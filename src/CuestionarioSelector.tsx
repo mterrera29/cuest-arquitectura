@@ -71,7 +71,6 @@ export default function CuestionarioSelector() {
           : 'Introducción a la Informñatica📋'}
       </h1>
       <select name='' id='' onChange={handleChange}>
-        <option value=''>Seleccionar</option>
         <option value='1'>Arquitectura de Computadoras</option>
         <option value='2'>Introducción a la Informática</option>
       </select>
