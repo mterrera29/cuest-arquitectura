@@ -140,7 +140,14 @@ export default function App({ semana, preguntas, onVolver }: Props) {
         ))}
 
         <div className='bottom-bar'>
-          <button onClick={corregir}>
+          <button
+            onClick={corregir}
+            style={
+              mostrarResultados
+                ? { marginLeft: '10px', backgroundColor: 'red' }
+                : { marginLeft: '10px', backgroundColor: 'green' }
+            }
+          >
             {mostrarResultados ? 'Dejar de Corregir' : 'Corregir'}
           </button>
           <button onClick={onVolver} style={{ marginLeft: '10px' }}>

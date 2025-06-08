@@ -1543,56 +1543,29 @@ const preguntasSemana10_v2 = [
   },
 ];
 
-const deduplicarPreguntas = (...listas: (typeof preguntasSemana1_v1)[]) => {
-  const mapa = new Map<string, (typeof preguntasSemana1_v1)[number]>();
-
-  for (const lista of listas) {
-    for (const pregunta of lista) {
-      if (!mapa.has(pregunta.texto)) {
-        mapa.set(pregunta.texto, pregunta);
-      }
-    }
-  }
-
-  return Array.from(mapa.values());
-};
-
 const cuestionarios = [
-  {
-    semana: 1,
-    preguntas: deduplicarPreguntas(preguntasSemana1_v1, preguntasSemana1_v2),
-  },
-  {
-    semana: 2,
-    preguntas: deduplicarPreguntas(preguntasSemana2_v1, preguntasSemana2_v2),
-  },
-  {
-    semana: 4,
-    preguntas: deduplicarPreguntas(
-      preguntasSemana4_v1,
-      preguntasSemana4_v2,
-      preguntasSemana5_v1
-    ),
-  },
-  { semana: 6, preguntas: deduplicarPreguntas(preguntasSemana6_v1) },
-  {
-    semana: 7,
-    preguntas: deduplicarPreguntas(preguntasSemana7_v1, preguntasSemana7_v2),
-  },
-  {
-    semana: 8,
-    preguntas: deduplicarPreguntas(preguntasSemana8_v1, preguntasSemana8_v2),
-  },
-  {
-    semana: 9,
-    preguntas: deduplicarPreguntas(preguntasSemana9_v1, preguntasSemana9_v2),
-  },
-  {
-    semana: 10,
-    preguntas: deduplicarPreguntas(preguntasSemana10_v1, preguntasSemana10_v2),
-  },
-  // podés ir agregando más semanas así:
-  // { semana: 1, preguntas: preguntasSemana1 },
+  { semana: 1, preguntas: preguntasSemana1_v1 },
+  { semana: 1, preguntas: preguntasSemana1_v2 },
+
+  { semana: 2, preguntas: preguntasSemana2_v1 },
+  { semana: 2, preguntas: preguntasSemana2_v2 },
+
+  { semana: 4, preguntas: preguntasSemana4_v1 },
+  { semana: 4, preguntas: preguntasSemana4_v2 },
+
+  { semana: 6, preguntas: preguntasSemana6_v1 },
+
+  { semana: 7, preguntas: preguntasSemana7_v1 },
+  { semana: 7, preguntas: preguntasSemana7_v2 },
+
+  { semana: 8, preguntas: preguntasSemana8_v1 },
+  { semana: 8, preguntas: preguntasSemana8_v2 },
+
+  { semana: 9, preguntas: preguntasSemana9_v1 },
+  { semana: 9, preguntas: preguntasSemana9_v2 },
+
+  { semana: 10, preguntas: preguntasSemana10_v1 },
+  { semana: 10, preguntas: preguntasSemana10_v2 },
 ];
 
 export default function CuestionarioSelector() {
