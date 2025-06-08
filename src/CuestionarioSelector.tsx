@@ -1241,7 +1241,7 @@ const preguntasSemana9_v1 = [
       'Seleccione el cauce válido para evitar desbalanceamiento en el pipelining:',
     opciones: [
       'FI, DI, CO, FO, WO',
-      'FI, DI, CO, FO, EI, WO',
+      'FO, DI, CO, FO, EI, WO',
       'FI, CO, FO, EI, WO, CDI',
       'FI, DI, CO, FO, EI, WO',
     ],
