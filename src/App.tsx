@@ -139,10 +139,12 @@ export default function App({ semana, preguntas, onVolver }: Props) {
           </div>
         ))}
 
-        <button onClick={corregir}>Corregir</button>
-        <button onClick={onVolver} style={{ marginLeft: '10px' }}>
-          Volver atrás
-        </button>
+        <div className='bottom-bar'>
+          <button onClick={corregir}>Corregir</button>
+          <button onClick={onVolver} style={{ marginLeft: '10px' }}>
+            Volver atrás
+          </button>
+        </div>
       </div>
     </>
   );

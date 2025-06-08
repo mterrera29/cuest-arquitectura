@@ -1601,11 +1601,13 @@ export default function CuestionarioSelector() {
   if (seleccionado !== null) {
     const { semana, preguntas } = cuestionarios[seleccionado];
     return (
-      <App
-        semana={semana}
-        preguntas={preguntas}
-        onVolver={() => setSeleccionado(null)}
-      />
+      <div>
+        <App
+          semana={semana}
+          preguntas={preguntas}
+          onVolver={() => setSeleccionado(null)}
+        />
+      </div>
     );
   }
 
