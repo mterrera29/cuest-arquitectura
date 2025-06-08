@@ -5,7 +5,7 @@ export interface Pregunta {
   opciones: string[];
   correcta: number | number[];
   multiple?: boolean;
-  tipo?: 'multiple' | 'ordenar';
+  tipo?: string;
 }
 
 interface Props {
