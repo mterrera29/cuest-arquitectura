@@ -68,7 +68,7 @@ export default function CuestionarioSelector() {
       <h1>
         {materia === '1'
           ? 'Arquitectura de Computadoras📋'
-          : 'Introducción a la Informñatica📋'}
+          : 'Introducción a la Informática📋'}
       </h1>
       <select name='' id='' onChange={handleChange}>
         <option value='1'>Arquitectura de Computadoras</option>
