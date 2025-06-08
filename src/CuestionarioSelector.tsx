@@ -1615,9 +1615,11 @@ export default function CuestionarioSelector() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
+        alignItems: 'center',
       }}
     >
-      <h1>Seleccioná un cuestionario</h1>
+      <h1>Arquitectura de Computadoras📋</h1>
+      <h2>Seleccioná un cuestionario</h2>
       <ul
         style={{
           display: 'flex',
