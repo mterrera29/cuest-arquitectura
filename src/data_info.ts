@@ -713,15 +713,17 @@ export const introducción = {
     },
     {
       texto:
-        '¿Cuál de las siguientes afirmaciones define correctamente una base de datos?',
-
+        'Ordene los elementos para reconstruir una definición precisa de "base de datos":',
       opciones: [
-        'Una base de datos es un conjunto de programas que ejecutan operaciones aritméticas sobre datos volátiles.',
-        'Una base de datos es un archivo de texto simple que se utiliza para almacenar código fuente.',
-        'Una base de datos es un sistema que convierte un conjunto de datos de gran tamaño en una herramienta abstracta, permitiendo al usuario buscar y extraer elementos pertinentes de información de una forma cómoda para él.',
-        'Una base de datos es una red informática que permite compartir archivos en tiempo real entre múltiples usuarios.',
+        'permitiendo al usuario buscar y extraer elementos pertinentes',
+        'de una forma cómoda para él.',
+        'es un sistema que convierte un conjunto de datos de gran tamaño',
+        'en una herramienta abstracta,',
+        'Una base de datos',
       ],
-      correcta: 2,
+      correcta: [4, 2, 3, 0, 1],
+      multiple: true,
+      tipo: 'ordenar',
     },
     {
       texto:
@@ -817,11 +819,16 @@ export const introducción = {
     },
     {
       texto:
-        'En una tabla de una base de datos, cada fila representa un registro',
+        'Ordene los fragmentos para formar correctamente la afirmación sobre una tabla en una base de datos:',
       opciones: [
-        'En una tabla de una base de datos, cada fila representa un [registro]',
+        'cada fila',
+        'representa un registro',
+        'de una base de datos,',
+        'En una tabla',
       ],
-      correcta: 0,
+      correcta: [3, 2, 0, 1],
+      multiple: true,
+      tipo: 'ordenar',
     },
     {
       texto: 'Cada fila de una tabla de una base de datos recibe el nombre de:',
@@ -830,11 +837,17 @@ export const introducción = {
     },
     {
       texto:
-        'Una base de datos es un sistema que convierte un conjunto de datos de gran tamaño en una herramienta abstracta permitiendo al usuario buscar y extraer elementos pertinentes de información una forma cómoda para él.',
+        'Ordene los elementos para reconstruir una definición precisa de "base de datos":',
       opciones: [
-        'Una [base de datos] es un sistema que convierte un [conjunto de datos] de gran tamaño en una [herramienta abstracta], permitiendo al [usuario] buscar y extraer elementos pertinentes de [información], de una forma cómoda para él.',
+        'permitiendo al usuario buscar y extraer elementos pertinentes',
+        'de una forma cómoda para él.',
+        'es un sistema que convierte un conjunto de datos de gran tamaño',
+        'en una herramienta abstracta,',
+        'Una base de datos',
       ],
-      correcta: 0,
+      correcta: [4, 2, 3, 0, 1],
+      multiple: true,
+      tipo: 'ordenar',
     },
     {
       texto: '¿Qué es un registro?',
@@ -848,22 +861,30 @@ export const introducción = {
     },
     {
       texto:
-        'Objetivo principal de un SGBD es proporcionar una forma de almacenar y recuperar la información de una base de datos de manera que sea tanto práctica como eficiente. Diseñados para gestionar grandes cantidades de información. Implica tanto la definición de estructuras para almacenar la información como la provisión de mecanismos para la manipulación de la información.',
+        '¿Cuál es el objetivo principal de un Sistema de Gestión de Bases de Datos (SGBD)?',
       opciones: [
-        'Objetivo principal de un SGBD es proporcionar una forma de [almacenar y recuperar] la información de una base de datos de manera que sea tanto [práctica como eficiente]. Diseñados para gestionar grandes [cantidades de información]. Implica tanto la [definición de estructuras] para almacenar la información como la provisión de mecanismos para la [manipulación de la información].',
+        'Proporcionar una forma práctica y eficiente de almacenar y recuperar la información de una base de datos.',
+        'Gestionar grandes cantidades de información de manera segura y organizada.',
+        'Definir estructuras para almacenar la información y proveer mecanismos para manipularla.',
+        'Permitir el acceso directo y sin control a los archivos del sistema operativo.',
+        'Optimizar la velocidad de conexión a Internet para bases de datos en línea.',
       ],
-      correcta: 0,
+      correcta: [0, 1, 2],
+      multiple: true,
+      tipo: 'multiple',
     },
     {
       texto: 'Podemos clasificar a los usuarios SGBD en:',
       opciones: [
         'Usuarios sofisticados que escriben aplicaciones de bases de datos especializadas que no son adecuadas en el marco de procesamiento de datos tradicional → Usuarios especializados',
-        'Interactúan con el sistema mediante la invocación de alguno de los programas de aplicación → Usuario normales',
+        'Interactúan con el sistema mediante la invocación de alguno de los programas de aplicación → Usuarios normales',
         'Profesionales informáticos que escriben programas de aplicación → Programadores de aplicaciones',
+        'Personas sin conocimientos técnicos que acceden a la base de datos únicamente a través del panel de control del sistema operativo → Usuarios básicos', // opción falsa
         'Interactúan con el sistema sin programas escritos. En su lugar, ellos forman sus consultas en un lenguaje de consulta de bases de datos. → Usuarios sofisticados',
       ],
-      correcta: [0, 1, 2, 3],
+      correcta: [0, 1, 2, 4],
       multiple: true,
+      tipo: 'multiple',
     },
     {
       texto:
