@@ -28,6 +28,8 @@ const cuestionarios_inf = [
   { semana: 3, preguntas: introducción.semana3_v2 },
   { semana: 4, preguntas: introducción.semana4 },
   { semana: 4, preguntas: introducción.semana4_v2 },
+  { semana: 5, preguntas: introducción.semana5 },
+  { semana: 5, preguntas: introducción.semana5_v2 },
   { semana: 6, preguntas: introducción.semana6 },
   { semana: 8, preguntas: introducción.semana8 },
   { semana: 9, preguntas: introducción.semana9 },
@@ -73,7 +75,7 @@ export default function CuestionarioSelector() {
           : 'Introducción a la Informática📋'}
       </h1>
       <select name='' id='' onChange={handleChange}>
-        <option value='0'>Seeccionar</option>
+        <option value='0'>Seleccionar</option>
         <option value='1'>Arquitectura de Computadoras</option>
         <option value='2'>Introducción a la Informática</option>
       </select>

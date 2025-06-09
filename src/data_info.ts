@@ -679,6 +679,356 @@ export const introducción = {
       correcta: 2,
     },
   ],
+  // Semana 5 - Versión 1
+  semana5: [
+    {
+      texto:
+        'Un Sistema de Gestión de Bases de Datos (SGBD) es una colección de datos no interrelacionados y un conjunto de programas para acceder a dichos datos.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto: 'Algunas tareas de mantenimiento de la SGBD son:',
+      opciones: [
+        'Supervisión de los trabajos que se ejecuten en la base de datos y asegurarse de que el rendimiento no se degrada por tareas muy costosas iniciadas por algunos usuarios.',
+        'Copia de seguridad periódica de la base de datos para prevenir la pérdida de datos en caso de desastres.',
+        'Asegurarse de que haya suficiente espacio libre en disco para las operaciones normales y aumentar el espacio en disco según sea necesario.',
+        'Instalar sistema operativo.',
+        'Desarrollar interfaces de usuario.',
+      ],
+      correcta: [0, 1, 2],
+      multiple: true,
+    },
+    {
+      texto:
+        'Interactuar con el SGBD mediante la invocación de alguno de los programas de aplicación, es responsabilidad del:',
+      opciones: [
+        'Administrador',
+        'Programador de aplicación',
+        'Usuario normal',
+        'Usuario sofisticado',
+        'Usuario especializado',
+      ],
+      correcta: 2,
+    },
+    {
+      texto:
+        'Una base de datos es un sistema que convierte un conjunto de datos de gran tamaño en una herramienta abstracta, permitiendo al usuario buscar y extraer elementos pertinentes de información de una forma cómoda para él.',
+      opciones: [
+        'Una [base de datos] es un sistema que convierte un [conjunto de datos] de gran tamaño en una [herramienta abstracta], permitiendo al [usuario] buscar y extraer elementos pertinentes de [información], de una forma cómoda para él.',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'La dicotomía entre el software de aplicación y el DBMS tiene varias ventajas:',
+      opciones: [
+        'Separar el software de aplicación del DBMS, proporciona un medio de controlar el acceso a la base de datos.',
+        'El software de aplicación manipula directamente la base de datos.',
+        'El software de aplicación es el encargado añadir o borrar datos.',
+        'Permite la construcción y uso de herramientas abstractas.',
+        'Independencia de los datos, la capacidad de modificar la organización de la propia base de datos sin tener que modificar el software de aplicación.',
+      ],
+      correcta: [0, 3, 4],
+      multiple: true,
+    },
+    {
+      texto:
+        'Para las labores de manipulación de información, las personas utilizan bases de datos porque...',
+      opciones: [
+        'Facilitan la impresión y distribución de la información de muy diversos modos.',
+        'Todas las anteriores.',
+        'Facilitan la tarea de organizar y reorganizar la información.',
+        'Facilitan la tarea de almacenar grandes cantidades de información.',
+        'Permiten recuperar información de un modo más rápido y flexible.',
+      ],
+      correcta: 1,
+    },
+    {
+      texto: 'Las funciones de los administradores de un SGBD son:',
+      opciones: [
+        'Diseñar de la interfaz de usuario.',
+        'Diseñar consultas para la aplicación.',
+        'Concesión de autorización para el acceso a los datos',
+        'Definición de la estructura y del método de acceso',
+        'Definición del esquema',
+        'Mantenimiento rutinario',
+        'Diseñar informes para la aplicación.',
+        'Agregar datos a la base de datos.',
+      ],
+      correcta: [2, 3, 4, 5],
+      multiple: true,
+    },
+    {
+      texto: '¿Cuál de las siguientes funciones corresponde a un SGBD?',
+      opciones: [
+        'Diseñar presentaciones en PowerPoint',
+        'Navegar por Internet con mayor velocidad',
+        'Controlar el acceso a los datos y garantizar su integridad',
+        'Crear archivos PDF desde hojas de cálculo',
+      ],
+      correcta: 2,
+    },
+    {
+      texto: '¿Qué significa que una base de datos sea multidimensional?',
+      opciones: [
+        'Que utiliza inteligencia artificial para procesar información',
+        'Que puede almacenar datos en más de un idioma',
+        'Que funciona en varias computadoras al mismo tiempo',
+        'Que puede analizar datos desde distintas perspectivas',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        '¿Cuál de las siguientes funciones pertenece al Administrador de la Base de Datos (DBA)?',
+      opciones: [
+        'Crear informes mediante consultas SQL',
+        'Diseñar programas de aplicación para usuarios finales',
+        'Definir esquemas, gestionar autorizaciones y realizar backups',
+        'Ejecutar transferencias de fondos desde una app bancaria',
+      ],
+      correcta: 2,
+    },
+  ],
+  // Semana 5 - Versión 2
+  semana5_v2: [
+    {
+      texto:
+        'Concesión de autorización para el acceso a los datos, es una función del:',
+      opciones: [
+        'Programadores de aplicaciones',
+        'Usuario normales',
+        'Invitado',
+        'Administrador',
+        'Usuarios especializados',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'En una base de datos relacional todos los valores de un campo en una misma tabla comparten la misma estructura o tipo de dato.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'En una tabla de una base de datos, cada fila representa un registro',
+      opciones: [
+        'En una tabla de una base de datos, cada fila representa un [registro]',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'Cada fila de una tabla de una base de datos recibe el nombre de:',
+      opciones: ['Campo', 'Dominio', 'Registro', 'Atributo'],
+      correcta: 2,
+    },
+    {
+      texto:
+        'Una base de datos es un sistema que convierte un conjunto de datos de gran tamaño en una herramienta abstracta permitiendo al usuario buscar y extraer elementos pertinentes de información una forma cómoda para él.',
+      opciones: [
+        'Una [base de datos] es un sistema que convierte un [conjunto de datos] de gran tamaño en una [herramienta abstracta], permitiendo al [usuario] buscar y extraer elementos pertinentes de [información], de una forma cómoda para él.',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: '¿Qué es un registro?',
+      opciones: [
+        'Es el conjunto de caracteres relacionados entre sí.',
+        'Es el conjunto de caracteres se referían a un dato particular.',
+        'Es el grupo de registros asociados a un concepto determinado.',
+        'Es el conjunto de campos relacionados entre sí de acuerdo con una asociación del mundo real.',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Objetivo principal de un SGBD es proporcionar una forma de almacenar y recuperar la información de una base de datos de manera que sea tanto práctica como eficiente. Diseñados para gestionar grandes cantidades de información. Implica tanto la definición de estructuras para almacenar la información como la provisión de mecanismos para la manipulación de la información.',
+      opciones: [
+        'Objetivo principal de un SGBD es proporcionar una forma de [almacenar y recuperar] la información de una base de datos de manera que sea tanto [práctica como eficiente]. Diseñados para gestionar grandes [cantidades de información]. Implica tanto la [definición de estructuras] para almacenar la información como la provisión de mecanismos para la [manipulación de la información].',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'Podemos clasificar a los usuarios SGBD en:',
+      opciones: [
+        'Usuarios sofisticados que escriben aplicaciones de bases de datos especializadas que no son adecuadas en el marco de procesamiento de datos tradicional → Usuarios especializados',
+        'Interactúan con el sistema mediante la invocación de alguno de los programas de aplicación → Usuario normales',
+        'Profesionales informáticos que escriben programas de aplicación → Programadores de aplicaciones',
+        'Interactúan con el sistema sin programas escritos. En su lugar, ellos forman sus consultas en un lenguaje de consulta de bases de datos. → Usuarios sofisticados',
+      ],
+      correcta: [0, 1, 2, 3],
+      multiple: true,
+    },
+    {
+      texto:
+        'Interactuar con el SGBD mediante la invocación de alguno de los programas de aplicación, es responsabilidad del:',
+      opciones: [
+        'Usuarios especializados',
+        'Programadores de aplicaciones',
+        'Administradores',
+        'Usuario normales',
+        'Usuarios sofisticados',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'SQL es un lenguaje de consultas con una estructura parecida al idioma inglés que se utiliza en casi todos los sistemas de administración de bases de datos',
+      opciones: [
+        '[SQL] es un lenguaje de consultas con una estructura parecida al idioma inglés que se utiliza en casi todos los sistemas de administración de bases de datos',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'Por definición, una base de datos relacional es...',
+      opciones: [
+        'Una base de datos cuya estructura combina los datos de varias tablas basadas en el modelo relacional.',
+        'Una base de datos con más de 1.000 registros.',
+        'Una base de datos que contiene varios campos relacionados.',
+        'Una base de datos que tiene una relación con otras bases de datos.',
+        'Una base de datos que contiene varios registros relacionados.',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'Una relación es una asociación entre varias entidades.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Los modelos de datos semiestructurados permiten la especificación de datos donde los elementos de datos individuales del mismo tipo pueden tener diferentes conjuntos de atributos.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Dificultades que se presentan con el sistema de procesamiento de archivos:',
+      opciones: [
+        'Problemas de redacción.',
+        'Redundancia e inconsistencia de datos',
+        'Problemas del sistema operativo.',
+        'Problemas de navegación',
+        'Problemas de atomicidad',
+        'Inconvenientes de formato de caracteres.',
+        'Anomalías en el acceso concurrente',
+        'Problemas de seguridad',
+      ],
+      correcta: [1, 4, 6, 7],
+      multiple: true,
+    },
+    {
+      texto: 'Una clave foránea:',
+      opciones: [
+        'Es una relación de integridad referencial entre dos tablas, que indica que para que los valores de los atributos pertenecientes a la clave sean válidos, éstos no pueden aparecer en la tabla a la que referencian.',
+        'Es una relación de integridad referencial entre dos tablas, que indica que para que los valores de los atributos pertenecientes a la clave foránea sean válidos, éstos deben aparecer en la tabla a la que referencian.',
+        'Sirve para identificar de forma única los registros de una tabla.',
+        'Es una relación de integridad referencial entre tres tablas, que indica que para que los valores de los atributos pertenecientes a la clave sean válidos, éstos deben aparecer en cualquiera de las tablas a la que referencian.',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Expresa el número de entidades con las que otra entidad se puede asociar a través de un conjunto de relaciones.',
+      opciones: [
+        'Correspondencia de cardinalidad',
+        'Correspondencia de documentación',
+        'Correspondencia de mantenibilidad',
+        'Correspondencia de facilidad de uso',
+        'Correspondencia de usabilidad',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Está basado en una percepción del mundo real que consta de una colección de objetos básicos, llamados entidades, y de relaciones entre estos objetos.',
+      opciones: [
+        'Modelo Entidad Relación',
+        'Modelo en red',
+        'Modelo Jerárquico',
+        'Modelo Procedimental',
+        'Modelo Organigrama',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Las entidades se describen en una base de datos mediante un conjunto de números.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto: 'Una clave primaria (primary key):',
+      opciones: [
+        'Ninguna de las anteriores es válida.',
+        'Según se diseñe la tabla, se puede repetir.',
+        'Se puede repetir.',
+        'Es única.',
+      ],
+      correcta: 3,
+    },
+    {
+      texto: 'Algunas tareas de mantenimiento de la SGBD son:',
+      opciones: [
+        'Copia de seguridad periódica de la base de datos para prevenir la pérdida de datos en caso de desastres.',
+        'Desarrollar interfaces de usuario.',
+        'Asegurarse de que haya suficiente espacio libre en disco para las operaciones normales y aumentar el espacio en disco según sea necesario.',
+        'Supervisión de los trabajos que se ejecuten en la base de datos y asegurarse de que el rendimiento no se degrada por tareas muy costosas iniciadas por algunos usuarios.',
+        'Instalar sistema operativo.',
+      ],
+      correcta: [0, 2, 3],
+      multiple: true,
+    },
+    {
+      texto:
+        'La dicotomía entre el software de aplicación y el DBMS tiene varias ventajas:',
+      opciones: [
+        'Independencia de los datos, la capacidad de modificar la organización de la propia base de datos sin tener que modificar el software de aplicación.',
+        'El software de aplicación es el encargado añadir o borrar datos.',
+        'Separar el software de aplicación del DBMS, proporciona un medio de controlar el acceso a la base de datos.',
+        'Permite la construcción y uso de herramientas abstractas.',
+        'El software de aplicación manipula directamente la base de datos.',
+      ],
+      correcta: [0, 2, 3],
+      multiple: true,
+    },
+    {
+      texto: 'En un registro, no es necesario que cada campo contenga datos.',
+      opciones: [
+        'En un registro, no es necesario que cada [campo] contenga datos.',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'Las funciones de los administradores de un SGBD son:',
+      opciones: [
+        'Diseñar de la interfaz de usuario.',
+        'Diseñar informes para la aplicación.',
+        'Definición de la estructura y del método de acceso',
+        'Concesión de autorización para el acceso a los datos',
+        'Mantenimiento rutinario',
+        'Agregar datos a la base de datos.',
+        'Definición del esquema',
+        'Diseñar consultas para la aplicación.',
+      ],
+      correcta: [2, 3, 4, 6],
+      multiple: true,
+    },
+    {
+      texto:
+        '¿Cuál de las siguientes es la jerarquía correcta en una base de datos estándar?',
+      opciones: [
+        'Base de datos, tabla, registro, campo.',
+        'Base de datos, campo, registro, tabla.',
+        'Base de datos, tabla, campo, registro.',
+        'Base de datos, registro, tabla, campo.',
+        'Base de datos, registro, campo, tabla.',
+      ],
+      correcta: 0,
+    },
+  ],
   semana6: [
     {
       texto: 'Una relación es una asociación entre varias entidades.',
