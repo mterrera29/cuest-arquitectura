@@ -98,11 +98,15 @@ export const introducción = {
       correcta: 1,
     },
     {
-      texto: 'Relacione los conceptos:',
+      texto:
+        'Indique si cada una de las siguientes afirmaciones es Verdadera o Falsa:',
       opciones: [
         'Componentes físicos de una computadora → Hardware',
         'Componentes lógicos de una computadora → Software',
         'Software que sirve de soporte para controlar e interactuar con el hardware → Software base',
+        'Componentes físicos de una computadora → Software',
+        'Componentes lógicos de una computadora → Hardware',
+        'Software base → Aplicación de oficina',
       ],
       correcta: [0, 1, 2],
       multiple: true,
@@ -156,6 +160,99 @@ export const introducción = {
         '¿Cuántos valores diferentes pueden representarse con cuatro bits?',
       opciones: ['8', '12', '16', '32'],
       correcta: 2,
+    },
+  ],
+  semana2_v2: [
+    {
+      texto: '¿Qué número en decimal equivale al 10 en hexadecimal?',
+      opciones: ['8', '10', '16', '20', '15'],
+      correcta: 2,
+    },
+    {
+      texto: 'Seleccione las características de los algoritmos:',
+      opciones: [
+        'Secuencia de pasos desordenadas',
+        'Instrucciones específicas no ambiguas',
+        'Número infinito de pasos',
+        'Método para resolver problemas',
+        'Instrucciones específicas ambiguas',
+      ],
+      correcta: [1, 3],
+      multiple: true,
+    },
+    {
+      texto: 'Los símbolos del sistema hexadecimal son:',
+      opciones: [
+        '01234567',
+        '0123456789CDEFGH',
+        '0123456789',
+        '01',
+        '0123456789ABCDEF',
+      ],
+      correcta: 4,
+    },
+    {
+      texto: 'Ordene las computadoras de mayor a menor según sus prestaciones:',
+      opciones: [
+        'Servidor - computadoras de bolsillo - PC personal',
+        'Computadoras de bolsillo - PC personal - Servidor',
+        'PC personal - servidor - computadoras de bolsillo',
+        'Servidor - PC personal - computadoras de bolsillo',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Complete: Los sistemas de numeración actuales son [sistemas ______], donde el valor depende del [______] y la [posición ______].',
+      opciones: [
+        'posicionales - símbolo - relativa',
+        'binarios - número - absoluta',
+        'decimales - dígito - fija',
+        'hexadecimales - valor - variable',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'Las computadoras usan internamente el sistema:',
+      opciones: ['Octal', 'Hexadecimal', 'Decimal', 'Binario'],
+      correcta: 3,
+    },
+    {
+      texto: 'Seleccione los componentes de un sistema computacional:',
+      opciones: [
+        'Software - aplicación - usuario - sistema operativo',
+        'Hardware - software - aplicación - usuario',
+        'Hardware - software - usuario - procesador',
+        'Hardware - software - aplicación - web',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Los sistemas de numeración posicionales son los más utilizados actualmente.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: 'Ordene los pasos del algoritmo de lavarse los dientes:',
+      opciones: [
+        'Cerrar canilla',
+        'Tomar cepillo de dientes',
+        'Enjuagarse la boca',
+        'Ir hasta el baño',
+        'Colocar pasta',
+        'Abrir canilla',
+        'Guardar cepillo en su lugar',
+        'Cepillarse',
+      ],
+      correcta: [3, 1, 4, 7, 5, 2, 0, 6], // Orden correcto: [Ir, Tomar, Colocar, Cepillarse, Abrir, Enjuagar, Cerrar, Guardar]
+      multiple: true,
+      tipo: 'ordenar',
+    },
+    {
+      texto: '¿Cuál es el valor decimal del número binario 1010?',
+      opciones: ['10', '12', '8', '6'],
+      correcta: 0,
     },
   ],
   semana3: [
@@ -264,6 +361,124 @@ export const introducción = {
         'El sistema operativo se despreocupa del formato de los archivos y del medio de almacenamiento.',
       opciones: ['Verdadero', 'Falso'],
       correcta: 1,
+    },
+  ],
+  semana3_v2: [
+    {
+      texto:
+        'Al conjunto de programas y servicios que administra los recursos de una computadora se le denomina:',
+      opciones: [
+        'Lenguaje ensamblador',
+        'Hardware',
+        'Software de aplicación',
+        'Sistema operativo',
+        'Paquete ofimático',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Complete: Cuando se enciende la máquina, el procesador ejecuta el [______] en ROM, que transfiere el SO desde [______] a [______].',
+      opciones: [
+        'programa de arranque - almacenamiento masivo - memoria principal',
+        'BIOS - memoria caché - almacenamiento secundario',
+        'kernel - CPU - memoria volátil',
+        'gestor de arranque - RAM - disco duro',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'Sistema operativo que solo permite ejecutar un proceso a la vez:',
+      opciones: [
+        'Multiaplicación',
+        'Multitarea',
+        'Multiusuario',
+        'Monotarea',
+        'Multisistema',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Sistemas operativos que garantizan acciones en instantes determinados:',
+      opciones: [
+        'Sistemas de servidores',
+        'Sistemas embebidos',
+        'Sistemas de PC',
+        'Sistemas en tiempo real',
+        'Sistemas móviles',
+      ],
+      correcta: 3,
+    },
+    {
+      texto: '¿Qué es un sistema multiusuario?',
+      opciones: [
+        'Permitir que varios usuarios ejecuten programas simultáneamente',
+        'Que una computadora tenga varios microprocesadores',
+        'Ejecutar diversos programas al mismo tiempo',
+        'Distribuir tareas entre múltiples dispositivos',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: '¿Cuál NO es función del sistema operativo?',
+      opciones: [
+        'Acelerar cálculos en planillas',
+        'Coordinar procesos del sistema',
+        'Detección de virus',
+        'Corrección ortográfica',
+        'Gestionar periféricos',
+      ],
+      correcta: [0, 2, 3],
+      multiple: true,
+    },
+    {
+      texto:
+        'Interfaz de comunicación con la computadora mediante comandos de texto:',
+      opciones: [
+        'Entorno gráfico',
+        'Menú',
+        'Administrador de ventanas',
+        'Interfaz gráfica',
+        'Shell',
+      ],
+      correcta: 4,
+    },
+    {
+      texto:
+        '¿Cuáles de las siguientes afirmaciones sobre las funciones del sistema operativo son verdaderas?',
+      opciones: [
+        'Coordinar procesos → Planificador de tareas',
+        'Asignar tiempo CPU → Gestor de archivos',
+        'Gestionar almacenamiento → Administrador de archivos',
+        'Controlar periféricos → Controladores',
+        'Gestionar memoria → Controladores de red',
+        'Comunicación externa → Shell',
+        'Gestionar memoria → Gestor de memoria',
+        'Comunicación externa → Antivirus',
+      ],
+      correcta: [0, 2, 3, 5, 6],
+      multiple: true,
+    },
+    {
+      texto: '¿Qué no depende del sistema operativo?',
+      opciones: [
+        'Gestionar periféricos',
+        'Configuración de la BIOS',
+        'Almacenar archivos',
+        'Imprimir documentos',
+      ],
+      correcta: 1,
+    },
+    {
+      texto: 'Al encender un PC, ¿qué software se ejecuta primero?',
+      opciones: [
+        'Bases de datos',
+        'Sistema operativo',
+        'BIOS',
+        'Procesadores de texto',
+      ],
+      correcta: 2,
     },
   ],
   semana4: [

@@ -23,7 +23,9 @@ const cuestionarios_arq = [
 const cuestionarios_inf = [
   { semana: 1, preguntas: introducción.semana1 },
   { semana: 2, preguntas: introducción.semana2 },
+  { semana: 2, preguntas: introducción.semana2_v2 },
   { semana: 3, preguntas: introducción.semana3 },
+  { semana: 3, preguntas: introducción.semana3_v2 },
   { semana: 4, preguntas: introducción.semana4 },
   { semana: 4, preguntas: introducción.semana4_v2 },
   { semana: 6, preguntas: introducción.semana6 },
@@ -71,6 +73,7 @@ export default function CuestionarioSelector() {
           : 'Introducción a la Informática📋'}
       </h1>
       <select name='' id='' onChange={handleChange}>
+        <option value='0'>Seeccionar</option>
         <option value='1'>Arquitectura de Computadoras</option>
         <option value='2'>Introducción a la Informática</option>
       </select>
