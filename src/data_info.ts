@@ -713,11 +713,15 @@ export const introducción = {
     },
     {
       texto:
-        'Una base de datos es un sistema que convierte un conjunto de datos de gran tamaño en una herramienta abstracta, permitiendo al usuario buscar y extraer elementos pertinentes de información de una forma cómoda para él.',
+        '¿Cuál de las siguientes afirmaciones define correctamente una base de datos?',
+
       opciones: [
-        'Una [base de datos] es un sistema que convierte un [conjunto de datos] de gran tamaño en una [herramienta abstracta], permitiendo al [usuario] buscar y extraer elementos pertinentes de [información], de una forma cómoda para él.',
+        'Una base de datos es un conjunto de programas que ejecutan operaciones aritméticas sobre datos volátiles.',
+        'Una base de datos es un archivo de texto simple que se utiliza para almacenar código fuente.',
+        'Una base de datos es un sistema que convierte un conjunto de datos de gran tamaño en una herramienta abstracta, permitiendo al usuario buscar y extraer elementos pertinentes de información de una forma cómoda para él.',
+        'Una base de datos es una red informática que permite compartir archivos en tiempo real entre múltiples usuarios.',
       ],
-      correcta: 0,
+      correcta: 2,
     },
     {
       texto:
