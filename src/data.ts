@@ -697,7 +697,7 @@ export const arquitectura = {
       texto:
         '¿Qué valor queda almacenado en z según el siguiente código?\n\nMOV AL, x\nMOV BL, y\nCMP AL, BL\nJZ Restar\nADD BL, AL\nJMP Guardar\nRestar:\n  SUB BL, AL\nGuardar:\n  MOV z, BL\nHLT\n\nVariables:\n  x DB 2\n  y DB 3\n  z DB 0',
       opciones: ['1', '2', '0', '5'],
-      correcta: 1,
+      correcta: 3,
     },
     {
       texto:
