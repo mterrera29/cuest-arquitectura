@@ -1393,14 +1393,20 @@ export const introducción = {
   semana8: [
     {
       texto: 'Relacione los niveles de red con sus funciones:',
-      opciones: [
-        'Nivel que permite a los datos atravesar redes diferentes → De internet',
-        'Nivel que asegura intercambio fiable de datos → De transporte',
-        'Nivel que maneja conexión física a la red → De acceso a la red',
-        'Nivel que interactúa con aplicaciones → De aplicación',
+      descripciones: [
+        'Nivel que permite a los datos atravesar redes diferentes',
+        'Nivel que asegura intercambio fiable de datos',
+        'Nivel que maneja conexión física a la red',
+        'Nivel que interactúa con aplicaciones',
       ],
-      correcta: [0, 1, 2, 3],
-      multiple: true,
+      opciones: [
+        'De transporte',
+        'De acceso a la red',
+        'De aplicación',
+        'De internet',
+      ],
+      correcta: [3, 0, 1, 2], // índices que corresponden a las respuestas correctas en el orden desordenado
+      tipo: 'ordenar',
     },
     {
       texto: 'En cualquier tipo de red...',
