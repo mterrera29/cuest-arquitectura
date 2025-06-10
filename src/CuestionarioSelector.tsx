@@ -21,7 +21,6 @@ const cuestionarios_arq = [
 ];
 
 const cuestionarios_inf = [
-  { semana: 0, preguntas: introducción.parcial },
   { semana: 1, preguntas: introducción.semana1 },
   { semana: 2, preguntas: introducción.semana2 },
   { semana: 2, preguntas: introducción.semana2_v2 },
@@ -38,6 +37,7 @@ const cuestionarios_inf = [
   { semana: 9, preguntas: introducción.semana9 },
   { semana: 10, preguntas: introducción.semana10 },
   { semana: 11, preguntas: introducción.semana11 },
+  { semana: 0, preguntas: introducción.parcial },
 ];
 
 export default function CuestionarioSelector() {

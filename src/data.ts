@@ -635,7 +635,7 @@ export const arquitectura = {
       texto:
         '¿Qué valor queda almacenado en la posición dada por z? Programa:\n\nORG 10h\n  x DB 2\n  y DB 3\n  z DB 0\n\nORG 20h\n  MOV AL, 0\n  MOV BL, y\nBucle:\n  ADD AL, x\n  SUB BL, 1\n  JZ Fin\n  JMP Bucle\nFin:\n  MOV z, AL\nHLT',
       opciones: ['5', '0', '6', '2'],
-      correcta: 0,
+      correcta: 2,
     },
     {
       texto:
