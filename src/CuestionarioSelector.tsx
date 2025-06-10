@@ -35,6 +35,7 @@ const cuestionarios_inf = [
   { semana: 7, preguntas: introducción.semana7 },
   { semana: 7, preguntas: introducción.semana7_v2 },
   { semana: 8, preguntas: introducción.semana8 },
+  { semana: 8, preguntas: introducción.semana8_v2 },
   { semana: 9, preguntas: introducción.semana9 },
   { semana: 10, preguntas: introducción.semana10 },
   { semana: 11, preguntas: introducción.semana11 },

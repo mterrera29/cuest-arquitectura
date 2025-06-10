@@ -1479,6 +1479,95 @@ export const introducción = {
       correcta: 4,
     },
   ],
+  semana8_v2: [
+    {
+      texto: 'Relacione los niveles de red con sus funciones:',
+      descripciones: [
+        'Nivel que permite a los datos atravesar redes diferentes',
+        'Nivel que asegura intercambio fiable de datos',
+        'Nivel que maneja conexión física a la red',
+        'Nivel que interactúa con aplicaciones',
+      ],
+      opciones: [
+        'De transporte',
+        'De acceso a la red',
+        'De aplicación',
+        'De internet',
+      ],
+      correcta: [3, 0, 1, 2],
+      tipo: 'ordenar',
+    },
+    {
+      texto: 'En cualquier tipo de red...',
+      opciones: [
+        'Existe un emisor y receptor',
+        'La información viaja por un canal',
+        'Requiere codificación/decodificación',
+        'Todas las anteriores',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Red extensa que comunica diferentes ciudades, países o continentes se llama:',
+      opciones: ['LAN', 'WAN', 'MAN', 'EXLAN'],
+      correcta: 1,
+    },
+    {
+      texto: 'La tecnología WiFi:',
+      opciones: [
+        'Usa ondas de radio',
+        'Requiere punto de acceso',
+        'Necesita dispositivo WiFi en computadora',
+        'Todas las anteriores',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Complete: Una red___ es una red informática cuyo alcance se limita a un espacio físico reducido. Permite compartir ____entre varias computadoras.',
+      opciones: ['LAN, recursos', 'WAN, datos', 'MAN, archivos'],
+      correcta: 0,
+    },
+    {
+      texto: 'Un router...',
+      opciones: [
+        'Encamina direcciones fuera de la red',
+        'Tiene IP LAN (gateway)',
+        'Tiene IP WAN pública',
+        'Todas las anteriores',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'El emisor divide mensajes en paquetes con cabeceras de dirección y control.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Los hipervínculos facilitan saltar entre páginas web de diferentes autores.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: 'Cada elemento conectado a una red identificado por IP se llama:',
+      opciones: ['Host', 'Conector RJ45', 'DNS', 'Router'],
+      correcta: 0,
+    },
+    {
+      texto: 'Un sitio web puede contener:',
+      opciones: [
+        'Hipervínculos',
+        'Multimedia',
+        'Información pública',
+        'URL única',
+        'Todos los anteriores',
+      ],
+      correcta: 4,
+    },
+  ],
   semana9: [
     {
       texto: '¿Cuál es el lenguaje estándar para estilos en páginas web?',
