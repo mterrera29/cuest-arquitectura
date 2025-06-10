@@ -52,11 +52,12 @@ export default function CuestionarioSelector() {
       materia === '1'
         ? cuestionarios_arq[seleccionado]
         : cuestionarios_inf[seleccionado];
+
     return (
       <div>
         <App
           semana={semana}
-          preguntas={preguntas}
+          preguntas={preguntas.sort(() => Math.random() - 0.5)}
           onVolver={() => setSeleccionado(null)}
         />
       </div>
