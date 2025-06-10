@@ -1132,6 +1132,264 @@ export const introducción = {
       correcta: 0,
     },
   ],
+  semana7: [
+    {
+      texto: 'Originalmente, Internet fue...',
+      opciones: [
+        'Una LAN del MIT.',
+        'Un producto de Microsoft que creció rápidamente.',
+        'Una red cooperativa creada por varias importantes compañías de hardware y software.',
+        'Una red experimental de investigación.',
+        'Una red para la ruptura de códigos utilizada por el Departamento de Defensa de los Estados Unidos durante la II guerra Mundial.',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'El ancho de banda de una red puede verse afectado por todo esto excepto...',
+      opciones: [
+        'Los protocolos de la red.',
+        'La cantidad de tráfico en la red.',
+        'El medio físico que constituye la red.',
+        'El tipo de conexión de red.',
+        'El tipo de información que se está transmitiendo.',
+      ],
+      correcta: 4,
+    },
+    {
+      texto: 'La conmutación de paquetes:',
+      opciones: [
+        'Conlleva que, cuando haya que enviar mensajes muy grandes, éstos se dividan en pequeños fragmentos que se envían de forma independiente.',
+        'Permite mejorar la tolerancia a fallos de una red.',
+        'Permite que cada uno de los paquetes que componen un mensaje pueda viajar por un camino distinto.',
+        'Todas las afirmaciones anteriores son ciertas.',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Cuando se envía un archivo de vídeo digital a través de Internet, se divide en paquetes que viajan de forma independiente hasta su destino.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: 'Una dirección IP es...',
+      opciones: [
+        'Una cadena de texto que identifica a cada equipo de Internet.',
+        'Una cadena de texto separada por puntos asociada a cada página web.',
+        'Una forma de identificar computadoras, que ya no se usa en la actualidad.',
+        'Una agrupación de 32 bits que sirve para identificar a los equipos en Internet.',
+      ],
+      correcta: 3,
+    },
+    {
+      texto: 'Indique cuáles son las ventajas de una red:',
+      opciones: [
+        'Todas las anteriores.',
+        'Permiten a las personas compartir recursos hardware de la computadora, reduciendo costes y haciendo que más personas se beneficien de los equipos informáticos más potentes.',
+        'Permiten a las personas compartir datos y programas, incrementándose la eficacia y la productividad.',
+        'Permiten que las personas trabajen juntas, o colaboren.',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Complete: ___ transmite los datos a todos los dispositivos conectados; ___ envía los datos solo al dispositivo de destino; ___ selecciona la mejor ruta y conecta diferentes redes.',
+      opciones: [
+        'Router, Switch, Hub',
+        'Switch, Hub, Router',
+        'Hub, Router, Switch',
+        'Switch, Router, Hub',
+        'Hub, Switch, Router',
+      ],
+      correcta: 4,
+    },
+    {
+      texto:
+        'Las señales electromagnéticas se propagan a través de medios físicos determinados (pares trenzados, cable coaxial, fibra óptica), se denominan...',
+      opciones: ['medios guiados', 'medios no guiados'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Usan antenas para la transmisión y recepción, donde una emite energía electromagnética y la otra la capta luego de atravesar el espacio (radio, microondas terrestres, microondas satelitales), se denominan...',
+      opciones: ['medios guiados', 'medios no guiados'],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Los protocolos TCP/IP que se encuentran en el corazón de Internet fueron publicados como estándares abiertos que no pertenecen a ninguna empresa o compañía.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'El centro de control y el hub principal de Internet están localizados en...',
+      opciones: [
+        'en Silicon Valley.',
+        'cerca del campus de Microsoft en Redmond, Washington.',
+        'en ninguna parte Internet no tiene ningún hub central.',
+        'cerca de Washington D.C.',
+        'en una localización de alto secreto.',
+      ],
+      correcta: 2,
+    },
+  ],
+  semana7_v2: [
+    {
+      texto: 'Originalmente, Internet fue...',
+      opciones: [
+        'una LAN del MIT.',
+        'un producto de Microsoft que se convirtió rápidamente en un monstruo que se escapó de su control.',
+        'una red cooperativa creada por varias importantes compañías de hardware y software.',
+        'una red experimental de investigación llamada ARPANET.',
+        'una red para la ruptura de códigos utilizada por el Departamento de Defensa de los Estados Unidos durante la II Guerra Mundial.',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'El ancho de banda de una red puede verse afectado por todo esto excepto...',
+      opciones: [
+        'los protocolos software de la red.',
+        'la cantidad de tráfico en la red.',
+        'el medio físico que constituye la red.',
+        'el tipo de conexión de red.',
+        'el tipo de información que se está transmitiendo.',
+      ],
+      correcta: 4,
+    },
+    {
+      texto: 'La conmutación de paquetes:',
+      opciones: [
+        'Conlleva que, cuando haya que enviar mensajes muy grandes, éstos se dividan en pequeños fragmentos que se envían de forma independiente.',
+        'Permite mejorar la tolerancia a fallos de una red.',
+        'Permite que cada uno de los paquetes que componen un mensaje pueda viajar por un camino distinto.',
+        'Todas las afirmaciones anteriores son ciertas.',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Cuando se envía un archivo de video digital a través de Internet, se divide en paquetes que viajan de forma independiente hasta su destino.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: 'Una dirección IP es...',
+      opciones: [
+        'Una cadena de texto que identifica a cada equipo de Internet.',
+        'Una cadena de texto separada por puntos asociada a cada página web.',
+        'Una forma de identificar computadoras, que ya no se usa en la actualidad.',
+        'Una agrupación de 32 bits que sirve para identificar a los equipos en Internet.',
+      ],
+      correcta: 3,
+    },
+    {
+      texto: 'Indique cuáles son las ventajas de una red:',
+      opciones: [
+        'Permiten a las personas compartir recursos hardware de la computadora, reduciendo costes.',
+        'Permiten a las personas compartir datos y programas, aumentando la eficacia.',
+        'Permiten que las personas trabajen juntas, o colaboren.',
+        'Todas las anteriores.',
+      ],
+      correcta: 3,
+    },
+    {
+      texto: 'Seleccione el dispositivo correcto para cada definición:',
+      descripciones: [
+        'Recibe datos procedentes de una computadora y los transmite a las demás — ___',
+        'Los datos provenientes de la computadora de origen solamente son enviados a la computadora de destino — ___',
+        'Tiene la capacidad de escoger la mejor ruta que un determinado paquete de datos debe seguir para llegar a su destino. Permite conectar redes entre sí — ___',
+      ],
+      opciones: ['Hub', 'Switch', 'Router'], // solo una vez
+      correcta: [0, 1, 2],
+      tipo: 'ordenar',
+      multiple: true,
+    },
+    {
+      texto:
+        'Las señales electromagnéticas se propagan a través de medios físicos como pares trenzados, cable coaxial, fibra óptica. Se denominan...',
+      opciones: ['medios guiados', 'medios no guiados'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Usan antenas para la transmisión y recepción, como radio y microondas, y no requieren medio físico. Se denominan...',
+      opciones: ['medios guiados', 'medios no guiados'],
+      correcta: 1,
+    },
+    {
+      texto:
+        '¿Qué deben usar en común los dispositivos de una red para comunicarse directamente entre sí?',
+      opciones: ['hardware', 'procesador', 'sistema operativo', 'protocolo'],
+      correcta: 3,
+    },
+    {
+      texto: 'Seleccione el tipo de cable adecuado:',
+      opciones: ['fibra óptica', 'HDMI', 'TP', 'VGA', 'COAX'],
+      correcta: 2,
+    },
+    {
+      texto:
+        'Los protocolos TCP/IP que se encuentran en el corazón de Internet fueron publicados como estándares abiertos que no pertenecen a ninguna empresa o compañía.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'El centro de control y el hub principal de Internet están localizados en...',
+      opciones: [
+        'en Silicon Valley.',
+        'cerca del campus de Microsoft en Redmond, Washington.',
+        'cerca de Washington D.C.',
+        'en ninguna parte: Internet no tiene ningún hub central.',
+        'en una localización de alto secreto.',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Seleccione la capa correspondiente del modelo OSI para cada definición:',
+      opciones: [
+        'Física',
+        'Enlace',
+        'Red',
+        'Transporte',
+        'Sesión',
+        'Presentación',
+        'Aplicación',
+      ],
+      descripciones: [
+        'Aplicaciones de red', // Aplicación (6)
+        'Codificación de bits', // Física (0)
+        'Transmisión punto a punto de paquetes', // Red (2)
+        'Formateado, encriptado y compresión de datos', // Presentación (5)
+        'Transmisión de paquetes sobre un enlace', // Enlace (1)
+        'Envío punto a punto de los mensajes', // Transporte (3)
+        'Iniciación y gestión de conversaciones de punto a punto', // Sesión (4)
+      ],
+      correcta: [6, 0, 2, 5, 1, 3, 4],
+      tipo: 'ordenar',
+      multiple: true,
+    },
+    {
+      texto: 'Las tareas principales de un sistema de comunicación:',
+      opciones: [
+        'Reproducir música',
+        'Editar archivos pptx',
+        'Uso eficaz del recurso',
+        'Detección y corrección de errores',
+        'Generación de la señal',
+        'Control de procesos del sistema operativo',
+        'Consultar el SGBD',
+        'Encaminamiento',
+      ],
+      correcta: [2, 3, 4, 7],
+      multiple: true,
+    },
+  ],
+
   semana8: [
     {
       texto: 'Relacione los niveles de red con sus funciones:',
@@ -1527,6 +1785,380 @@ export const introducción = {
         'Sensores de humo y control de temperatura',
       ],
       correcta: 1,
+    },
+  ],
+  parcial: [
+    {
+      texto: '¿El software es?',
+      opciones: [
+        'La parte lógica del sistema de cómputo',
+        'La parte más cara del sistema de cómputo',
+        'La parte física del sistema de cómputo',
+        'La parte tangible del sistema de cómputo',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Los avances en qué área permitieron eliminar los obstáculos económicos para producir máquinas complejas.',
+      opciones: ['Biología', 'Electrónica', 'Robótica', 'Ingeniería'],
+      correcta: 1,
+    },
+    {
+      texto: 'Relaciona los conceptos con las descripciones correspondientes',
+      descripciones: [
+        'Es aquel hardware que cuenta con suficiente documentación pública para que se pueda copiar y mejorar el dispositivo',
+        'Es el conjunto de dispositivos físicos utilizados en el procesamiento de datos',
+        'Ofrece al usuario cuatro libertades: libertad de uso, de estudio y modificación, de distribución, y de redistribución de las mejoras',
+        'Componentes lógicos de la computadora',
+      ],
+      opciones: ['Hardware', 'Hardware abierto', 'Software', 'Software libre'],
+      correcta: [1, 0, 3, 2],
+      tipo: 'ordenar',
+      multiple: true,
+    },
+    {
+      texto: 'A medida que las computadoras evolucionan...',
+      opciones: [
+        'Se hacen más rápidas',
+        'Consumen más electricidad',
+        'Cuestan más',
+        'Crecen en tamaño',
+        'Se hacen menos fiables',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Los sistemas de numeración más utilizados en la actualidad son los sistemas posicionales.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: 'Seleccione los componentes de un sistema computacional:',
+      opciones: [
+        'Hardware - software - usuario - procesador',
+        'Software - aplicación - usuario - sistema operativo',
+        'Hardware - software - aplicación - web',
+        'Hardware - software - aplicación - usuario',
+      ],
+      correcta: 3,
+    },
+    {
+      texto: '¿Cuál es valor en decimal del siguiente numero binario 1010?',
+      opciones: ['12', '10', '16', '8', '6'],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Un compilador convierte un programa escrito en un lenguaje de alto nivel a',
+      opciones: [
+        'C#',
+        'lenguaje natural',
+        'un programa depurado',
+        'lenguaje máquina',
+        'un algoritmo',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Un lenguaje de programación es un conjunto de instrucciones junto con una serie de reglas que indiquen cómo pueden combinarse esas instrucciones para representar ideas más complejas.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Complete los espacios en blanco: Un lenguaje de alto nivel ha de transformarse en ______ antes de ejecutarse. Esta tarea de ______ se puede llevar a cabo de dos formas mediante un ______ o mediante un ______.',
+      opciones: [
+        'lenguaje máquina - transformación - traductor - intérprete',
+        'código objeto - compilación - compilador - ensamblador',
+        'bytecode - traducción - compilador - máquina virtual',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'De las siguientes afirmaciones seleccione si son verdaderas o falsas:',
+      opciones: [
+        'Las memorias son dispositivos que permiten retener y recuperar información ',
+        'El disco rígido magnético es un tipo de memoria volátil ',
+        'Los registros son internos de la unidad central de proceso (CPU) o procesador ',
+        'La memoria volátil no requiere energía constante para mantener la información almacenada',
+      ],
+      correcta: [0, 2],
+      multiple: true,
+    },
+    {
+      texto: 'Todas las operaciones de un procesador son gobernadas por...',
+      opciones: [
+        'la memoria principal',
+        'los buses',
+        'la unidad aritmético lógica',
+        'los registros',
+        'la unidad de control',
+      ],
+      correcta: 4,
+    },
+    {
+      texto:
+        'Cuando trabaja en un documento en un PC, el documento es temporalmente almacenado en:',
+      opciones: ['la RAM', 'la CPU', 'la ROM', 'el CD-ROM', 'la memoria flash'],
+      correcta: 0,
+    },
+    {
+      texto: 'Ubique los componentes básicos de una computadora:',
+      descripciones: [
+        '___ - capaz de hacer operaciones con datos binarios',
+        '___ - que almacena tanto datos como instrucciones',
+        '___ - que interpreta las instrucciones en memoria y provoca su ejecución',
+      ],
+      opciones: [
+        'Memoria principal',
+        'Unidad aritmético-lógica (ALU)',
+        'Unidad de control',
+      ],
+      correcta: [1, 0, 2],
+      tipo: 'ordenar',
+    },
+    {
+      texto:
+        'Cuando el sistema operativo permite el acceso completo a todo el hardware y cualquier instrucción que la máquina sea capaz de ejecutar, se llama:',
+      opciones: [
+        'Modo kernel',
+        'Modo usuario',
+        'Modo distribuido',
+        'Modo cliente-servidor',
+        'Modo multiusuario',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: '¿Qué significa que un sistema sea multiusuario?',
+      opciones: [
+        'Permitir ejecutar diversos programas al mismo tiempo',
+        'Ninguna de las anteriores',
+        'Que una computadora pueda tener varios microprocesadores',
+        'Permitir que varios usuarios puedan ejecutar programas a la vez',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Linux es el sistema operativo Microsoft original con una interfaz de línea de comando.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Sistemas operativos que deben proveer garantías absolutas de que cierta acción ocurrirá en un instante determinado.',
+      opciones: [
+        'Sistemas operativos en tiempo real',
+        'Sistemas operativos de computadoras personales',
+        'Sistemas operativos de servidores',
+        'Sistemas operativos de computadoras de bolsillo',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Relaciona cada definición con el tipo de lenguaje de bases de datos:',
+      descripciones: [
+        'Lenguaje que permite a los usuarios acceder o manipular los datos organizados mediante el modelo de datos apropiado',
+        'Definen los detalles de implementación de los esquemas de base de datos, que se ocultan usualmente a los usuarios',
+      ],
+      opciones: [
+        'Lenguaje de definición de datos',
+        'Lenguaje de manipulación de datos',
+      ],
+      correcta: [1, 0],
+      tipo: 'ordenar',
+    },
+    {
+      texto:
+        'Concesión de autorización para el acceso a los datos, es una función del:',
+      opciones: [
+        'Usuario especializado',
+        'Invitado',
+        'Usuario normal',
+        'Administrador',
+        'Programador de aplicaciones',
+      ],
+      correcta: 3,
+    },
+    {
+      texto: '¿Qué es un registro?',
+      opciones: [
+        'Es el conjunto de caracteres que se refieren a un dato particular',
+        'Es el conjunto de campos relacionados entre sí',
+        'Es el conjunto de caracteres relacionados entre sí',
+        'Es el grupo de tuplas asociados a un concepto determinado',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        'En una base de datos relacional todos los valores de un campo en una misma tabla comparten la misma estructura o tipo de dato.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: 'Una clave primaria (primary key):',
+      opciones: [
+        'Es única',
+        'Según se diseñe la tabla, se puede repetir',
+        'Ninguna de las anteriores es válida',
+        'Se puede repetir',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Los modelos de datos semiestructurados permiten la especificación de datos donde los elementos de datos individuales del mismo tipo pueden tener diferentes conjuntos de atributos.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Está basado en una percepción del mundo real que consta de una colección de objetos básicos, llamados entidades, y de relaciones entre estos objetos.',
+      opciones: [
+        'Modelo Procedimental',
+        'Modelo en red',
+        'Modelo Jerárquico',
+        'Modelo Entidad Relación',
+        'Modelo Organigrama',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        'Expresa el número de entidades con las que otra entidad se puede asociar a través de un conjunto de relaciones.',
+      opciones: [
+        'Correspondencia de mantenibilidad',
+        'Correspondencia de facilidad de uso',
+        'Correspondencia de cardinalidad',
+        'Correspondencia de usabilidad',
+      ],
+      correcta: 2,
+    },
+    {
+      texto:
+        '¿Qué deben usar en común los dispositivos de una red para comunicarse directamente entre sí?',
+      opciones: [
+        'Protocolo',
+        'Sistema operativo',
+        'Base de datos',
+        'Procesador',
+        'Hardware',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'Originalmente, Internet fue...',
+      opciones: [
+        'Una red para la ruptura de códigos utilizada por el Departamento de Defensa de los Estados Unidos durante la II Guerra Mundial',
+        'Una red cooperativa creada por varias importantes compañías de hardware y software',
+        'Una LAN del MIT',
+        'Una red experimental de investigación llamada ARPANET',
+        'Un producto de Microsoft que creció rápidamente',
+      ],
+      correcta: 3,
+    },
+    {
+      texto: 'Las tareas principales de un sistema de comunicación son:',
+      opciones: [
+        'Encaminamiento',
+        'Uso eficaz del recurso',
+        'Generación de la señal',
+        'Administración del SGBD',
+        'Transmisión de datos multimedia',
+        'Detección y corrección de errores',
+        'Control de procesos del sistema operativo',
+      ],
+      correcta: [0, 1, 2, 5],
+      multiple: true,
+    },
+    {
+      texto: 'Complete las definiciones sobre medios de transmisión:',
+      descripciones: [
+        'Las señales electromagnéticas se propagan a través de medios físicos determinados (pares trenzados, cable coaxial, fibra óptica), se denominan ___',
+        'Usan antenas para la transmisión y recepción (radio, microondas terrestres, microondas satelitales), se denominan ___',
+      ],
+      opciones: ['medios guiados', 'medios no guiados'],
+      correcta: [0, 1],
+      tipo: 'ordenar',
+    },
+    {
+      texto: 'La tecnología WiFi...',
+      opciones: [
+        'Necesita un dispositivo WiFi en nuestra computadora',
+        'Necesita un punto de acceso WiFi',
+        'Utiliza ondas de radio para el envío de datos',
+        'Todas las respuestas son correctas',
+      ],
+      correcta: 3,
+    },
+    {
+      texto: 'En cualquier tipo de red...',
+      opciones: [
+        'Debe someterse a codificación y decodificación',
+        'Encontramos un emisor y un receptor de la información',
+        'La información viaja a través de un canal',
+        'Todas son correctas',
+      ],
+      correcta: 3,
+    },
+    {
+      texto: 'La red WAN es una...',
+      opciones: [
+        'red de área metropolitana',
+        'red de área de usuario',
+        'red de área amplia',
+        'red de área local',
+      ],
+      correcta: 2,
+    },
+    {
+      texto: '¿Qué hace una hoja de estilo en cascada (CSS)?',
+      opciones: [
+        'Almacena opciones de formato para editar la apariencia del sitio web',
+        'Crea los elementos interactivos dentro de una página web',
+        'Sirve para crear y administrar las bases de datos del sitio web',
+        'Ninguno de los anteriores',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Complete la frase: Una ___ es básicamente la dirección de un documento en la ___. Un ___ es un programa que ayuda al usuario a ___ de hipertexto.',
+      opciones: [
+        'dirección URL - World Wide Web - navegador - acceder a información',
+        'dirección IP - Internet - explorador - visualizar contenido',
+        'página web - red global - browser - descargar archivos',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'SON PROGRAMAS QUE SE CODIFICAN EN UN LENGUAJE INTERPRETABLE POR LOS NAVEGADORES WEB:',
+      opciones: [
+        'SGBD',
+        'Procesador de texto',
+        'Lenguaje de máquina',
+        'SQL',
+        'Aplicaciones web',
+      ],
+      correcta: 4,
+    },
+    {
+      texto: 'Complete las características de los protocolos:',
+      descripciones: [
+        '___ - Protocolo no orientado a conexión, sin garantías de entrega o orden',
+        '___ - Protocolo confiable, orientado a conexión, con control de flujo y orden',
+      ],
+      opciones: ['TCP', 'UDP'],
+      correcta: [1, 0],
+      tipo: 'ordenar',
     },
   ],
 };

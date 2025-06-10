@@ -21,6 +21,7 @@ const cuestionarios_arq = [
 ];
 
 const cuestionarios_inf = [
+  { semana: 0, preguntas: introducción.parcial },
   { semana: 1, preguntas: introducción.semana1 },
   { semana: 2, preguntas: introducción.semana2 },
   { semana: 2, preguntas: introducción.semana2_v2 },
@@ -31,6 +32,8 @@ const cuestionarios_inf = [
   { semana: 5, preguntas: introducción.semana5 },
   { semana: 5, preguntas: introducción.semana5_v2 },
   { semana: 6, preguntas: introducción.semana6 },
+  { semana: 7, preguntas: introducción.semana7 },
+  { semana: 7, preguntas: introducción.semana7_v2 },
   { semana: 8, preguntas: introducción.semana8 },
   { semana: 9, preguntas: introducción.semana9 },
   { semana: 10, preguntas: introducción.semana10 },
@@ -92,7 +95,7 @@ export default function CuestionarioSelector() {
         {cuestionarios.map((q, i) => (
           <li key={i} style={{ marginTop: '5px', listStyle: 'none' }}>
             <button onClick={() => setSeleccionado(i)}>
-              Semana {q.semana}
+              {q.semana === 0 ? 'Parcial' : `Semana ${q.semana}`}
             </button>
           </li>
         ))}
