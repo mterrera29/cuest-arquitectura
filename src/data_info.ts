@@ -1436,7 +1436,7 @@ export const introducción = {
     },
     {
       texto:
-        'Complete: Una red [LAN] es una red informática cuyo alcance se limita a un espacio físico reducido. Permite compartir [recursos] entre varias computadoras.',
+        'Complete: Una red___ es una red informática cuyo alcance se limita a un espacio físico reducido. Permite compartir ____entre varias computadoras.',
       opciones: ['LAN, recursos', 'WAN, datos', 'MAN, archivos'],
       correcta: 0,
     },
