@@ -40,7 +40,7 @@ const cuestionarios_inf = [
 ];
 
 export default function CuestionarioSelector() {
-  const [materia, setMateria] = useState<string>('1');
+  const [materia, setMateria] = useState<string>('2');
   const [seleccionado, setSeleccionado] = useState<number | null>(null);
   const cuestionarios = materia === '1' ? cuestionarios_arq : cuestionarios_inf;
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -95,7 +95,7 @@ export default function CuestionarioSelector() {
         {cuestionarios.map((q, i) => (
           <li key={i} style={{ marginTop: '5px', listStyle: 'none' }}>
             <button onClick={() => setSeleccionado(i)}>
-              {q.semana === 0 ? 'Parcial' : `Semana ${q.semana}`}
+              {q.semana === 0 ? 'Parcial 2022' : `Semana ${q.semana}`}
             </button>
           </li>
         ))}
