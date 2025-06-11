@@ -4,6 +4,7 @@ import App from './App';
 import { arquitectura } from './data';
 import { introducción } from './data_info';
 import BuscadorGlobal from './BuscadorGlobal';
+import { Analytics } from '@vercel/analytics/react';
 
 const cuestionarios_arq = [
   { semana: 1, preguntas: arquitectura.preguntasSemana1_v1 },
@@ -84,6 +85,7 @@ export default function CuestionarioSelector() {
         <option value='1'>Arquitectura de Computadoras</option>
         <option value='2'>Introducción a la Informática</option>
       </select>
+      <Analytics />
       <BuscadorGlobal
         materia={materia}
         cuestionarios_arq={cuestionarios_arq}
