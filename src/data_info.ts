@@ -1719,19 +1719,28 @@ export const introducción = {
     },
     {
       texto: 'Seleccione la palabra correcta para cada frase:',
-      opciones: [
-        'Una amenaza [aprovecha] una vulnerabilidad',
-        'Un activo [tiene] riesgo',
-        'Un activo [posee] vulnerabilidad',
-        'Una contramedida [reduce] riesgo',
-        'Una amenaza [provoca] un impacto',
-        'Un activo [sufre] un impacto',
-        'Una contramedida [protege] un activo',
-        'Una contramedida [mitiga] una vulnerabilidad',
+      descripciones: [
+        'Una amenaza [...] una vulnerabilidad',
+        'Un activo [...] riesgo',
+        'Un activo [...] vulnerabilidad',
+        'Una contramedida [...] riesgo',
+        'Una amenaza [...] un impacto',
+        'Un activo [...] un impacto',
+        'Una contramedida [...] un activo',
+        'Una contramedida [...] una vulnerabilidad',
       ],
-      correcta: [0, 1, 2, 3, 4, 5, 6, 7],
-      multiple: true,
-      tipo: 'completar',
+      opciones: [
+        'protege', // 0 (antes 6)
+        'mitiga', // 1 (antes 7)
+        'posee', // 2 (antes 2)
+        'tiene', // 3 (antes 1)
+        'reduce', // 4 (antes 3)
+        'sufre', // 5 (antes 5)
+        'provoca', // 6 (antes 4)
+        'aprovecha', // 7 (antes 0)
+      ],
+      correcta: [7, 3, 2, 4, 6, 5, 0, 1],
+      tipo: 'ordenar',
     },
     {
       texto: 'Existe al menos un sistema 100% seguro.',
@@ -1843,19 +1852,28 @@ export const introducción = {
     },
     {
       texto: 'Relaciona cada tipo de malware con su descripción:',
-      opciones: [
-        'Programa que parece benigno pero ejecuta acciones maliciosas → Troyanos',
-        'Se une a otros programas para ser ejecutado → Virus',
-        'Monitorea actividad del usuario y muestra publicidad → Spyware',
-        'Se copia a sí mismo en una red → Gusanos',
-        'Registra pulsaciones de teclado → Key loggers',
-        'Impide el uso del dispositivo hasta pagar rescate → Ransomware',
-        'Se activa ante un evento específico → Bombas lógicas',
-        'Envía consultas SQL maliciosas → Ataques de inyección SQL',
+      descripciones: [
+        'Programa que parece benigno pero ejecuta acciones maliciosas',
+        'Se une a otros programas para ser ejecutado',
+        'Monitorea la actividad del usuario y muestra publicidad',
+        'Se copia a sí mismo en una red',
+        'Registra pulsaciones de teclado',
+        'Impide el uso del dispositivo hasta pagar rescate',
+        'Se activa ante un evento específico',
+        'Envía consultas SQL maliciosas para acceder o dañar bases de datos',
       ],
-      correcta: [0, 1, 2, 3, 4, 5, 6, 7],
-      multiple: true,
-      tipo: 'relacionar',
+      opciones: [
+        'Spyware', // índice 0 (antes era 2)
+        'Ataques de inyección SQL', // índice 1 (antes era 7)
+        'Keyloggers', // índice 2 (antes era 4)
+        'Bombas lógicas', // índice 3 (antes era 6)
+        'Ransomware', // índice 4 (antes era 5)
+        'Troyanos', // índice 5 (antes era 0)
+        'Virus', // índice 6 (antes era 1)
+        'Gusanos', // índice 7 (antes era 3)
+      ],
+      correcta: [5, 6, 0, 7, 2, 4, 3, 1],
+      tipo: 'ordenar',
     },
     {
       texto: 'Medidas para proteger la seguridad lógica:',
