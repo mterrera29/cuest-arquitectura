@@ -1905,6 +1905,114 @@ export const introducción = {
       correcta: 1,
     },
   ],
+  semana12: [
+    {
+      texto:
+        'Es el conjunto de medidas destinadas a la protección de datos y aplicaciones informáticas así como a garantizar el acceso a la información únicamente por las personas autorizadas es un tipo de seguridad:',
+      opciones: [
+        'video vigilancia',
+        'lógica',
+        'cortes del suministro eléctrico',
+        'oculta',
+        'física',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        '¿Cuál de las siguientes opciones no corresponde a un control de seguridad lógica?',
+      opciones: [
+        'Cifrado de información en tránsito y en reposo.',
+        'Políticas de backup y recuperación ante desastres.',
+        'UPS (sistemas de energía ininterrumpida) y generadores.',
+        'Contraseñas seguras y autenticación multifactor.',
+        'Firewalls y sistemas de detección de intrusos.',
+      ],
+      correcta: 2,
+    },
+    {
+      texto:
+        'El spam es un tipo de virus informático que ataca sólo a los documentos de email.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Internet ha llegado a ser virtualmente libre de riesgos en los últimos años.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto: 'El uso más común del spam es...',
+      opciones: [
+        'Transmitir virus de computadora.',
+        'El pirateo.',
+        'Buscar en la web.',
+        'Robar la identidad.',
+        'Comercializar mercancías y servicios no solicitados.',
+      ],
+      correcta: 4,
+    },
+    {
+      texto: 'Medidas para proteger la seguridad lógica:',
+      opciones: [
+        'Que la información transmitida sea recibida sólo por el destinatario al cual ha sido enviada y no a otro.',
+        'Restringir el acceso a los programas y archivos.',
+        'Que la información recibida sea la misma que ha sido transmitida.',
+        'Colocación de sensores y alarmas',
+        'Aplicación de barreras físicas.',
+      ],
+      correcta: [0, 1, 2],
+      multiple: true,
+    },
+    {
+      texto:
+        'La aplicación de barreras físicas y procedimientos de control como medidas de prevención ante amenazas a los recursos e información confidencial es un tipo de seguridad:',
+      opciones: [
+        'física',
+        'transparente',
+        'lógica',
+        'estricta',
+        'reglamentaria',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Engañar mediante el uso de direcciones de correo electrónico falsas, o haciéndose pasar por otra persona. Redirige el enlace web a una dirección diferente de la pretendida, donde el sitio se hace pasar por destino previsto.',
+      opciones: [
+        'Spoofing',
+        'Ataques de negación de servicios distribuidos',
+        'Sniffer',
+        'Ataques de negación de servicios',
+        'Botnets',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: '¿Qué es virus?',
+      opciones: [
+        'Un software para crear virus.',
+        'Un software que mejora las opciones de la computadora.',
+        'Un software para conocer los tipos de virus.',
+        'Un software que se instala para proteger la computadora.',
+        'Un software que tiene por objetivo alterar el funcionamiento normal de cualquier tipo de dispositivo informático, sin el permiso o el conocimiento del usuario principalmente para lograr fines maliciosos sobre el dispositivo.',
+      ],
+      correcta: 4,
+    },
+    {
+      texto:
+        '¿Qué tipo de malware simula ser un programa legítimo pero permite el acceso no autorizado al sistema?',
+      opciones: [
+        'Troyano',
+        'Cusano',
+        'Keylogger',
+        'Ransomware',
+        'Bombas lógicas',
+      ],
+      correcta: 0,
+    },
+  ],
   parcial: [
     {
       texto: '¿El software es?',
