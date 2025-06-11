@@ -1749,15 +1749,20 @@ export const introducción = {
     },
     {
       texto: 'Relaciona cada concepto con su definición:',
-      opciones: [
-        'La información siempre debe estar disponible → Disponibilidad',
-        'Garantiza veracidad de autoría de la información → Autenticidad',
-        'Es la garantía de que determinada información esté disponible solo a personas autorizadas → Confidencialidad',
-        'Mantener datos intactos preservando su originalidad → Integridad',
+      descripciones: [
+        'La información siempre debe estar disponible',
+        'Garantiza veracidad de autoría de la información',
+        'Es la garantía de que determinada información esté disponible solo a personas autorizadas',
+        'Mantener datos intactos preservando su originalidad',
       ],
-      correcta: [0, 1, 2, 3],
-      multiple: true,
-      tipo: 'relacionar',
+      opciones: [
+        'Confidencialidad', // 0 (antes 2)
+        'Disponibilidad', // 1 (antes 0)
+        'Integridad', // 2 (antes 3)
+        'Autenticidad', // 3 (antes 1)
+      ],
+      correcta: [1, 3, 0, 2],
+      tipo: 'ordenar',
     },
     {
       texto:
