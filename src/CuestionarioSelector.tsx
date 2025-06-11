@@ -83,7 +83,11 @@ export default function CuestionarioSelector() {
         <option value='1'>Arquitectura de Computadoras</option>
         <option value='2'>Introducción a la Informática</option>
       </select>
-      <BuscadorGlobal />
+      <BuscadorGlobal
+        materia={materia}
+        cuestionarios_arq={cuestionarios_arq}
+        cuestionarios_inf={cuestionarios_inf}
+      />
       <h2>Seleccioná un cuestionario</h2>
       <ul
         style={{
