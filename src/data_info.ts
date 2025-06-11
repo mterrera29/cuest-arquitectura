@@ -90,6 +90,171 @@ export const introducción = {
       correcta: 0,
     },
   ],
+  semana1_v2: [
+    {
+      texto: 'La informática es un acrónimo de las palabras:',
+      opciones: [
+        'Información + Computadora',
+        'Información + Automática',
+        'Información + Tecnología',
+        'Datos + Computadora',
+        'Datos + Automática',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Un software diseñado para ayudarle a cumplir una tarea específica se llama software de...',
+      opciones: [
+        'Sistema operativo',
+        'Aplicación',
+        'Documento',
+        'Video',
+        'Escritorio',
+      ],
+      correcta: 1,
+    },
+    {
+      texto: 'Microsoft Office es',
+      opciones: [
+        'Software de código abierto',
+        'Software de dominio público',
+        'Shareware',
+        'Una suite de software libre',
+        'Software privativo',
+      ],
+      correcta: 4,
+    },
+    {
+      texto: 'A medida que las computadoras evolucionan...',
+      opciones: [
+        'Se hacen más rápidas',
+        'Crecen en tamaño',
+        'Cuestan más',
+        'Se hacen menos fiables',
+        'Consumen más electricidad',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'Relaciona los conceptos con las descripciones correspondientes',
+      descripciones: [
+        'Componentes lógicos de la computadora',
+        'Es aquel hardware que cuenta con suficiente documentación pública para que se pueda copiar y mejorar el dispositivo',
+        'Es el conjunto de dispositivos físicos utilizados en el procesamiento de datos',
+        'Ofrece al usuario cuatro libertades: libertad de uso, de estudio y modificación, de distribución, y de redistribución de las mejoras',
+      ],
+      opciones: ['Software', 'Hardware abierto', 'Hardware', 'Software libre'],
+      correcta: [0, 1, 2, 3],
+      tipo: 'ordenar',
+      multiple: true,
+    },
+    {
+      texto:
+        'La computadora es un dispositivo que cambia la información de un formato a otro',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: '¿Cuál es el orden cronológico del origen de las computadoras?',
+      opciones: [
+        'Mark I + Ábaco + Pascal',
+        'Ábaco + Pascal + Mark I',
+        'Mark I + Pascal + Ábaco',
+        'Pascal + Ábaco + Mark I',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Las computadoras toman información de _____ y generan información de _____.',
+      opciones: [
+        'entrada - salida',
+        'proceso - resultado',
+        'almacenamiento - visualización',
+        'datos - información',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'La Informática es la ciencia que estudia el análisis y resolución de problemas utilizando _____.',
+      opciones: [
+        'computadoras/dispositivos',
+        'algoritmos/matemáticas',
+        'redes/internet',
+        'datos/estadísticas',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'El software libre es:',
+      opciones: [
+        'Es lo mismo que el software de dominio público',
+        'El software que se puede usar, estudiar, distribuir y mejorar libremente',
+        'Es el software que no puede ser distribuido comercialmente',
+        'El software shareware',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Las computadoras actuales siguen el esquema ideado por Babbage y Lady Lovelace.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: '¿El software es?',
+      opciones: [
+        'La parte más cara del sistema de cómputo',
+        'La parte lógica del sistema de cómputo',
+        'La parte tangible del sistema de cómputo',
+        'La parte física del sistema de cómputo',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        'El nacimiento de las computadoras nació por la necesidad de los seres humanos de',
+      opciones: [
+        'Conectarse con otras personas',
+        'Cuantificar',
+        'Procesar datos',
+        'Ver vídeos',
+        'Almacenar información',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        'La evolución histórica de la computadora tiene la siguiente relación:',
+      opciones: [
+        '> capacidad + > costo + > tamaño',
+        '> capacidad + < costo + < tamaño',
+        '> capacidad + > costo + < tamaño',
+        '< capacidad + < costo + < tamaño',
+        '> capacidad + < costo + > tamaño',
+      ],
+      correcta: 1,
+    },
+    {
+      texto: 'El ejemplo más conocido de software de código abierto es:',
+      opciones: ['UNIX', 'Mac OS X', 'Microsoft Windows', 'Palm OS', 'Linux'],
+      correcta: 4,
+    },
+    {
+      texto:
+        'Apple presentó la primer computadora de sobremesa denominada computadora personal.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto:
+        'La máquina analítica sirvió de punto de partida para la primera computadora',
+      opciones: ['Personal', 'De uso comercial', 'Programable'],
+      correcta: 2,
+    },
+  ],
   semana2: [
     {
       texto:

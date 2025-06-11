@@ -24,6 +24,7 @@ const cuestionarios_arq = [
 
 const cuestionarios_inf = [
   { semana: 1, preguntas: introducción.semana1 },
+  { semana: 1, preguntas: introducción.semana1_v2 },
   { semana: 2, preguntas: introducción.semana2 },
   { semana: 2, preguntas: introducción.semana2_v2 },
   { semana: 3, preguntas: introducción.semana3 },
