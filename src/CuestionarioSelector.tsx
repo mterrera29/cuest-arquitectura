@@ -3,6 +3,7 @@ import App from './App';
 
 import { arquitectura } from './data';
 import { introducción } from './data_info';
+import BuscadorGlobal from './BuscadorGlobal';
 
 const cuestionarios_arq = [
   { semana: 1, preguntas: arquitectura.preguntasSemana1_v1 },
@@ -82,6 +83,7 @@ export default function CuestionarioSelector() {
         <option value='1'>Arquitectura de Computadoras</option>
         <option value='2'>Introducción a la Informática</option>
       </select>
+      <BuscadorGlobal />
       <h2>Seleccioná un cuestionario</h2>
       <ul
         style={{
