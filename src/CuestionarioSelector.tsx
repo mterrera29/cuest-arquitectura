@@ -13,7 +13,10 @@ const materiasNombre = [
   'Introducción a la Informática📋',
   'Programación 2📋',
 ];
-const cuestionarios_prog2 = [{ semana: 1, preguntas: prog2.semana1 }];
+const cuestionarios_prog2 = [
+  { semana: 1, preguntas: prog2.semana1 },
+  { semana: 2, preguntas: prog2.semana2 },
+];
 
 const cuestionarios_arq = [
   { semana: 1, preguntas: arquitectura.preguntasSemana1_v1 },

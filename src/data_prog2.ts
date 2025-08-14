@@ -201,4 +201,204 @@ export const prog2 = {
       correcta: 1,
     },
   ],
+  semana2: [
+    {
+      texto:
+        'Elija el orden correcto de las etapas del Ciclo de Vida de un proyecto.',
+      opciones: [
+        '1. Análisis y especificaciones de requerimientos\n2. Diseño y especificación\n3. Integración y Testeo de Sistema\n4. Codificación y Testeo de módulos\n5. Liberación y Mantenimiento',
+        '1. Estudio de Factibilidad\n2. Análisis y especificaciones de requerimientos\n3. Diseño y especificación\n4. Codificación y Testeo de módulos\n5. Integración y Testeo de Sistema',
+        '1. Análisis y especificaciones de requerimientos\n2. Estudio de Factibilidad\n3. Codificación y Testeo de módulos\n4. Diseño y especificación\n5. Integración y Testeo de Sistema\n6. Liberación y Mantenimiento',
+        '1. Estudio de Factibilidad\n2. Análisis y especificaciones de requerimientos\n3. Diseño y especificación\n4. Codificación y Testeo de módulos\n5. Integración y Testeo de Sistema\n6. Liberación y Mantenimiento',
+        '1. Estudio de Factibilidad\n2. Diseño y especificación\n3. Análisis y especificaciones de requerimientos\n4. Codificación y Testeo de módulos\n5. Integración y Testeo de Sistema\n6. Liberación y Mantenimiento',
+      ],
+      correcta: 3,
+    },
+    {
+      texto:
+        '¿Cuáles son las subetapas de la Integración y Testeo del sistema?',
+      opciones: [
+        'Verificación\nAnálisis',
+        'Validación\nAnálisis',
+        'Verificación\nValidación',
+        'Verificación\nMantenimiento',
+      ],
+      correcta: 2,
+    },
+    {
+      texto:
+        'Enlace los 5 principios de construcción de software con sus respectivas definiciones',
+      descripciones: [
+        'Propiedades que describen a un módulo capaz de ser extendido por el usuario o utilizado por otro módulo.',
+        'Un único módulo debe conocer una lista exhaustiva de alternativas a utilizarse por el programa.',
+        'No debe revelarse la forma en los servicios ofrecidos por un módulo son implementados.',
+        'Los módulos deben corresponderse con las unidades sintácticas que ofrece el lenguaje utilizado.',
+        'La documentación sobre un módulo debe estar contenida en su propio código.',
+      ],
+      opciones: [
+        'Unidad Modular Lingüística',
+        'Auto-documentación',
+        'Cambio Simple',
+        'Acceso Uniforme',
+        'Abierto-Cerrado',
+      ],
+      correcta: [4, 2, 3, 0, 1],
+      tipo: 'ordenar',
+      multiple: true,
+    },
+    {
+      texto:
+        'Una los Criterios con los Factores de Calidad que estos favorecen',
+      descripciones: [
+        'Composición Modular',
+        'Entendimiento Modular',
+        'Protección Modular',
+        'Continuidad Modular',
+      ],
+      opciones: ['Mantenimiento', 'Extensibilidad', 'Robustez', 'Reusabilidad'],
+      correcta: [3, 0, 2, 1],
+      tipo: 'ordenar',
+      multiple: true,
+    },
+    {
+      texto:
+        'Elija, entre las siguientes combinaciones, la opción que crea correcta.',
+      opciones: [
+        'Correctitud & Extensibilidad - Modularidad\nRobustez & Reusabilidad - Confiabilidad',
+        'Correctitud & Robustez - Confiabilidad\nExtensibilidad & Reusabilidad - Modularidad',
+        'Reusabilidad & Robustez - Confiabilidad\nExtensibilidad & Correctitud - Modularidad',
+        'Correctitud & Robustez - Modularidad\nExtensibilidad & Reusabilidad - Confiabilidad',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Un módulo se dice abierto cuando, habiendo dado una descripción bien definida y estable, está disponible para ser utilizado por otros módulos.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Los términos procedimientos y funciones refieren a un conjunto de sentencias y declaraciones contenidas en una unidad con el fin de resolver un problema específico, el cual puede ser invocado desde otro punto del programa.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: '¿Las funciones son procedimientos?',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: 'Seleccione las sentencias que cree son correctas',
+      opciones: [
+        'El criterio de Continuidad Modular especifica que los cambios que impactan un módulo se propaguen al resto.',
+        'La Composición Modular trata de la creación de nuevos unidades de software creadas a partir de la combinación de otras ya existentes.',
+        'En un programa donde se satisface el criterio de Protección Modular, los cambios que impactan un módulo NO se propagan al resto.',
+        'La Descomposición Modular sigue la idea de poder descomponer un programa en módulos menos complejos.',
+        'El Entendimiento Modular se relaciona a la facilidad para comprender el comportamiento de un módulo con solo leer su código.',
+        'Se satisface el criterio de Composición Modular si se favorece la producción de elementos de software que pueden ser combinados para crear nuevos sistemas, posiblemente en un entorno diferente a aquel en el que se idearon.',
+        'La Protección Modular especifica que las excepciones en tiempo de ejecución detectadas en un módulo, es decir, mientras el programa está corriendo, son contenidas y NO se propagan al resto de los módulos.',
+        'La Descomposición Modular refiere a la descomposición de un problema en subproblemas menos complejos, conectados por una estructura simple, y que pueden resolverse en forma independiente.',
+        'Un método favorece el Entendimiento Modular si facilita que quien lea un módulo pueda comprenderlo sin necesidad de acudir a otros módulos.',
+      ],
+      correcta: [1, 2, 5, 6, 7, 8],
+      multiple: true,
+    },
+    {
+      texto:
+        'Los procedimientos y funciones deben obligatoriamente hacer uso de parámetros',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Todos los lenguajes de programación soportan los mismos tipos de datos',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto: 'Python es un lenguaje dinámicamente tipado',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: '¿Cuáles de las siguientes son palabras reservadas del lenguaje?',
+      opciones: [
+        'True',
+        'print',
+        'None',
+        'elseif',
+        'escape',
+        'global',
+        'stop',
+        'do',
+        'while',
+        'break',
+      ],
+      correcta: [0, 2, 5, 8, 9],
+      multiple: true,
+    },
+    {
+      texto:
+        'Una variable de tipo entero puede transformarse a una variable de tipo cadena de caracteres de la siguiente forma:\n\nVar1 = 9\nVar1 = str(var1)',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto:
+        '¿Qué expresión, al evaluarse y encontrarse un elemento cuyo valor de verdad es falso (False) detiene la ejecución y retorna dicho valor?',
+      opciones: ['or', 'and'],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Se llama paquete al conjunto de módulos que componen un programa.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto:
+        "¿Qué imprime la siguiente instrucción?\n\nprint('Mi', 'nombre', 'es', 'Nicolas', sep='#')",
+      opciones: [
+        'Mi#nombre#es#Nicolas',
+        'MinombreesNicolas',
+        'Mi nombre es Nicolas',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        "¿Cuál es la salida del siguiente programa?\n\nnum = 968.19893842\nprint('%.2f' % num)",
+      opciones: ['968.19', '968.19893842', '968'],
+      correcta: 0,
+    },
+    {
+      texto:
+        'La salida del siguiente programa es: 15\n\nvariable = [1,2,3,4,5]\nfor i in range(len(variable)):\n    variable[i] += 1\nprint(variable)',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto:
+        'El siguiente programa encuentra todos los números entre 200 y 210 (incluidos) tal que cada dígito del número es par, y los imprime de forma ordenada separados por comas.',
+      opciones: [
+        '202, 204, 204, 206, 208',
+        '200, 202, 204, 206, 208',
+        '200, 202, 204, 206, 208, 210',
+        '200, 202, 204, 208, 206',
+        '190, 202, 204, 206, 208',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        'Elija la versión de código que sirva para encontrar todos los números divisibles por 7 pero que no son múltiplo de 5 entre 0 y 50 (incluidos).',
+      opciones: [
+        'numeros=[]\nfor numero in range(0, 51):\n    if (numero % 7 == 0) and (numero % 5 != 0):\n    numeros.append(str(numero))\nprint(",".join(numeros))',
+        'numeros=[]\nfor numero in range(0, 51):\n    if (numero / 7 > 0) and (numero % 5 != 0):\n    numeros.append(str(numero))\nprint(",".join(numeros))',
+        'numeros=[]\nfor numero in range(0, 51):\n    if (numero % 7 == 0) and (numero * 5 == 0):\n    numeros.append(str(numero))\nprint(",".join(numeros))',
+      ],
+      correcta: 0,
+    },
+  ],
 };
