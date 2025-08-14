@@ -8,7 +8,7 @@ import BuscadorGlobal from './BuscadorGlobal';
 import { Analytics } from '@vercel/analytics/react';
 
 const materiasNombre = [
-  '',
+  'Seleccionar Materia',
   'Arquitectura de Computadoras📋',
   'Introducción a la Informática📋',
   'Programación 2📋',
@@ -100,15 +100,7 @@ export default function CuestionarioSelector() {
         alignItems: 'center',
       }}
     >
-      <h1>
-        {materia === '1'
-          ? materiasNombre[1]
-          : materia == '2'
-          ? materiasNombre[2]
-          : materia == '3'
-          ? materiasNombre[3]
-          : 'Seleccionar Materia'}
-      </h1>
+      <h1>{materiasNombre[Number(materia)]}</h1>
       <select name='' id='' onChange={handleChange}>
         <option value='0'>Seleccionar</option>
         <option value='1'>Arquitectura de Computadoras</option>
