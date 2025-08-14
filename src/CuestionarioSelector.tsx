@@ -3,8 +3,11 @@ import App from './App';
 
 import { arquitectura } from './data';
 import { introducción } from './data_info';
+import { prog2 } from './data_prog2';
 import BuscadorGlobal from './BuscadorGlobal';
 import { Analytics } from '@vercel/analytics/react';
+
+const cuestionarios_prog2 = [{ semana: 1, preguntas: prog2.semana1 }];
 
 const cuestionarios_arq = [
   { semana: 1, preguntas: arquitectura.preguntasSemana1_v1 },
@@ -47,7 +50,12 @@ const cuestionarios_inf = [
 export default function CuestionarioSelector() {
   const [materia, setMateria] = useState<string>('2');
   const [seleccionado, setSeleccionado] = useState<number | null>(null);
-  const cuestionarios = materia === '1' ? cuestionarios_arq : cuestionarios_inf;
+  const cuestionarios =
+    materia === '1'
+      ? cuestionarios_arq
+      : materia == '2'
+      ? cuestionarios_inf
+      : cuestionarios_prog2;
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setMateria(e.target.value);
   };
@@ -55,7 +63,9 @@ export default function CuestionarioSelector() {
     const { semana, preguntas } =
       materia === '1'
         ? cuestionarios_arq[seleccionado]
-        : cuestionarios_inf[seleccionado];
+        : materia == '2'
+        ? cuestionarios_inf[seleccionado]
+        : cuestionarios_prog2[seleccionado];
 
     return (
       <div>
@@ -86,6 +96,7 @@ export default function CuestionarioSelector() {
         <option value='0'>Seleccionar</option>
         <option value='1'>Arquitectura de Computadoras</option>
         <option value='2'>Introducción a la Informática</option>
+        <option value='3'>Programación 2</option>
       </select>
       <Analytics />
       <BuscadorGlobal

@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+Te voy a subir un PDF con un cuestionario.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Quiero que lo conviertas a un archivo TypeScript siguiendo exactamente este modelo de estructura de pregunta:
 
-Currently, two official plugins are available:
+Formato base:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+{
+texto: "Enunciado de la pregunta",
+opciones: ["Opción 1", "Opción 2", "Opción 3"],
+correcta: 1, // índice de la respuesta correcta (o array si son varias)
+}
 
-## Expanding the ESLint configuration
+Reglas especiales según el tipo de pregunta:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Si es de Verdadero/Falso → usar opciones: ["Verdadero", "Falso"] y correcta con índice.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Si es de selección múltiple (varias correctas) → incluir multiple: true y correcta como array de índices.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Si es de emparejamiento/relacionar/ordenar → usar este formato:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+{
+texto: "Enunciado",
+descripciones: ["Descripción 1", "Descripción 2", "Descripción 3"],
+opciones: ["Opción A", "Opción B", "Opción C"], // en orden aleatorio
+correcta: [índice_correcto_de_cada_descripción_en_opciones],
+tipo: "ordenar",
+multiple: true
+}
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Extra:
+
+En las de tipo: 'ordenar' las opciones deben estar en orden aleatorio, y correcta debe guardar el índice real según ese orden.
+
+No todas las preguntas deben ser tipo: 'ordenar', solo las que en el PDF sean de emparejar/relacionar/ordenar.
+
+Mantener el texto limpio y sin explicaciones ni feedback del examen, solo el enunciado puro.
+
+Responder con el bloque TypeScript completo listo para pegar en data_info.ts con el nombre export const semanaX = [...] usando X según la semana.
