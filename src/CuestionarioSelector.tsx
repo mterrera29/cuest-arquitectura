@@ -7,6 +7,12 @@ import { prog2 } from './data_prog2';
 import BuscadorGlobal from './BuscadorGlobal';
 import { Analytics } from '@vercel/analytics/react';
 
+const materiasNombre = [
+  '',
+  'Arquitectura de Computadoras📋',
+  'Introducción a la Informática📋',
+  'Programación 2📋',
+];
 const cuestionarios_prog2 = [{ semana: 1, preguntas: prog2.semana1 }];
 
 const cuestionarios_arq = [
@@ -48,14 +54,16 @@ const cuestionarios_inf = [
 ];
 
 export default function CuestionarioSelector() {
-  const [materia, setMateria] = useState<string>('2');
+  const [materia, setMateria] = useState<string>('0');
   const [seleccionado, setSeleccionado] = useState<number | null>(null);
   const cuestionarios =
     materia === '1'
       ? cuestionarios_arq
       : materia == '2'
       ? cuestionarios_inf
-      : cuestionarios_prog2;
+      : materia == '3'
+      ? cuestionarios_prog2
+      : [];
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setMateria(e.target.value);
   };
@@ -65,7 +73,9 @@ export default function CuestionarioSelector() {
         ? cuestionarios_arq[seleccionado]
         : materia == '2'
         ? cuestionarios_inf[seleccionado]
-        : cuestionarios_prog2[seleccionado];
+        : materia == '3'
+        ? cuestionarios_prog2[seleccionado]
+        : cuestionarios_arq[seleccionado];
 
     return (
       <div>
@@ -89,8 +99,12 @@ export default function CuestionarioSelector() {
     >
       <h1>
         {materia === '1'
-          ? 'Arquitectura de Computadoras📋'
-          : 'Introducción a la Informática📋'}
+          ? materiasNombre[1]
+          : materia == '2'
+          ? materiasNombre[2]
+          : materia == '3'
+          ? materiasNombre[3]
+          : 'Seleccionar Materia'}
       </h1>
       <select name='' id='' onChange={handleChange}>
         <option value='0'>Seleccionar</option>
