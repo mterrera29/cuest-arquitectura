@@ -17,6 +17,7 @@ interface BuscadorGlobalProps {
   cuestionarios_arq: { semana: number; preguntas: Pregunta[] }[];
   cuestionarios_inf: { semana: number; preguntas: Pregunta[] }[];
   cuestionarios_so: { semana: number; preguntas: Pregunta[] }[];
+  cuestionarios_prog2: { semana: number; preguntas: Pregunta[] }[];
 }
 
 export default function BuscadorGlobal({
@@ -24,6 +25,7 @@ export default function BuscadorGlobal({
   cuestionarios_arq,
   cuestionarios_inf,
   cuestionarios_so,
+  cuestionarios_prog2,
 }: BuscadorGlobalProps) {
   // Armamos la lista completa de preguntas de acuerdo a la materia seleccionada
   const preguntasFiltradasPorMateria =
@@ -44,6 +46,16 @@ export default function BuscadorGlobal({
               ...p,
               semana: q.semana,
               materia: '2',
+            }))
+          )
+          .flat()
+      : materia === '3'
+      ? cuestionarios_prog2
+          .map((q) =>
+            q.preguntas.map((p) => ({
+              ...p,
+              semana: q.semana,
+              materia: '3',
             }))
           )
           .flat()
