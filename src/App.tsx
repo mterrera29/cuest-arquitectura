@@ -7,6 +7,7 @@ export interface Pregunta {
   multiple?: boolean;
   tipo?: string;
   descripciones?: string[]; // agregado para emparejar
+  respuestaCorrecta?: string;
 }
 
 interface Props {
@@ -159,13 +160,27 @@ export default function App({ semana, preguntas, onVolver }: Props) {
               })
             )}
             {mostrarResultados && (
-              <p
-                className={
-                  esCorrecta(p, respuestas[i]) ? 'correct' : 'incorrect'
-                }
-              >
-                {esCorrecta(p, respuestas[i]) ? '✔ Correcto' : '✘ Incorrecto'}
-              </p>
+              <>
+                <p
+                  className={
+                    esCorrecta(p, respuestas[i]) ? 'correct' : 'incorrect'
+                  }
+                >
+                  {esCorrecta(p, respuestas[i]) ? '✔ Correcto' : '✘ Incorrecto'}
+                </p>
+                {p.respuestaCorrecta && (
+                  <div
+                    style={{
+                      backgroundColor: '#fff8b3', // amarillo claro
+                      padding: '0.5em',
+                      marginTop: '0.5em',
+                      borderRadius: '4px',
+                    }}
+                  >
+                    <strong>Respuesta correcta:</strong> {p.respuestaCorrecta}
+                  </div>
+                )}
+              </>
             )}
           </div>
         </div>

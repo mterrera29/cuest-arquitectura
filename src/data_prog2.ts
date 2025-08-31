@@ -401,4 +401,427 @@ export const prog2 = {
       correcta: 0,
     },
   ],
+  semana3: [
+    {
+      texto:
+        "Dada la siguiente clase:\n\nclass NaveEspacial:\n    def __init__(self, co, comb):\n        self.color = co\n        self.combustible = comb\n        self.alertas = False\n\n    def obtenerCombustible(self):\n        return self.combustible\n\n    def establecerEstadoAlertas(self, estado):\n        self.alertas = estado\n\n    def agregarCombustible(self, cantidad):\n        if self.combustible + cantidad > 1000:\n            disponible = 1000 - self.combustible\n            print(f\"¡De los {cantidad} litros, solo se pudieron cargar {disponible} litros!\")\n            self.combustible = 1000\n        else:\n            self.combustible += cantidad\n            print(f\"¡Se cargaron {cantidad} litros!\")\n\nIndique cuál es la salida del siguiente programa:\n\nnave_espacial1 = NaveEspacial('R', 500)\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))\nnave_espacial1.establecerEstadoAlertas(True)\nnave_espacial1.agregarCombustible(700)\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))\n\nnave_espacial2 = NaveEspacial('A', 0)\nprint('Combustible de Nave 2: ' + str(nave_espacial2.obtenerCombustible()))\nnave_espacial2.establecerEstadoAlertas\nnave_espacial2.agregarCombustible(200)\nprint('Combustible de Nave 2: ' + str(nave_espacial2.obtenerCombustible()))",
+      opciones: [
+        'Combustible de Nave 1: 500\n¡De los 700 litros, solo se pudieron cargar 500 litros!\nCombustible de Nave 2: 0\n¡Se cargaron 200 litros!',
+        'Combustible de Nave 1: 500\n¡De los 700 litros, solo se pudieron cargar 500 litros!\nCombustible de Nave 1: 1000\nCombustible de Nave 2: 0\nCombustible de Nave 2: 200',
+        'Combustible de Nave 1: 500\nCombustible de Nave 1: 1000\nCombustible de Nave 2: 0\nCombustible de Nave 2: 200',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        "Dada la clase NaveEspacial:\n\n¿Qué sucede si se ejecuta el siguiente programa?\n\nnave_espacial1 = NaveEspacial()\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))\nnave_espacial1.establecerEstadoAlertas(True)\nnave_espacial1.agregarCombustible(700)\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))",
+      opciones: [
+        'La primer instrucción print falla porque el objeto no se inicializó correctamente',
+        'Arroja un error, ya que el método __init__ espera que se proporcionen los parámetros',
+        'Funciona normalmente',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        "Dada la clase NaveEspacial:\n\n¿Qué sucede si se ejecuta el siguiente programa?\n\nnave_espacial1 = NaveEspacial\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))\nnave_espacial1.establecerEstadoAlertas(True)\nnave_espacial1.agregarCombustible(700)\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))",
+      opciones: [
+        'Funciona normalmente',
+        'La primer instrucción print falla porque el objeto nave_espacial1 no se inicializó correctamente',
+        'Arroja un error porque __init__ espera parámetros',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        "Dada la clase NaveEspacial:\n\n¿Cuál es la salida del siguiente programa?\n\nnave_espacial1 = NaveEspacial('R', 500)\nnave_espacial1.establecerEstadoAlertas(True)\nnave_espacial1.combustible += 700\nprint(nave_espacial1.obtenerCombustible())",
+      opciones: ['1200', '500', '700', '1000'],
+      correcta: 0,
+    },
+    {
+      texto:
+        "Dada la clase NaveEspacial:\n\nEl siguiente programa imprime Nave 1 = Nave 2: True\n\nnave_espacial1 = NaveEspacial('R', 500)\nnave_espacial2 = NaveEspacial('R', 500)\nprint('Nave 1 = Nave 2: ' + str(nave_espacial1 == nave_espacial2))",
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto:
+        "Dada la siguiente clase:\n\nclass Pelota:\n    def __init__(self):\n        self.estado = 'FRENADA'\n\n    def obtenerEstado(self):\n        return self.estado\n\n    def rodar(self):\n        print('Rodando...')\n        self.estado = 'RODANDO'\n\n    def frenar(self):\n        print('Frenando...')\n        self.estado = 'FRENADA'\n\n    def imprimirEstado(self):\n        print('Estado: ' + self.estado)\n\nIndique cuál será la salida del siguiente código:\n\npelota = Pelota()\npelota.imprimirEstado()\npelota.rodar()\nprint(pelota.obtenerEstado())\npelota.frenar()\npelota.imprimirEstado()",
+      opciones: [
+        'Estado: FRENADA\nRodando...\nRODANDO\nFrenando...\nEstado: FRENADA',
+        'FRENADA\nrodando...\nRODANDO\nfrenando...\nFRENADA',
+        "Estado: FRENADA\nRodando...\n'RODANDO'\nFrenando...\nEstado: FRENADA",
+        'Error de sintaxis',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Dada la clase Pelota:\n\nIndique cuál será la salida del siguiente código:\n\npelota = new Pelota()\npelota.imprimir_estado()\npelota.rodar()\nprint(pelota.obtenerEstado())\npelota.frenar()\npelota.imprimir_estado()',
+      opciones: [
+        'Error de sintaxis',
+        'Estado: FRENADA\nRodando...\nRODANDO\nFrenando...\nEstado: FRENADA',
+        'FRENADA\nrodando...\nRODANDO\nfrenando...\nFRENADA',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        'Dada la clase Pelota:\n\n¿Qué tipo de servicios son rodar, frenar, obtenerEstado e imprimirEstado?',
+      opciones: [
+        'rodar y frenar son comandos, obtenerEstado e imprimirEstado son consultas',
+        'todos son consultas',
+        'ninguno es comando ni consulta',
+        'todos son comandos',
+      ],
+      correcta: 0,
+    },
+    {
+      texto:
+        "Dada la siguiente clase:\n\nclass PelotaConNombre:\n    def __init__(self, nombre):\n        self.nombre = nombre\n        self.__establecerEstadoInicial()\n\n    def __establecerEstadoInicial(self):\n        self._establecerEstado('FRENADA')\n\n    def _establecerEstado(self, estado):\n        self.estado = estado\n\n    def establecerNombre(self, nombre):\n        self.nombre = nombre\n\n    def obtenerEstado(self):\n        return self.estado\n\n    def obtenerNombre(self):\n        return self.nombre\n\n    def rodar(self):\n        print('Rodando...')\n        self._establecerEstado('RODANDO')\n\n    def frenar(self):\n        print('Frenando...')\n        self._establecerEstado('FRENADA')\n\n    def imprimirEstado(self):\n        print('Estado de ' + self.nombre + ': ' + self.estado)\n\n¿Por qué el siguiente programa falla?\n\npelota1 = PelotaConNombre('Pelota 1')\npelota1.__establecerEstadoInicial()\npelota1.imprimirEstado()",
+      opciones: [
+        'El método __establecerEstadoInicial es privado',
+        'El método __establecerEstadoInicial, al declararse con doble guion bajo, queda inaccesible convencionalmente',
+        'El método __establecerEstadoInicial debe ser invocado por el constructor',
+      ],
+      correcta: 1,
+    },
+    {
+      texto:
+        "Dada la clase PelotaConNombre:\n\nEl programa:\n\npelota1 = PelotaConNombre('Pelota 1')\npelota2 = PelotaConNombre('Pelota 2')\npelota1.establecerNombre('Pelota 2')\npelota2.establecerNombre('Pelota 1')\nprint(pelota1.obtenerNombre())\nprint(pelota2.obtenerNombre())\n\nImprime: Pelota 1 / Pelota 2",
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto:
+        'El diagrama de clases es una especificación de una parte de la solución de un problema, que el programador elabora para que los diseñadores implementen y los responsables de testing verifiquen.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto:
+        '¿Por qué se considera incorrecto llamar al método __init__ constructor de una clase?',
+      opciones: [
+        'Porque al llamarse __init__ el objeto ya fue creado',
+        'Porque __init__ es el constructor de un objeto y no de una clase',
+        'Porque puede reescribirse',
+        'Porque el concepto de constructor solo aplica a C++',
+        'Las clases no utilizan constructores',
+      ],
+      correcta: 0,
+    },
+    {
+      texto: 'Los términos Clase y Objeto pueden usarse indistintamente.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto: 'Los nombres de las clases no pueden comenzar con un número.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: 'Indique cuáles son los dos miembros válidos de una Clase',
+      opciones: [
+        'comportamiento',
+        'enlaces',
+        'atributos',
+        'servicios',
+        'nombres',
+        'responsabilidades',
+        'objetos',
+        'variables',
+      ],
+      multiple: true,
+      correcta: [2, 3],
+    },
+    {
+      texto:
+        'Los requisitos y la funcionalidad de los servicios pueden especificarse únicamente a través de diagramas.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+    },
+    {
+      texto: 'Una los términos con sus respectivas definiciones.',
+      descripciones: [
+        'Propiedad o cualidad relevante que caracteriza a todos los objetos de una clase.',
+        'Servicio que modifica el valor de al menos un atributo.',
+        'Servicio que no modifica el valor de ningún atributo.',
+        'Mantienen valores compartidos por todos los objetos de una clase.',
+        'Representa la abstracción del conjunto de objetos o instancias.',
+        'Dependiendo del lenguaje, se usa para crear un objeto o inicializar la instancia de una clase.',
+      ],
+      opciones: [
+        'Constructor',
+        'Atributos de clase',
+        'Consulta',
+        'Nombre',
+        'Comando',
+        'Atributo',
+      ],
+      correcta: [5, 4, 2, 1, 3, 0],
+      tipo: 'ordenar',
+      multiple: true,
+    },
+    {
+      texto:
+        'En Python no existen los conceptos de privacidad que hay en otros lenguajes, donde se definen métodos y atributos como privados o protegidos.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+    },
+    {
+      texto: 'La Firma o Signatura de un servicio está dada por:',
+      opciones: [
+        'Número de llamadas',
+        'Número de comandos',
+        'Nombre del servicio',
+        'Tipo de los parámetros',
+        'Longitud del nombre del servicio',
+        'Tipo del resultado',
+        'Número de parámetros',
+        'Tipo de las variables definidas internamente',
+      ],
+      multiple: true,
+      correcta: [2, 3, 6, 5],
+    },
+    {
+      texto:
+        'Señale cuáles de las siguientes se consideran convenciones válidas en el lenguaje Python',
+      opciones: [
+        'La primera letra del nombre de la clase se escribe en minúscula',
+        'Las palabras de un identificador se escriben todas con inicial mayúscula',
+        'La primera letra del nombre de atributos, comandos y consultas, se escribe con minúscula',
+        'Los nombres de consultas que retornan el valor de un atributo comienzan con obtener, y comandos con establecer',
+        'Se usan comentarios para identificar las secciones de atributos, comandos y consultas',
+      ],
+      multiple: true,
+      correcta: [2, 3, 4],
+    },
+  ],
+  semana3_2: [
+    {
+      texto:
+        "Dada la siguiente clase:\n\nclass NaveEspacial:\n    def __init__(self, co, comb):\n        self.color = co\n        self.combustible = comb\n        self.alertas = False\n\n    def obtenerCombustible(self):\n        return self.combustible\n\n    def establecerEstadoAlertas(self, estado):\n        self.alertas = estado\n\n    def agregarCombustible(self, cantidad):\n        if self.combustible + cantidad > 1000:\n            disponible = 1000 - self.combustible\n            print(f\"¡De los {cantidad} litros, solo se pudieron cargar {disponible} litros!\")\n            self.combustible = 1000\n        else:\n            self.combustible += cantidad\n            print(f\"¡Se cargaron {cantidad} litros!\")\n\nIndique cuál es la salida del siguiente programa:\n\nnave_espacial1 = NaveEspacial('R', 500)\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))\nnave_espacial1.establecerEstadoAlertas(True)\nnave_espacial1.agregarCombustible(700)\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))\n\nnave_espacial2 = NaveEspacial('A', 0)\nprint('Combustible de Nave 2: ' + str(nave_espacial2.obtenerCombustible()))\nnave_espacial2.establecerEstadoAlertas\nnave_espacial2.agregarCombustible(200)\nprint('Combustible de Nave 2: ' + str(nave_espacial2.obtenerCombustible()))",
+      opciones: [
+        'Combustible de Nave 1: 500\n¡De los 700 litros, solo se pudieron cargar 500 litros!\nCombustible de Nave 2: 0\n¡Se cargaron 200 litros!',
+        'Combustible de Nave 1: 500\n¡De los 700 litros, solo se pudieron cargar 500 litros!\nCombustible de Nave 1: 1000\nCombustible de Nave 2: 0\nCombustible de Nave 2: 200',
+        'Combustible de Nave 1: 500\nCombustible de Nave 1: 1000\nCombustible de Nave 2: 0\nCombustible de Nave 2: 200',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Combustible de Nave 1: 500\n¡De los 700 litros, solo se pudieron cargar 500 litros!\nCombustible de Nave 1: 1000\nCombustible de Nave 2: 0\nCombustible de Nave 2: 200',
+    },
+    {
+      texto:
+        "Dada la clase NaveEspacial:\n\n¿Qué sucede si se ejecuta el siguiente programa?\n\nnave_espacial1 = NaveEspacial()\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))\nnave_espacial1.establecerEstadoAlertas(True)\nnave_espacial1.agregarCombustible(700)\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))",
+      opciones: [
+        'La primer instrucción print falla porque el objeto no se inicializó correctamente',
+        'Arroja un error, ya que el método __init__ espera que se proporcionen los parámetros',
+        'Funciona normalmente',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Arroja un error, ya que el método __init__ espera que se proporcionen los parámetros',
+    },
+    {
+      texto:
+        "Dada la clase NaveEspacial:\n\n¿Qué sucede si se ejecuta el siguiente programa?\n\nnave_espacial1 = NaveEspacial\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))\nnave_espacial1.establecerEstadoAlertas(True)\nnave_espacial1.agregarCombustible(700)\nprint('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))",
+      opciones: [
+        'Funciona normalmente',
+        'La primer instrucción print falla porque el objeto nave_espacial1 no se inicializó correctamente',
+        'Arroja un error porque __init__ espera parámetros',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'La primer instrucción print falla porque el objeto nave_espacial1 no se inicializó correctamente',
+    },
+    {
+      texto:
+        "Dada la clase NaveEspacial:\n\n¿Cuál es la salida del siguiente programa?\n\nnave_espacial1 = NaveEspacial('R', 500)\nnave_espacial1.establecerEstadoAlertas(True)\nnave_espacial1.combustible += 700\nprint(nave_espacial1.obtenerCombustible())",
+      opciones: ['1200', '500', '700', '1000'],
+      correcta: 0,
+      respuestaCorrecta: '1200',
+    },
+    {
+      texto:
+        "Dada la clase NaveEspacial:\n\nEl siguiente programa imprime Nave 1 = Nave 2: True\n\nnave_espacial1 = NaveEspacial('R', 500)\nnave_espacial2 = NaveEspacial('R', 500)\nprint('Nave 1 = Nave 2: ' + str(nave_espacial1 == nave_espacial2))",
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        "Dada la siguiente clase:\n\nclass Pelota:\n    def __init__(self):\n        self.estado = 'FRENADA'\n\n    def obtenerEstado(self):\n        return self.estado\n\n    def rodar(self):\n        print('Rodando...')\n        self.estado = 'RODANDO'\n\n    def frenar(self):\n        print('Frenando...')\n        self.estado = 'FRENADA'\n\n    def imprimirEstado(self):\n        print('Estado: ' + self.estado)\n\nIndique cuál será la salida del siguiente código:\n\npelota = Pelota()\npelota.imprimirEstado()\npelota.rodar()\nprint(pelota.obtenerEstado())\npelota.frenar()\npelota.imprimirEstado()",
+      opciones: [
+        'Estado: FRENADA\nRodando...\nRODANDO\nFrenando...\nEstado: FRENADA',
+        'FRENADA\nrodando...\nRODANDO\nfrenando...\nFRENADA',
+        "Estado: FRENADA\nRodando...\n'RODANDO'\nFrenando...\nEstado: FRENADA",
+        'Error de sintaxis',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Estado: FRENADA\nRodando...\nRODANDO\nFrenando...\nEstado: FRENADA',
+    },
+    {
+      texto:
+        'Dada la clase Pelota:\n\nIndique cuál será la salida del siguiente código:\n\npelota = new Pelota()\npelota.imprimir_estado()\npelota.rodar()\nprint(pelota.obtenerEstado())\npelota.frenar()\npelota.imprimir_estado()',
+      opciones: [
+        'Error de sintaxis',
+        'Estado: FRENADA\nRodando...\nRODANDO\nFrenando...\nEstado: FRENADA',
+        'FRENADA\nrodando...\nRODANDO\nfrenando...\nFRENADA',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Error de sintaxis',
+    },
+    {
+      texto:
+        'Dada la clase Pelota:\n\n¿Qué tipo de servicios son rodar, frenar, obtenerEstado e imprimirEstado?',
+      opciones: [
+        'rodar y frenar son comandos, obtenerEstado e imprimirEstado son consultas',
+        'todos son consultas',
+        'ninguno es comando ni consulta',
+        'todos son comandos',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'rodar y frenar son comandos, obtenerEstado e imprimirEstado son consultas',
+    },
+    {
+      texto:
+        "Dada la siguiente clase PelotaConNombre...\n\n¿Por qué el siguiente programa falla?\n\npelota1 = PelotaConNombre('Pelota 1')\npelota1.__establecerEstadoInicial()\npelota1.imprimirEstado()",
+      opciones: [
+        'El método __establecerEstadoInicial es privado',
+        'El método __establecerEstadoInicial, al declararse con doble guion bajo, queda inaccesible convencionalmente',
+        'El método __establecerEstadoInicial debe ser invocado por el constructor',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'El método __establecerEstadoInicial, al declararse con doble guion bajo, queda inaccesible convencionalmente',
+    },
+    {
+      texto:
+        'Dada la clase PelotaConNombre:\n\nEl programa imprime:\n\nPelota 1\nPelota 2',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        'El diagrama de clases es una especificación de una parte de la solución de un problema...',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        '¿Por qué se considera incorrecto llamar al método __init__ constructor de una clase?',
+      opciones: [
+        'Porque al llamarse __init__ el objeto ya fue creado',
+        'Porque __init__ es el constructor de un objeto y no de una clase',
+        'Porque puede reescribirse',
+        'Porque el concepto de constructor solo aplica a C++',
+        'Las clases no utilizan constructores',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Porque al llamarse __init__ el objeto ya fue creado',
+    },
+    {
+      texto: 'Los términos Clase y Objeto pueden usarse indistintamente.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'Los nombres de las clases no pueden comenzar con un número.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'Indique cuáles son los dos miembros válidos de una Clase',
+      opciones: [
+        'comportamiento',
+        'enlaces',
+        'atributos',
+        'servicios',
+        'nombres',
+        'responsabilidades',
+        'objetos',
+        'variables',
+      ],
+      multiple: true,
+      correcta: [2, 3],
+      respuestaCorrecta: 'atributos, servicios',
+    },
+    {
+      texto:
+        'Los requisitos y la funcionalidad de los servicios pueden especificarse únicamente a través de diagramas.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'Una los términos con sus respectivas definiciones.',
+      descripciones: [
+        'Propiedad o cualidad relevante que caracteriza a todos los objetos de una clase.',
+        'Servicio que modifica el valor de al menos un atributo.',
+        'Servicio que no modifica el valor de ningún atributo.',
+        'Mantienen valores compartidos por todos los objetos de una clase.',
+        'Representa la abstracción del conjunto de objetos o instancias.',
+        'Dependiendo del lenguaje, se usa para crear un objeto o inicializar la instancia de una clase.',
+      ],
+      opciones: [
+        'Constructor',
+        'Atributos de clase',
+        'Consulta',
+        'Nombre',
+        'Comando',
+        'Atributo',
+      ],
+      correcta: [5, 4, 2, 1, 3, 0],
+      tipo: 'ordenar',
+      multiple: true,
+      respuestaCorrecta:
+        'Atributo, Comando, Consulta, Atributos de clase, Nombre, Constructor',
+    },
+    {
+      texto:
+        'En Python no existen los conceptos de privacidad que hay en otros lenguajes...',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'La Firma o Signatura de un servicio está dada por:',
+      opciones: [
+        'Número de llamadas',
+        'Número de comandos',
+        'Nombre del servicio',
+        'Tipo de los parámetros',
+        'Longitud del nombre del servicio',
+        'Tipo del resultado',
+        'Número de parámetros',
+        'Tipo de las variables definidas internamente',
+      ],
+      multiple: true,
+      correcta: [2, 3, 6, 5],
+      respuestaCorrecta:
+        'Nombre del servicio, Tipo de los parámetros, Número de parámetros, Tipo del resultado',
+    },
+    {
+      texto:
+        'Señale cuáles de las siguientes se consideran convenciones válidas en Python',
+      opciones: [
+        'La primera letra del nombre de la clase se escribe en minúscula',
+        'Las palabras de un identificador se escriben todas con inicial mayúscula',
+        'La primera letra del nombre de atributos, comandos y consultas, se escribe con minúscula',
+        'Los nombres de consultas que retornan el valor de un atributo comienzan con obtener, y comandos con establecer',
+        'Se usan comentarios para identificar las secciones de atributos, comandos y consultas',
+      ],
+      multiple: true,
+      correcta: [2, 3, 4],
+      respuestaCorrecta:
+        "La primera letra del nombre de atributos, comandos y consultas, se escribe con minúscula; Los nombres de consultas comienzan con 'obtener' y los comandos con 'establecer'; Se usan comentarios para identificar secciones",
+    },
+  ],
 };

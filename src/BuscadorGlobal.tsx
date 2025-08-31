@@ -9,18 +9,21 @@ export interface Pregunta {
   descripciones?: string[];
   semana?: number;
   materia?: string;
+  respuestaCorrecta?: string;
 }
 
 interface BuscadorGlobalProps {
   materia: string; // '1' para Arquitectura, '2' para Informática
   cuestionarios_arq: { semana: number; preguntas: Pregunta[] }[];
   cuestionarios_inf: { semana: number; preguntas: Pregunta[] }[];
+  cuestionarios_so: { semana: number; preguntas: Pregunta[] }[];
 }
 
 export default function BuscadorGlobal({
   materia,
   cuestionarios_arq,
   cuestionarios_inf,
+  cuestionarios_so,
 }: BuscadorGlobalProps) {
   // Armamos la lista completa de preguntas de acuerdo a la materia seleccionada
   const preguntasFiltradasPorMateria =
@@ -34,7 +37,8 @@ export default function BuscadorGlobal({
             }))
           )
           .flat()
-      : cuestionarios_inf
+      : materia === '2'
+      ? cuestionarios_inf
           .map((q) =>
             q.preguntas.map((p) => ({
               ...p,
@@ -42,7 +46,18 @@ export default function BuscadorGlobal({
               materia: '2',
             }))
           )
-          .flat();
+          .flat()
+      : materia === '4'
+      ? cuestionarios_so
+          .map((q) =>
+            q.preguntas.map((p) => ({
+              ...p,
+              semana: q.semana,
+              materia: '4',
+            }))
+          )
+          .flat()
+      : [];
 
   const [busqueda, setBusqueda] = useState('');
 
