@@ -136,8 +136,16 @@ export const prog2 = {
     {
       texto:
         'Elija el orden correcto de las etapas del Ciclo de Vida de un proyecto.',
-      opciones: ['a', 'b', 'c', 'd', 'e'],
+      opciones: [
+        '1. Estudio de Factibilidad, 2. Análisis y especificaciones de requerimientos, 3. Diseño y especificación, 4. Integración y Testeo de Sistema, 5. Codificación y Testeo de módulos, 6. Liberación y Mantenimiento',
+        '1. Análisis y especificaciones de requerimientos, 2. Diseño y especificación, 3. Estudio de Factibilidad, 4. Codificación y Testeo de módulos, 5. Integración y Testeo de Sistema, 6. Liberación y Mantenimiento',
+        '1. Estudio de Factibilidad, 2. Análisis y especificaciones de requerimientos, 3. Diseño y especificación, 4. Codificación y Testeo de módulos, 5. Integración y Testeo de Sistema, 6. Liberación y Mantenimiento',
+        '1. Estudio de Factibilidad, 2. Análisis y especificaciones de requerimientos, 3. Diseño y especificación, 4. Codificación y Testeo de módulos, 5. Liberación y Mantenimiento, 6. Integración y Testeo de Sistema',
+        '1. Estudio de Factibilidad, 2. Diseño y especificación, 3. Análisis y especificaciones de requerimientos, 4. Codificación y Testeo de módulos, 5. Integración y Testeo de Sistema, 6. Liberación y Mantenimiento',
+      ],
       correcta: 2,
+      respuestaCorrecta:
+        '1. Estudio de Factibilidad, 2. Análisis y especificaciones de requerimientos, 3. Diseño y especificación, 4. Codificación y Testeo de módulos, 5. Integración y Testeo de Sistema, 6. Liberación y Mantenimiento',
     },
     {
       texto:
