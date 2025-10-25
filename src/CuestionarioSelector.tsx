@@ -101,7 +101,8 @@ export default function CuestionarioSelector() {
       <div>
         <App
           semana={semana}
-          preguntas={preguntas.sort(() => Math.random() - 0.5)}
+          //preguntas={preguntas.sort(() => Math.random() - 0.5)}
+          preguntas={preguntas}
           onVolver={() => setSeleccionado(null)}
         />
       </div>
