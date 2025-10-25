@@ -75,16 +75,22 @@ export const prog2 = {
       correcta: 0,
     },
     {
-      texto: 'Seleccione las sentencias correctas sobre modularidad.',
+      texto:
+        'Seleccione las sentencias que cree son correctas sobre los principios de modularidad.',
       opciones: [
-        'Descomposición Modular',
-        'Composición Modular',
-        'Entendimiento Modular',
-        'Protección Modular',
-        'Continuidad Modular',
+        'La Descomposición Modular sigue la idea de poder descomponer un programa en módulos menos complejos.',
+        'La Descomposición Modular refiere a la descomposición de un problema en subproblemas menos complejos, conectados por una estructura simple, y que pueden resolverse en forma independiente.',
+        'La Composición Modular trata de la creación de nuevas unidades de software creadas a partir de la combinación de otras ya existentes.',
+        'Se satisface el criterio de Composición Modular si se favorece la producción de elementos de software que pueden ser combinados para crear nuevos sistemas, posiblemente en un entorno diferente al que se idearon.',
+        'El Entendimiento Modular se relaciona a la facilidad para comprender el comportamiento de un módulo con solo leer su código.',
+        'Un método favorece el Entendimiento Modular si facilita que quien lea un módulo pueda comprenderlo sin necesidad de acudir a otros módulos.',
+        'En un programa donde se satisface el criterio de Protección Modular, los cambios que impactan un módulo NO se propagan al resto.',
+        'El criterio de Continuidad Modular especifica que los cambios que impactan un módulo se propaguen al resto.',
       ],
-      correcta: [0, 1, 2],
       multiple: true,
+      correcta: [0, 2, 4],
+      respuestaCorrecta:
+        'El Entendimiento Modular se relaciona a la facilidad para comprender el comportamiento de un módulo con solo leer su código; la Composición Modular trata de la creación de nuevas unidades de software creadas a partir de la combinación de otras ya existentes; y la Descomposición Modular sigue la idea de poder descomponer un programa en módulos menos complejos.',
     },
     {
       texto:
