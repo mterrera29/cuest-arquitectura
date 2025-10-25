@@ -394,7 +394,7 @@ export const prog2 = {
     },
     {
       texto:
-        'El siguiente programa encuentra todos los números entre 200 y 210 (incluidos) tal que cada dígito del número es par, y los imprime de forma ordenada separados por comas.',
+        'El siguiente programa encuentra todos los números entre 200 y 210 (incluidos) tal que cada dígito del número es par, y los imprime de forma ordenada separados por comas.\n\nvalores = []\nfor numero in range(200, 211):\n    numero_texto = str(numero)\n    if (int(numero_texto[0])%2==0) and (int(numero_texto[1])%2==0) and (int(numero_texto[2])%2==0):\n        valores.append(numero_texto)\nprint(", ".join(valores))\n\n¿Cuál es la salida esperada?',
       opciones: [
         '202, 204, 204, 206, 208',
         '200, 202, 204, 206, 208',
@@ -403,6 +403,7 @@ export const prog2 = {
         '190, 202, 204, 206, 208',
       ],
       correcta: 1,
+      respuestaCorrecta: '200, 202, 204, 206, 208',
     },
     {
       texto:
