@@ -824,4 +824,1036 @@ export const prog2 = {
         "La primera letra del nombre de atributos, comandos y consultas, se escribe con minúscula; Los nombres de consultas comienzan con 'obtener' y los comandos con 'establecer'; Se usan comentarios para identificar secciones",
     },
   ],
+  semana4: [
+    {
+      texto:
+        'El estado interno de un objeto lo definen los valores de sus atributos de instancia.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'El estado interno de un objeto se define por los valores de sus atributos de instancia.',
+    },
+    {
+      texto:
+        '¿Qué tipo de atributos se comparten entre todas las instancias de una clase?',
+      opciones: ['Atributos de Instancia', 'Atributos de Clase'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Los atributos de clase se comparten entre todas las instancias de una clase.',
+    },
+    {
+      texto: 'Indique cuál de las siguientes sentencias es verdadera.',
+      opciones: [
+        'Los parámetros formales son aquellos utilizados al declarar un procedimiento o función, y los parámetros reales se asignan a estos al invocar dicho procedimiento o función.',
+        'Los términos parámetros formales y parámetros reales son sinónimos.',
+        'Los parámetros reales son aquellos utilizados al declarar un procedimiento o función, y los parámetros formales se asignan a estos al invocar dicho procedimiento o función.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Los parámetros formales se usan al declarar, los reales se asignan al invocar.',
+    },
+    {
+      texto:
+        'En Python, ¿cuál de las siguientes sentencias es verdadera respecto a los parámetros formales y reales?',
+      opciones: [
+        'Deben coincidir en tipo pero no en cantidad.',
+        'Deben coincidir en cantidad pero no en tipo.',
+        'No es necesario que coincidan en cantidad y tipo.',
+        'Deben coincidir en cantidad y tipo.',
+      ],
+      correcta: 2,
+      respuestaCorrecta:
+        'En Python no es necesario que los parámetros formales y reales coincidan en cantidad y tipo.',
+    },
+    {
+      texto:
+        'Dos objetos de una misma clase definida por el usuario, con mismos valores para sus atributos, ocupan la misma posición de memoria.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Cada objeto ocupa una posición de memoria distinta, independientemente de los valores de sus atributos.',
+    },
+    {
+      texto:
+        'Cuando un servicio retorna como resultado un objeto, el valor que retorna:',
+      opciones: [
+        'Es una copia del objeto original',
+        'Es un objeto nuevo',
+        'Es una referencia',
+      ],
+      correcta: 2,
+      respuestaCorrecta:
+        'El valor retornado es una referencia al objeto, no una copia.',
+    },
+    {
+      texto: 'Un objeto puede distinguirse de otro por su referencia.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'Los objetos se distinguen por su referencia, incluso si tienen los mismos valores de atributos.',
+    },
+    {
+      texto: 'El diagrama de objetos:',
+      opciones: [
+        'Es una representación en memoria de la clase de un objeto.',
+        'Es una representación de los objetos de software en un momento de la ejecución.',
+        'Es una representación en memoria de un objeto.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'El diagrama de objetos muestra los objetos de software en un momento dado de la ejecución.',
+    },
+    {
+      texto: '¿Qué sucede al crearse un objeto?',
+      opciones: [
+        'Se reserva espacio en memoria para almacenar el estado interno de todos los objetos de la misma clase.',
+        'Se asignan valores por defecto a todos los atributos para los que no se definió un valor.',
+        'Se reserva espacio en memoria para almacenar el estado interno del objeto.',
+        'Se reserva espacio en memoria para almacenar los servicios del objeto.',
+        'Se ejecuta el código del constructor (método __init__).',
+      ],
+      multiple: true,
+      correcta: [2, 4],
+      respuestaCorrecta:
+        'Se reserva espacio en memoria para el estado interno del objeto y se ejecuta el constructor (__init__).',
+    },
+    {
+      texto: 'En Python, self es la referencia al objeto que envió el mensaje.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'Self es la referencia al objeto que recibió el mensaje.',
+    },
+    {
+      texto:
+        'Dada la clase robot.py, ¿cuántos comandos y consultas tiene dicha clase?',
+      opciones: [
+        '4 comandos y 4 consultas',
+        '8 comandos y 4 consultas',
+        '5 comandos y 8 consultas',
+        '4 comandos y 8 consultas',
+        '4 servicios y 8 consultas',
+      ],
+      correcta: 3,
+      respuestaCorrecta: 'La clase robot.py tiene 4 comandos y 8 consultas.',
+    },
+    {
+      texto:
+        "Dada la clase robot.py, ¿el siguiente programa funciona?\n\nrobot1 = Robot('Robot 1')\nprint(Robot.obtenerNombre())",
+      opciones: [
+        'No funciona, ya que al llamarse desde la clase no se instancia la variable self.',
+        'Funciona, pero la función obtenerNombre no retorna nada.',
+        'Funciona. La función devuelve el nombre del primer objeto de tipo Robot.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'No funciona, porque al llamarse desde la clase no se instancia self.',
+    },
+    {
+      texto:
+        "Dada la clase robot.py, ¿cuál es el valor del atributo nombre de cada objeto luego de ejecutar el siguiente programa?\n\nrobot1 = Robot('Manuel')\nrobot2 = robot1\nrobot2.nombre = 'Luchi'",
+      opciones: [
+        'El nombre de ambos robots es Luchi',
+        'El nombre de ambos robots es Manuel',
+        'El nombre de robot1 es Manuel y el nombre de robot2 es Luchi',
+        'El programa no funciona, arroja un error',
+        'El nombre de robot1 es Luchi y el nombre de robot2 es Manuel',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Ambos nombres son Luchi, ya que apuntan al mismo objeto.',
+    },
+    {
+      texto:
+        "Dada la clase robot.py, ¿cuál es la salida del siguiente programa?\n\nrobot1 = Robot('Manuel')\nrobot2 = Robot('Luchi')\nfor i in range(1, 3):\n    robot1.dormir()\nrobot2.caminar()\nrobot2.caminar()\nrobot2.caminar()\nrobot2.dormir()\nprint(robot1.tieneMasEnergia(robot2.obtenerEnergia()))",
+      opciones: ['True', 'False'],
+      correcta: 0,
+      respuestaCorrecta: 'True',
+    },
+    {
+      texto:
+        "Dada la clase robot.py, ¿cuál es la salida del siguiente programa?\n\nrobot1 = Robot('Manuel')\nrobot2 = Robot('Luchi')\nfor i in range(1, 3):\n    robot1.dormir()\nrobot2.caminar()\nrobot2.caminar()\nrobot2.caminar()\nrobot2.dormir()\nprint(robot1.mayorEnergia(robot2))",
+      opciones: ['None', 'True', '84', 'False', '99'],
+      correcta: 4,
+      respuestaCorrecta: '99',
+    },
+    {
+      texto:
+        "Dada la clase robot.py, ¿cuál es la salida del siguiente programa?\n\nrobot1 = Robot('Manuel')\nrobot2 = Robot('Luchi')\nfor i in range(1, 3):\n    robot1.dormir()\nrobot2.caminar()\nrobot2.caminar()\nrobot2.caminar()\nrobot2.dormir()\nrobot1.__str__()\nrobot2.__str__()",
+      opciones: [
+        'Manuel False 0 99 / Luchi False 3 84',
+        'Error',
+        'Manuel False 3 84 / Luchi False 0 99',
+        'Luchi False 3 84 / Manuel False 0 99',
+        'Vacío',
+      ],
+      correcta: 4,
+      respuestaCorrecta: 'Vacío',
+    },
+    {
+      texto:
+        "Dada la clase robot.py, ¿cuál es la salida del siguiente programa?\n\nrobot1 = Robot('Manuel')\nrobot2 = Robot('Luchi')\nrobot1.dormir()\nfor i in range(1, 5):\n    if (i % 2 == 0):\n        robot1.dormir()\n    else:\n        robot1.despertar()\nfor j in range(i, 5):\n    if (i % 2 == 0):\n        robot2.dormir()\n    else:\n        robot2.despertar()\n        robot2.caminar()\nprint(robot1.conMasEnergia(robot2))",
+      opciones: [
+        'Error',
+        'Manuel False 0 95 / Luchi False 0 99',
+        'Luchi False 0 99',
+        'Vacío',
+        'Manuel False 0 95',
+      ],
+      correcta: 2,
+      respuestaCorrecta: 'Luchi False 0 99',
+    },
+    {
+      texto:
+        "Dada la clase robot.py, evalúe la ejecución del siguiente programa:\n\nrobot1 = Robot('Manuel')\nrobot2 = Robot('Luchi')\nrobot1.dormir()\nrobot1.despertar()\nfor i in range(1, 10): \n    robot1.caminar()\nrobot1 = robot1.conMasEnergia(robot2)",
+      opciones: ['El mismo objeto', 'Objetos distintos', 'Objetos idénticos'],
+      correcta: 0,
+      respuestaCorrecta: 'Ambos hacen referencia al mismo objeto.',
+    },
+    {
+      texto:
+        "Dada la clase robot.py, evalúe la ejecución del siguiente programa:\n\nrobot1 = Robot('Manuel')\nrobot2 = Robot('Luchi')\nrobot1.dormir()\nrobot1.despertar()\nfor i in range(1, 10): \n    robot1.caminar()\nrobot_aux = robot2\nrobot2 = robot1.conMasEnergia(robot2)\nrobot1 = robot_aux",
+      opciones: ['El mismo objeto', 'Objetos idénticos', 'Objetos distintos'],
+      correcta: 0,
+      respuestaCorrecta: 'robot1 y robot2 hacen referencia al mismo objeto.',
+    },
+    {
+      texto:
+        "Dada la clase robot.py, evalúe la ejecución del siguiente programa:\n\nrobot1 = Robot('Manuel')\nrobot2 = Robot('Luchi')\nrobot1.dormir()\nrobot2.dormir()\nrobot1.despertar()\nrobot2.despertar()\nfor i in range(1, 10): \n    robot1.caminar()\nfor i in range(10, 1, -1): \n    robot2.caminar()\nrobot1.conMasEnergia(robot2)",
+      opciones: ['El mismo objeto', 'Objetos idénticos', 'Objetos distintos'],
+      correcta: 2,
+      respuestaCorrecta:
+        'robot1 y robot2 hacen referencia a objetos distintos.',
+    },
+  ],
+  semana5: [
+    {
+      texto:
+        'Cuando un servicio recibe como parámetro un objeto o retorna como resultado a un objeto, el valor que recibe o retorna es:',
+      opciones: [
+        'Una referencia',
+        'Una copia de ese objeto',
+        'Nulo',
+        'De tipo primitivo',
+        'La dirección en memoria del objeto',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Una referencia',
+    },
+    {
+      texto: 'Dos objetos pueden tener:',
+      opciones: [
+        'Distinta identidad y mismo estado interno',
+        'Distinta identidad y distinto estado interno',
+        'Misma identidad y distinto estado interno',
+        'Misma identidad y mismo estado interno',
+      ],
+      multiple: true,
+      correcta: [0, 1],
+      respuestaCorrecta:
+        'Distinta identidad y mismo estado interno, Distinta identidad y distinto estado interno',
+    },
+    {
+      texto: 'La función equals analizada en la Clase 07:',
+      opciones: [
+        'Retorna falso si el estado interno de dos objetos coincide.',
+        'Retorna falso si la identidad de dos objetos coincide.',
+        'Retorna verdadero si el estado interno de dos objetos coincide.',
+        'Retorna verdadero si la identidad de dos objetos coincide.',
+      ],
+      correcta: 2,
+      respuestaCorrecta:
+        'Retorna verdadero si el estado interno de dos objetos coincide.',
+    },
+    {
+      texto: 'La función clone analizada en la Clase 07:',
+      opciones: [
+        'Retorna un objeto con la misma dirección que el objeto que recibe el mensaje.',
+        'Crea y retorna un nuevo objeto con el mismo estado interno que el objeto que recibe el mensaje.',
+        'Retorna un objeto ya existente con el mismo estado interno que el objeto que recibe el mensaje.',
+        'Retorna un objeto similar al objeto que recibe el mensaje.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Crea y retorna un nuevo objeto con el mismo estado interno que el objeto que recibe el mensaje.',
+    },
+    {
+      texto: 'El alcance de una variable es:',
+      opciones: [
+        'El segmento de código en el cual una variable puede ser destruida.',
+        'El segmento de código en el cual una variable es visible y puede ser usada.',
+        'El segmento de código donde una variable se crea.',
+        'El segmento de código en el cual una variable puede ser creada.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'El alcance de una variable es el segmento de código en el cual es visible y puede ser usada.',
+    },
+    {
+      texto: 'La equivalencia de dos objetos está dada por:',
+      opciones: [
+        'El estado interno de los objetos',
+        'El nombre de los objetos',
+        'La dirección de memoria de los objetos',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'El estado interno de los objetos.',
+    },
+    {
+      texto: 'El alcance de los parámetros formales es:',
+      opciones: [
+        'El código del servicio en el que se los declara.',
+        'El código que rodea a la instrucción que invoca el servicio.',
+        'Igual al alcance de los parámetros reales.',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'El código del servicio en el que se los declara.',
+    },
+    {
+      texto:
+        'Los atributos privados solo son visibles dentro de la clase donde estos fueron declarados.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'Aunque en Python pueden ser accedidos, en POO los elementos privados solo deben ser accesibles dentro de la misma clase.',
+    },
+    {
+      texto:
+        'Una variable de tipo clase está ligada y su valor es una un objeto.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Una variable de tipo clase está ligada a una referencia a un objeto, no al objeto en sí mismo.',
+    },
+    {
+      texto:
+        'Una variable puede estar viva, ocupar un lugar en memoria y almacenar un valor, solo cuando no sea visible.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Una variable puede estar viva y ocupar memoria aunque no sea visible.',
+    },
+    {
+      texto:
+        'En Python, ¿qué método debe definirse para sobrescribir el operador de igualdad?',
+      opciones: ['__eq__', '__ne__', 'clone', 'equals', '__str__'],
+      correcta: 0,
+      respuestaCorrecta: '__eq__',
+    },
+    {
+      texto:
+        'Dada la clase cheque.py, ¿cuál es el ambiente de referenciamiento de la variable clienteBelen en el siguiente programa?',
+      opciones: [
+        'Todo el programa',
+        'El método main',
+        'La clase Cheque',
+        'La clase TesterCheque',
+        'El método cobrar',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'El método main',
+    },
+    {
+      texto:
+        'Dada la clase punto.py, evalúe la ejecución del siguiente programa:\n\npunto12 = Punto(1, 2)\npunto12bis = Punto(0, 0)\npunto12bis.copy(punto12)\n\nAl alcanzarse la última instrucción, punto12 y punto12bis hacen referencia a:',
+      opciones: [
+        'El mismo objeto',
+        'Objetos equivalentes, en términos de sus estados internos',
+        'Objetos distintos',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Objetos equivalentes, en términos de sus estados internos.',
+    },
+    {
+      texto:
+        'Dada la clase punto.py, evalúe la ejecución del siguiente programa:\n\npunto12 = Punto(1, 2)\npunto13 = punto12\npunto13.establecerY(3)\n\nAl alcanzarse la última instrucción, punto12 y punto13 hacen referencia a:',
+      opciones: [
+        'Objetos distintos',
+        'El mismo objeto',
+        'Objetos equivalentes en términos de sus estados internos',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'El mismo objeto.',
+    },
+    {
+      texto:
+        'Dada la clase punto.py, evalúe la ejecución del siguiente programa:\n\npunto12 = Punto(1, 2)\npunto13 = punto12\npunto13.establecerY(3)\npunto12bis = punto13.clone()\npunto12bis.copy(punto12)\n\nAl alcanzarse la última instrucción, sucede que:',
+      opciones: [
+        'punto13 y punto12bis hacen referencia al mismo objeto. punto12 hace referencia a un objeto distinto, pero equivalente en término de su estado interno.',
+        'punto12 y punto13 hacen referencia al mismo objeto. punto12bis hace referencia a un objeto distinto, pero equivalente en término de su estado interno.',
+        'punto12 y punto13 hacen referencia al mismo objeto, pero no comparten el mismo estado interno.',
+        'punto12 y punto12bis hacen referencia al mismo objeto. punto13 hace referencia a un objeto distinto, pero equivalente.',
+        'punto12, punto13 y punto12bis hacen referencia al mismo objeto.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'punto12 y punto13 hacen referencia al mismo objeto; punto12bis hace referencia a un objeto distinto pero equivalente en su estado interno.',
+    },
+    {
+      texto:
+        'Dada la clase punto.py, evalúe el siguiente programa:\n\npunto12 = Punto(1, 2)\npunto12bis = punto12.clone()\nprint(punto12 is punto12bis)\n\nLa última instrucción imprime False porque:',
+      opciones: [
+        'punto12 y punto12bis hacen referencia a objetos distintos, ubicados en posiciones diferentes de memoria.',
+        'punto12 y punto12bis no coinciden en sus nombres.',
+        'Los estados internos de punto12 y punto12bis no son equivalentes.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'punto12 y punto12bis hacen referencia a objetos distintos en posiciones diferentes de memoria.',
+    },
+    {
+      texto:
+        'Dada la clase punto.py, evalúe el siguiente programa:\n\npunto12 = Punto(1, 2)\npunto12bis = Punto(0, 0)\npunto12bis.copy(punto12)\nprint(punto12 == punto12bis)\n\nLa última instrucción imprime False porque:',
+      opciones: [
+        'El operador de igualdad está sobrecargado y los objetos no son equivalentes.',
+        'El operador de igualdad está sobrecargado y los objetos son distintos.',
+        'El operador de igualdad no está sobrecargado y los objetos no son equivalentes.',
+        'El operador de igualdad no está sobrecargado y los objetos son distintos.',
+      ],
+      correcta: 3,
+      respuestaCorrecta:
+        'El operador de igualdad no está sobrecargado y los objetos hacen referencia a instancias distintas.',
+    },
+    {
+      texto:
+        'Dada la clase punto.py, evalúe la ejecución del siguiente programa:\n\npunto12 = Punto(1, 2)\npunto13 = punto12\npunto13.establecerY(3)\nprint(punto12.equals(punto13))\n\nLa última instrucción imprime True porque:',
+      opciones: [
+        'punto12 y punto13 hacen referencia al mismo objeto.',
+        'punto12 y punto13 hacen referencia a objetos distintos, pero comparten el valor del atributo __x.',
+        'punto12 y punto13 hacen referencia a objetos distintos con estados equivalentes.',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'punto12 y punto13 hacen referencia al mismo objeto.',
+    },
+    {
+      texto:
+        'Dada la clase punto.py, evalúe la ejecución del siguiente programa (Modificaciones.txt):\n\npunto12 = Punto(1, 2)\npunto13 = punto12\npunto13.establecerY(3)\npunto12bis = punto13.clone()\npunto12bis.copy(punto12)\nprint(punto12.equals(punto13))\n\nLa última instrucción imprime True porque:',
+      opciones: [
+        'punto12 y punto13 hacen referencia a objetos distintos con estados equivalentes.',
+        'punto12 y punto13 hacen referencia al mismo objeto.',
+        'punto12 y punto13 hacen referencia a objetos distintos, pero comparten el valor del atributo __x.',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'punto12 y punto13 hacen referencia al mismo objeto.',
+    },
+    {
+      texto:
+        'Dada la clase punto.py, evalúe la ejecución del siguiente programa:\n\npunto12 = Punto(1, 2)\npunto13 = punto12\npunto13.establecerY(3)\npunto12bis = punto13.clone()\npunto12bis.copy(punto12)\nprint(punto12.equals(punto12bis))\n\nLa última instrucción imprime True porque:',
+      opciones: [
+        'punto12 y punto12bis hacen referencia al mismo objeto.',
+        'punto12 y punto12bis hacen referencia a objetos distintos y sus estados internos son equivalentes.',
+        'punto12 y punto12bis hacen referencia a objetos distintos, pero comparten el valor del atributo __x.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'punto12 y punto12bis hacen referencia a objetos distintos, pero con estados internos equivalentes.',
+    },
+  ],
+  semana6: [
+    {
+      texto:
+        'La herencia es un mecanismo que permite construir nuevas clases a partir de clases existentes.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'La herencia permite crear nuevas clases reutilizando y extendiendo el comportamiento de clases ya existentes.',
+    },
+    {
+      texto:
+        'Cuando una clase hereda de otra, los atributos y métodos de la superclase pasan a formar parte de la subclase.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'Los atributos y métodos definidos en la superclase son heredados por la subclase.',
+    },
+    {
+      texto:
+        '¿Qué palabra clave se utiliza en Python para definir una clase que hereda de otra?',
+      opciones: ['super', 'extends', 'inherits', 'class', 'def'],
+      correcta: 3,
+      respuestaCorrecta:
+        "En Python se utiliza la palabra clave 'class' seguida del nombre de la clase padre entre paréntesis.",
+    },
+    {
+      texto:
+        'En Python, para invocar el constructor de la clase padre dentro del constructor de la clase hija se utiliza:',
+      opciones: [
+        'self.__init__()',
+        'class.__init__()',
+        'super().__init__()',
+        'this.__init__()',
+      ],
+      correcta: 2,
+      respuestaCorrecta:
+        "Se utiliza 'super().__init__()' para llamar al constructor de la clase padre desde la subclase.",
+    },
+    {
+      texto: 'La herencia permite:',
+      opciones: [
+        'Reutilizar código y extender funcionalidades existentes.',
+        'Evitar la creación de nuevas clases.',
+        'Eliminar la necesidad de constructores.',
+        'Modificar directamente la clase padre.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Permite reutilizar código y extender funcionalidades ya implementadas en clases existentes.',
+    },
+    {
+      texto:
+        'Una subclase puede sobreescribir un método de la superclase con una nueva implementación.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'La sobrescritura de métodos es una característica fundamental de la herencia.',
+    },
+    {
+      texto:
+        'El método __init__ de una subclase puede reemplazar completamente al de la superclase.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        "Si no se invoca 'super().__init__()', el constructor de la superclase no se ejecuta.",
+    },
+    {
+      texto:
+        '¿Qué significa que una subclase sobrescriba un método de su superclase?',
+      opciones: [
+        'Que elimina el método de la clase padre.',
+        'Que redefine el comportamiento del método manteniendo el mismo nombre.',
+        'Que agrega un nuevo método distinto.',
+        'Que oculta el método padre sin reemplazarlo.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Significa que redefine el comportamiento del método heredado manteniendo el mismo nombre.',
+    },
+    {
+      texto:
+        'Si una clase hija no define su propio constructor (__init__), ¿qué sucede?',
+      opciones: [
+        'Python arroja un error.',
+        'Se ejecuta automáticamente el constructor de la clase padre.',
+        'No se crea ningún objeto.',
+        'La clase hija hereda el constructor de la clase padre.',
+      ],
+      correcta: 3,
+      respuestaCorrecta:
+        'La subclase hereda el constructor de la clase padre si no define el suyo propio.',
+    },
+    {
+      texto:
+        '¿Cuál de las siguientes afirmaciones sobre herencia múltiple en Python es correcta?',
+      opciones: [
+        'No está permitida.',
+        'Permite heredar de varias clases a la vez.',
+        'Solo se puede heredar de dos clases.',
+        'Solo puede aplicarse a métodos, no a atributos.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Python permite heredar de múltiples clases al mismo tiempo.',
+    },
+    {
+      texto:
+        'En Python, cuando dos clases padres tienen el mismo método y una subclase hereda de ambas, ¿cuál se ejecuta?',
+      opciones: [
+        'El de la primera clase padre indicada en la definición.',
+        'El de la segunda clase padre.',
+        'El método se ejecuta aleatoriamente.',
+        'Python lanza un error.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Se ejecuta el método de la primera clase padre listada en la definición de la subclase.',
+    },
+    {
+      texto: 'En POO, la relación de herencia se considera del tipo:',
+      opciones: [
+        'Composición',
+        'Asociación',
+        'Agregación',
+        'Generalización / Especialización',
+      ],
+      correcta: 3,
+      respuestaCorrecta:
+        'La herencia representa una relación de generalización/especialización entre clases.',
+    },
+    {
+      texto: 'Una clase abstracta:',
+      opciones: [
+        'No puede instanciarse directamente.',
+        'Puede instanciarse sin restricciones.',
+        'Debe tener todos sus métodos implementados.',
+        'No puede tener atributos.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Una clase abstracta no puede instanciarse directamente; sirve como plantilla para otras clases.',
+    },
+    {
+      texto: 'En Python, el módulo abc permite:',
+      opciones: [
+        'Definir clases abstractas y métodos abstractos.',
+        'Herencia múltiple.',
+        'Controlar el acceso a variables privadas.',
+        'Definir constructores.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'El módulo abc permite definir clases y métodos abstractos.',
+    },
+    {
+      texto:
+        'Si una clase hija hereda de una clase padre y redefine un método, ¿cómo puede acceder a la versión original?',
+      opciones: [
+        'self.metodo()',
+        'super().metodo()',
+        'class.metodo()',
+        'parent.metodo()',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Puede acceder a la versión original mediante super().metodo().',
+    },
+    {
+      texto: 'El concepto de herencia favorece principalmente:',
+      opciones: [
+        'La encapsulación',
+        'La reutilización de código',
+        'La independencia total de las clases',
+        'La redundancia de datos',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'La herencia promueve la reutilización del código y evita la duplicación.',
+    },
+    {
+      texto: 'La función isinstance(obj, Clase) permite:',
+      opciones: [
+        'Comprobar si un objeto pertenece a una clase o subclase.',
+        'Comparar el contenido de dos objetos.',
+        'Eliminar una instancia de clase.',
+        'Ver el tipo de atributo de un objeto.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Permite verificar si un objeto es instancia de una clase o de una subclase de ella.',
+    },
+    {
+      texto:
+        'En la herencia, el método __str__ puede sobrescribirse en la subclase.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'El método __str__ puede redefinirse para personalizar la representación en cadena del objeto.',
+    },
+    {
+      texto:
+        '¿Qué sucede si una subclase define un atributo con el mismo nombre que uno de la clase padre?',
+      opciones: [
+        'Python lanza un error.',
+        'El atributo de la subclase oculta al de la clase padre.',
+        'Ambos atributos se combinan.',
+        'El atributo del padre tiene prioridad.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'El atributo definido en la subclase oculta al de la clase padre.',
+    },
+    {
+      texto: '¿Qué es una jerarquía de clases?',
+      opciones: [
+        'El conjunto de clases independientes.',
+        'El conjunto de clases relacionadas mediante herencia.',
+        'Las clases agrupadas en módulos.',
+        'Una lista de clases ordenadas por tamaño.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Una jerarquía de clases es un conjunto de clases relacionadas a través de herencia.',
+    },
+  ],
+  semana7: [
+    {
+      texto: 'La clase Punto presentada al principio de la Clase 09 define:',
+      opciones: [
+        'Un Tipo de Dato Abstracto',
+        'Un Tipo de Dato Proveedor',
+        'Un Tipo de Dato Concreto',
+        'Un Tipo de Dato Cliente',
+        'Un Tipo de Dato Nativo',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Un Tipo de Dato Abstracto',
+    },
+    {
+      texto: 'Un tipo de dato abstracto (TDA) es un tipo de dato en el cual:',
+      opciones: [
+        'La representación del conjunto de valores y la implementación del conjunto de operaciones está encapsulada en la clase.',
+        'La representación del conjunto de valores no está encapsulada en la clase pero la implementación del conjunto de operaciones sí lo está.',
+        'La representación del conjunto de valores está encapsulada en la clase pero la implementación del conjunto de operaciones no lo está.',
+        'La representación del conjunto de valores y la implementación del conjunto de operaciones no está encapsulada en la clase.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'La representación del conjunto de valores y la implementación del conjunto de operaciones está encapsulada en la clase.',
+    },
+    {
+      texto: 'Todas las clases definen un tipo de dato abstracto.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'No todas las clases definen un tipo de dato abstracto.',
+    },
+    {
+      texto: 'La abstracción permite clasificar objetos a partir de:',
+      opciones: [
+        'Sus atributos, su nombre y su comportamiento.',
+        'Sus atributos y su representación.',
+        'Sus atributos y su comportamiento.',
+        'Solamente su comportamiento.',
+        'Solamente sus atributos.',
+      ],
+      correcta: 2,
+      respuestaCorrecta: 'Sus atributos y su comportamiento.',
+    },
+    {
+      texto: 'El encapsulamiento permite:',
+      opciones: [
+        'Exponer la representación de los datos.',
+        'Esconder la implementación de los servicios.',
+        'Esconder la representación de los datos.',
+        'Exponer los servicios que ofrece una clase.',
+        'Determinar el comportamiento de una clase.',
+      ],
+      correcta: 2,
+      respuestaCorrecta: 'Esconder la representación de los datos.',
+    },
+    {
+      texto:
+        'Cada clase es un módulo de software que muestra su interfaz y esconde su implementación.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'Cada clase muestra su interfaz y oculta su implementación.',
+    },
+    {
+      texto:
+        'La Reusabilidad y la Legibilidad favorecen la Productividad de software.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'La Reusabilidad favorece la Productividad, mientras que la Legibilidad favorece la Calidad del software.',
+    },
+    {
+      texto:
+        "El encapsulamiento es un mecanismo que permite la definición de módulos de software que pueden ser utilizados como 'cajas negras', esto es, conociendo los detalles de su implementación.",
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'El concepto de caja negra implica conocer qué hacen los módulos, sin saber cómo lo hacen.',
+    },
+    {
+      texto:
+        'Cada módulo de software tiene una interfaz que le permite comunicarse con los demás módulos del sistema. Si un módulo se reemplaza por otro con la misma interfaz:',
+      opciones: [
+        'El resto del sistema debe adaptarse al nuevo módulo.',
+        'Ambos módulos pueden funcionar en paralelo.',
+        'Se necesita un rediseño del sistema.',
+        'El cambio no afecta al resto del sistema.',
+      ],
+      correcta: 3,
+      respuestaCorrecta: 'El cambio no afecta al resto del sistema.',
+    },
+    {
+      texto:
+        'En la POO cada módulo es una clase y un sistema es una colección de TDA relacionados entre sí.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'En POO, un sistema es una colección de clases relacionadas entre sí; no todas son necesariamente TDA.',
+    },
+    {
+      texto:
+        'Dada la clase Punto de la semana 5, podemos afirmar que la misma define un TDA ya que:',
+      opciones: [
+        'Establece un conjunto de valores cuya representación está encapsulada en una clase y un conjunto de operaciones visibles sobre esos valores.',
+        'No se puede crear un objeto a partir de ella.',
+        'Se puede crear un objeto a partir de ella.',
+        'La firma de sus servicios no se encuentra disponible para las clases Cliente.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Establece un conjunto de valores cuya representación está encapsulada en una clase y un conjunto de operaciones visibles sobre esos valores.',
+    },
+    {
+      texto:
+        'Así como la clase Punto de la semana 5 define un TDA, también lo hace la clase SignosVitales de la semana 6.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'La clase SignosVitales no esconde la representación de sus atributos temperatura y presión.',
+    },
+    {
+      texto:
+        'Dada la clase Punto de la semana 5, y el siguiente programa:\n\npunto12 = Punto(1, 2)\nprint(punto12.x)\n\nEl mismo falla porque la clase Punto no representa internamente el atributo x con el mismo nombre. Aún así, puede obtenerse su valor llamando a:',
+      opciones: [
+        '__x',
+        '_Punto__x',
+        'No puede accederse directamente al valor del atributo x.',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'Puede accederse mediante _Punto__x.',
+    },
+    {
+      texto:
+        'Dada la clase Punto de la semana 5, y el siguiente programa:\n\npunto12 = Punto(1, 2)\nprint(punto12.__x)\n\nEl mismo falla porque:',
+      opciones: [
+        'El atributo __x es interno y no puede ser accedido fuera del ámbito de la clase.',
+        'El atributo __x es interno y únicamente puede ser accedido a través de la consulta obtenerX.',
+        'El atributo __x es interno, aunque puede ser accedido fuera del ámbito de la clase a través de _Punto__x.',
+      ],
+      multiple: true,
+      correcta: [0, 2],
+      respuestaCorrecta:
+        'El atributo __x es interno y no puede ser accedido fuera de la clase, aunque puede accederse con _Punto__x.',
+    },
+    {
+      texto:
+        'Dada la clase Punto de la semana 5, y el siguiente programa:\n\npunto12 = Punto(1, 2)\nprint(punto12.obtenerX())',
+      opciones: [
+        'obtenerX() y _Punto__x son las dos operaciones que el TDA Punto ofrece para acceder al valor del atributo x identificado internamente como __x.',
+        'obtenerX() es la única operación que el TDA Punto ofrece para acceder al valor del atributo x identificado internamente como __x.',
+        'El TDA Punto no ofrece operaciones para acceder al valor del atributo x identificado internamente como __x.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'obtenerX() es la única operación que el TDA Punto ofrece para acceder al valor del atributo __x.',
+    },
+    {
+      texto: 'La clase Alien de la semana 6 no define un TDA.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'La clase Alien no encapsula la representación de sus atributos ni ofrece operaciones sobre ellos.',
+    },
+    {
+      texto:
+        'La siguiente clase define un TDA:\n\nclass Caja:\n    def __init__(self, rueda, opticas, chasis):\n        self.__ruedas = rueda\n        self.__opticas = opticas\n        self.__chasis = chasis',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Dicha clase no ofrece operaciones sobre sus atributos.',
+    },
+    {
+      texto:
+        'La siguiente clase define un TDA:\n\nclass Caja:\n    def __init__(self, rueda, opticas, chasis):\n        self.__ruedas = rueda\n        self.__opticas = opticas\n        self.__chasis = chasis\n\n    def establecerRuedas(self, n):\n        self.__ruedas = n\n\n    def establecerOpticas(self, n):\n        self.__opticas = n\n\n    def establecerChasis(self, n):\n        self.__chasis = n\n\n    def obtenerChasis(self):\n        return self.__chasis\n\n    def obtenerRuedas(self):\n        return self.__ruedas\n\n    def obtenerOpticas(self):\n        return self.__opticas',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'La clase encapsula sus atributos y ofrece operaciones para accederlos, por lo tanto define un TDA.',
+    },
+    {
+      texto:
+        'La siguiente clase define un TDA:\n\nclass Caja:\n    def __init__(self, rueda, opticas, chasis):\n        self.ruedas = rueda\n        self.opticas = opticas\n        self.chasis = chasis\n\n    def establecerRuedas(self, n):\n        self.ruedas = n\n\n    def establecerOpticas(self, n):\n        self.opticas = n\n\n    def establecerChasis(self, n):\n        self.chasis = n\n\n    def obtenerChasis(self):\n        return self.chasis\n\n    def obtenerRuedas(self):\n        return self.ruedas\n\n    def obtenerOpticas(self):\n        return self.opticas',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Dicha clase no encapsula la representación de sus atributos, por lo tanto no define un TDA.',
+    },
+  ],
+  semana9: [
+    {
+      texto:
+        'La composición es una relación entre clases en la que una clase está compuesta por objetos de otras clases.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'La composición permite construir clases complejas a partir de otras más simples.',
+    },
+    {
+      texto: 'En una relación de composición:',
+      opciones: [
+        'Los objetos contenidos pueden existir independientemente del objeto contenedor.',
+        'Los objetos contenidos no pueden existir sin el objeto contenedor.',
+        'El objeto contenedor depende del contenido.',
+        'No hay dependencia entre los objetos involucrados.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Los objetos contenidos no pueden existir sin el objeto contenedor.',
+    },
+    {
+      texto:
+        'En Python, cuando se declara un atributo que almacena otro objeto dentro de una clase, se está implementando:',
+      opciones: ['Herencia', 'Asociación', 'Composición', 'Encapsulamiento'],
+      correcta: 2,
+      respuestaCorrecta: 'Composición',
+    },
+    {
+      texto:
+        '¿Qué tipo de relación existe entre una clase Cliente y una clase Cuenta en un sistema bancario?',
+      opciones: ['Herencia', 'Composición', 'Agregación', 'Abstracción'],
+      correcta: 2,
+      respuestaCorrecta: 'Agregación',
+    },
+    {
+      texto:
+        'En la agregación, el objeto contenido puede existir sin el objeto contenedor.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'En la agregación, los objetos asociados pueden existir independientemente del todo.',
+    },
+    {
+      texto: 'La principal diferencia entre composición y agregación es:',
+      opciones: [
+        'En la composición hay una relación más fuerte, donde la vida del componente depende del contenedor.',
+        'En la agregación el objeto contenido depende completamente del objeto contenedor.',
+        'La composición permite compartir objetos entre clases sin dependencia.',
+        'La agregación impide la creación de objetos independientes.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'En la composición, la vida del componente depende del contenedor.',
+    },
+    {
+      texto:
+        'Si una clase Vehículo contiene un atributo de tipo Motor, y al destruir el Vehículo también se destruye el Motor, estamos frente a:',
+      opciones: ['Herencia', 'Agregación', 'Composición', 'Abstracción'],
+      correcta: 2,
+      respuestaCorrecta: 'Composición',
+    },
+    {
+      texto:
+        'En Python, cuando se declara un objeto dentro del constructor de una clase, ¿qué tipo de relación suele representar?',
+      opciones: ['Composición', 'Herencia', 'Agregación', 'Dependencia'],
+      correcta: 0,
+      respuestaCorrecta: 'Representa una relación de composición.',
+    },
+    {
+      texto:
+        'En POO, la relación entre un objeto Alumno y su objeto Colegio puede considerarse:',
+      opciones: ['Herencia', 'Composición', 'Agregación', 'Abstracción'],
+      correcta: 2,
+      respuestaCorrecta: 'Agregación',
+    },
+    {
+      texto:
+        'Cuando un objeto contiene referencias a varios objetos independientes, se dice que:',
+      opciones: [
+        'Tiene una relación de agregación.',
+        'Tiene una relación de herencia.',
+        'Tiene una relación de composición.',
+        'Está implementando encapsulamiento.',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Tiene una relación de agregación.',
+    },
+    {
+      texto:
+        'En la relación de agregación, si el objeto contenedor deja de existir:',
+      opciones: [
+        'Los objetos contenidos también se destruyen.',
+        'Los objetos contenidos pueden seguir existiendo.',
+        'Los objetos contenidos se vuelven inaccesibles.',
+        'Se destruyen todas las referencias del sistema.',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'Los objetos contenidos pueden seguir existiendo.',
+    },
+    {
+      texto: '¿Cuál de las siguientes opciones describe mejor la composición?',
+      opciones: [
+        'Relación débil donde los objetos pueden vivir independientemente.',
+        'Relación fuerte donde el todo controla la vida de las partes.',
+        'Relación entre clases sin dependencia.',
+        'Relación de herencia.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Es una relación fuerte donde el todo controla la vida de las partes.',
+    },
+    {
+      texto:
+        '¿Cuál es la forma correcta de establecer una relación de composición en Python?',
+      opciones: [
+        'Definir un atributo dentro del constructor que contenga un objeto de otra clase.',
+        'Heredar una clase dentro de otra.',
+        'Importar un módulo dentro de una clase.',
+        'Definir una función que reciba otra clase como parámetro.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Definiendo un atributo dentro del constructor que contenga un objeto de otra clase.',
+    },
+    {
+      texto:
+        'En la composición, el objeto contenido se crea dentro del constructor del objeto contenedor.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'En composición, el objeto contenido es creado dentro del constructor del contenedor.',
+    },
+    {
+      texto:
+        'Si una clase Persona tiene una lista de objetos Mascota, ¿qué tipo de relación hay?',
+      opciones: ['Herencia', 'Composición', 'Agregación', 'Dependencia'],
+      correcta: 2,
+      respuestaCorrecta: 'Agregación',
+    },
+    {
+      texto: "El concepto de 'parte-todo' en POO hace referencia a:",
+      opciones: [
+        'La relación entre superclase y subclase.',
+        'La relación de agregación o composición.',
+        'La relación entre objetos independientes.',
+        'La relación entre atributos y métodos.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Hace referencia a las relaciones de agregación o composición.',
+    },
+    {
+      texto:
+        'En una relación de composición, la eliminación del objeto contenedor implica:',
+      opciones: [
+        'Que los objetos contenidos continúan existiendo.',
+        'Que los objetos contenidos también se destruyen.',
+        'Que los objetos contenidos cambian de clase.',
+        'Que se reinicia la referencia de los objetos contenidos.',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'Los objetos contenidos también se destruyen.',
+    },
+    {
+      texto:
+        'En la agregación, la referencia al objeto contenido se suele pasar:',
+      opciones: [
+        'Por valor en el constructor del contenedor.',
+        'Como parámetro desde fuera de la clase contenedora.',
+        'Por copia dentro del contenedor.',
+        'Por herencia directa.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'En la agregación, el objeto se pasa como parámetro externo al contenedor.',
+    },
+    {
+      texto:
+        'Cuando una clase Alarma incluye un atributo de tipo Sensor creado dentro del constructor, se trata de:',
+      opciones: ['Agregación', 'Composición', 'Dependencia', 'Herencia'],
+      correcta: 1,
+      respuestaCorrecta: 'Composición',
+    },
+    {
+      texto:
+        'Cuando una clase Auto recibe un objeto Motor como parámetro en su constructor, se trata de:',
+      opciones: ['Composición', 'Agregación', 'Dependencia', 'Encapsulamiento'],
+      correcta: 1,
+      respuestaCorrecta: 'Agregación',
+    },
+  ],
 };

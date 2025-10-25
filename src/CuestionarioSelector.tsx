@@ -23,8 +23,12 @@ const cuestionarios_so = [
 const cuestionarios_prog2 = [
   { semana: 1, preguntas: prog2.semana1 },
   { semana: 2, preguntas: prog2.semana2 },
-  { semana: 3, preguntas: prog2.semana3 },
   { semana: 3, preguntas: prog2.semana3_2 },
+  { semana: 4, preguntas: prog2.semana4 },
+  { semana: 5, preguntas: prog2.semana5 },
+  { semana: 6, preguntas: prog2.semana6 },
+  { semana: 7, preguntas: prog2.semana7 },
+  { semana: 9, preguntas: prog2.semana9 },
 ];
 
 const cuestionarios_arq = [
