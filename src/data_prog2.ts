@@ -1891,96 +1891,63 @@ print(pelota2.obtenerNombre())
   parcial: [
     {
       texto:
-        'Dado el siguiente diagrama de clases, implemente la clase Profesor con sus correspondientes atributos y servicios. Considere 65 la edad jubilatoria.',
-      opciones: [],
-      correcta: [],
-      respuestaCorrecta: `class Profesor():
-    #Atributos de clase
-    edadJubilatoria = 65
-    #Atributos de instancia
-    def __init__(self, leg, ed, ded):
-        self.legajo = leg
-        self.edad = ed
-        self.dedicacion = ded
-    #Comandos
-    def establecerLegajo(self, leg):
-        self.legajo = leg
-    def establecerEdad(self, ed):
-        self.edad = ed
-    def establecerDedicacion(self, ded):
-        self.dedicacion = ded
-    def copy(self, prof):
-        self.legajo = prof.obtenerLegajo()
-        self.edad = prof.obtenerEdad()
-        self.dedicacion = prof.obtenerDedicacion()
-    #Consultas
-    def obtenerLegajo(self):
-        return self.legajo
-    def obtenerEdad(self):
-        return self.edad
-    def obtenerDedicacion(self):
-        return self.dedicacion
-    def obtenerEdadJubilatoria(self):
-        return self.edadJubilatoria
-    def equals(self, prof):
-        return self.legajo == prof.obtenerLegajo() and self.edad == prof.obtenerEdad() and self.dedicacion == prof.obtenerDedicacion()
-    def clone(self):
-        profe = Profesor(self.legajo, self.edad, self.dedicacion)
-        return profe`,
-    },
-    {
-      texto:
-        'Dado el siguiente programa con objetos Punto, indique los valores de las expresiones según la implementación de equals() en profundidad.',
+        'Dado el siguiente diagrama de clases de Profesor, implemente la clase Profesor con sus correspondientes atributos y servicios. Considere 65 la edad jubilatoria.',
       opciones: [
-        'p1==p2',
-        'p1.equals(p2)',
-        'p2==p3',
-        'p3.equals(p1)',
-        'p2.equals(p1)',
-        'p1.equals(p4)',
-        'p4==p2',
-        'p5==p4',
-        'p3.equals(p5)',
-        'p4.equals(p3)',
+        'class Profesor { //Atributos de clase static edadJubilatoria = 65; //Atributos de instancia constructor(public legajo: number, public edad: number, public dedicacion: string) {} //Comandos establecerLegajo(leg: number) { this.legajo = leg; } establecerEdad(ed: number) { this.edad = ed; } establecerDedicacion(ded: string) { this.dedicacion = ded; } copy(prof: Profesor) { this.legajo = prof.obtenerLegajo(); this.edad = prof.obtenerEdad(); this.dedicacion = prof.obtenerDedicacion(); } //Consultas obtenerLegajo(): number { return this.legajo; } obtenerEdad(): number { return this.edad; } obtenerDedicacion(): string { return this.dedicacion; } obtenerEdadJubilatoria(): number { return Profesor.edadJubilatoria; } equals(prof: Profesor): boolean { return this.legajo === prof.obtenerLegajo() && this.edad === prof.obtenerEdad() && this.dedicacion === prof.obtenerDedicacion(); } clone(): Profesor { return new Profesor(this.legajo, this.edad, this.dedicacion); } }',
+        'Implementación incompleta sin métodos copy, equals y clone',
+        'Implementación con errores en los atributos de clase',
       ],
-      correcta: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      correcta: 0,
       respuestaCorrecta:
-        'False, False, False, True, False, False, False, True, False, False',
+        'La implementación completa incluye todos los métodos: copy, equals, clone y los comandos y consultas necesarios.',
     },
     {
       texto:
-        'Implemente el método cantAutos() que retorna la cantidad de autos que puede armar el robot con las piezas disponibles. Armar un auto consume 70 unidades de energía, 4 ruedas, 6 ópticas y 1 chasis.',
-      opciones: [],
-      correcta: [],
-      respuestaCorrecta: `def cantAutos(self):
-    ruedas = self.ruedas // 4
-    opticas = self.opticas // 6 
-    chasis = self.chasis 
-    energia = self.energia // 70 
-    autos = min(ruedas, opticas, chasis, energia)
-    return autos`,
-    },
-    {
-      texto:
-        'Implemente el método clone() de la clase Robot, que crea y retorna un robot con los mismos valores en cada uno de los atributos que el robot que recibió el mensaje.',
-      opciones: [],
-      correcta: [],
-      respuestaCorrecta: `def clone(self):
-    robot = Robot(self.nroSerie, Caja(self.ruedas, self.opticas, self.chasis))
-    return robot`,
-    },
-    {
-      texto: 'Elegir la opción que corresponda.',
+        'Considere el siguiente programa con puntos: p1 = Punto(2.0, 5.0), p2 = Punto(3.0, 5.0), p3 = Punto(2.0, 5.0), p4 = p2.clone(), p5 = p4. Considerando que en la clase Punto el método clone() se encuentra implementado e equals() implementado en profundidad, muestre los valores que computan las siguientes expresiones',
       opciones: [
-        'favorece la integración de softwares para crear nuevos sistemas',
+        '1. False, 2. False, 3. False, 4. True, 5. False, 6. False, 7. False, 8. True, 9. False, 10. False',
+        '1. True, 2. True, 3. False, 4. True, 5. False, 6. True, 7. False, 8. True, 9. False, 10. True',
+        '1. False, 2. True, 3. True, 4. False, 5. True, 6. False, 7. True, 8. False, 9. True, 10. False',
       ],
-      correcta: [0],
+      correcta: 0,
       respuestaCorrecta:
+        '1. False, 2. False, 3. False, 4. True, 5. False, 6. False, 7. False, 8. True, 9. False, 10. False',
+    },
+    {
+      texto:
+        'Se requiere que se implemente el método cantAutos() que retornará la cantidad de autos que puede armar el robot con las piezas que tiene disponibles. Armar un auto consume 70 unidades de energía, 4 ruedas, 6 ópticas y 1 chasis.',
+      opciones: [
+        'def cantAutos(self): return min(self.ruedas // 4, self.opticas // 6, self.chasis, self.energia // 70)',
+        'def cantAutos(self): return (self.ruedas + self.opticas + self.chasis + self.energia) // 81',
+        'def cantAutos(self): autos = 0; while self.ruedas >= 4 and self.opticas >= 6 and self.chasis >= 1 and self.energia >= 70: autos += 1; self.ruedas -= 4; self.opticas -= 6; self.chasis -= 1; self.energia -= 70; return autos',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'El método correcto calcula el mínimo entre la cantidad disponible de cada recurso dividido por lo que consume un auto.',
+    },
+    {
+      texto:
+        'Se requiere que se implemente el método clone() que crea y retorna un robot con los mismos valores en cada uno de los atributos que el robot que recibió el mensaje.',
+      opciones: [
+        'def clone(self): return Robot(self.nroSerie, Caja(self.ruedas, self.opticas, self.chasis))',
+        'def clone(self): nuevo = Robot(self.nroSerie, Caja(0,0,0)); nuevo.energia = self.energia; return nuevo',
+        'def clone(self): return self',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'El método clone debe crear un nuevo objeto con los mismos valores de atributos, incluyendo la energía.',
+    },
+    {
+      texto:
         'Composición modular: favorece la integración de softwares para crear nuevos sistemas',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'Verdadero - La composición modular favorece la integración de softwares para crear nuevos sistemas',
     },
     {
       texto:
-        'Enlace los enunciados con los Factores que determinan la Calidad de Software.',
+        'Enlace los enunciados con los Factores que determinan la Calidad de Software',
       descripciones: [
         'Esfuerzo requerido para que partes de una aplicación sean utilizadas en otras aplicaciones.',
         'Grado en que una aplicación o sistema puede ser transferido a otro hardware o sistema operativo.',
@@ -2007,7 +1974,7 @@ print(pelota2.obtenerNombre())
     },
     {
       texto:
-        'Una los Criterios con los Factores de Calidad que estos favorecen.',
+        'Una los Criterios con los Factores de Calidad que estos favorecen',
       descripciones: [
         'Protección Modular',
         'Entendimiento Modular',
@@ -2019,10 +1986,10 @@ print(pelota2.obtenerNombre())
       tipo: 'ordenar',
       multiple: true,
       respuestaCorrecta:
-        'Protección Modular → Robustez, Entendimiento Modular → Mantenimiento, Composición Modular → Reusabilidad, Continuidad Modular → Extensibilidad',
+        'Robustez, Mantenimiento, Reusabilidad, Extensibilidad',
     },
     {
-      texto: 'Una los términos con sus respectivas definiciones.',
+      texto: 'Una los términos con sus respectivas definiciones',
       descripciones: [
         'Formada por la signatura de los servicios públicos.',
         'Servicio que modifica el valor de al menos un atributo.',
@@ -2047,9 +2014,9 @@ print(pelota2.obtenerNombre())
     },
     {
       texto:
-        'Enlace los 5 principios de construcción de software con sus respectivas definiciones.',
+        'Enlace los 5 principios de construcción de software con sus respectivas definiciones',
       descripciones: [
-        'No debe revelarse la forma en que los servicios ofrecidos por un módulo son implementados.',
+        'No debe revelarse la forma en los servicios ofrecidos por un módulo son implementados.',
         'Propiedades que describen a un módulo capaz de ser extendido por el usuario o utilizado por otro módulo.',
         'Un único módulo debe conocer una lista exhaustiva de alternativas a utilizarse por el programa.',
         'La documentación sobre un módulo debe estar contenida en su propio código.',
@@ -2070,15 +2037,19 @@ print(pelota2.obtenerNombre())
     },
     {
       texto:
-        'Dado el código que duplica un regalo diario hasta alcanzar un millón, indique la salida esperada.',
-      opciones: ['Día 27, regalo $671,088.64, total $1,342,177.27'],
-      correcta: [0],
+        'Hoy te regalan un centavo. Mañana, recibirás el doble (2 centavos). Al próximo día, volverás a recibir el doble de ello (4 centavos). Finalmente, una vez que hayas recibido un millón o más, no recibirás más regalos. ¿Cuál es la salida esperada del código?',
+      opciones: [
+        'En el día 27, tu regalo de $671,088.64 te dejará un total de $1,342,177.27',
+        'En el día 20, tu regalo de $524,288.00 te dejará un total de $1,048,575.00',
+        'En el día 30, tu regalo de $1,073,741.82 te dejará un total de $2,147,483.64',
+      ],
+      correcta: 0,
       respuestaCorrecta:
         'En el día 27, tu regalo de $671,088.64 te dejará un total de $1,342,177.27',
     },
     {
       texto:
-        'Dadas las clases PresionArterial y SignosVitales, indique qué objetos están asociados.',
+        'Dadas las clases PresionArterial y SignosVitales, evalúe la ejecución del programa: pression1 = PresionArterial(90,185); pression2 = pression1; sv1 = SignosVitales(36.5,pression1); sv2 = SignosVitales(36.5,pression2). Los objetos referenciados por sv1 y sv2 están asociados con:',
       opciones: [
         'El mismo objeto de tipo PresionArterial',
         'Objetos equivalentes de tipo PresionArterial',
@@ -2089,135 +2060,145 @@ print(pelota2.obtenerNombre())
     },
     {
       texto:
-        'En un esquema de clases proveedoras y clientes, ¿qué debe conocer cada clase?',
+        'En un esquema de clases proveedoras y clases clientes, cada clase:',
       opciones: [
-        'No necesita conocer los servicios de sus proveedoras, pero sí conocer quienes son sus clientes.',
-        'Debe conocer los servicios de sus proveedoras, pero no necesita conocer quienes son sus clientes.',
-        'Debe conocer los servicios de sus proveedoras pero no cómo están implementados.',
-        'No necesita conocer los servicios de sus proveedoras ni quienes son sus clientes.',
+        'No necesita conocer los servicios que brindan sus clases proveedoras, pero si conocer quienes son sus clientes',
+        'Debe conocer los servicios que brindan sus clases proveedoras, pero no necesita conocer quienes son sus clientes',
+        'Debe conocer los servicios que brindan sus clases proveedoras pero no cómo estos están implementados',
+        'No necesita conocer los servicios que brindan sus clases proveedoras ni quienes son sus clientes',
       ],
-      multiple: true,
       correcta: [1, 2],
+      multiple: true,
       respuestaCorrecta:
-        'Debe conocer los servicios de sus clases proveedoras, pero no necesita conocer quienes son sus clientes; y debe conocer los servicios pero no cómo están implementados.',
+        'Debe conocer los servicios que brindan sus clases proveedoras, pero no necesita conocer quienes son sus clientes, Debe conocer los servicios que brindan sus clases proveedoras pero no cómo estos están implementados',
     },
     {
       texto:
-        'Seleccione la combinación correcta de factores de calidad y modularidad.',
+        'Elija, entre las siguientes combinaciones, la opción que crea correcta sobre calidad de software',
       opciones: [
-        'Correctitud & Extensibilidad - Modularidad / Robustez & Reusabilidad - Confiabilidad',
-        'Correctitud & Robustez - Modularidad / Extensibilidad & Reusabilidad - Confiabilidad',
-        'Correctitud & Robustez - Confiabilidad / Extensibilidad & Reusabilidad - Modularidad',
-        'Reusabilidad & Robustez - Confiabilidad / Extensibilidad & Correctitud - Modularidad',
+        'Correctitud & Extensibilidad - Modularidad | Robustez & Reusabilidad - Confiabilidad',
+        'Correctitud & Robustez - Modularidad | Extensibilidad & Reusabilidad - Confiabilidad',
+        'Correctitud & Robustez - Confiabilidad | Extensibilidad & Reusabilidad - Modularidad',
+        'Reusabilidad & Robustez - Confiabilidad | Extensibilidad & Correctitud - Modularidad',
       ],
       correcta: 2,
       respuestaCorrecta:
-        'Correctitud y Robustez aportan a la Confiabilidad; Extensibilidad y Reusabilidad a la Modularidad.',
+        'Correctitud & Robustez - Confiabilidad | Extensibilidad & Reusabilidad - Modularidad',
     },
     {
       texto:
-        'Seleccione las sentencias correctas sobre criterios de modularidad.',
+        'Seleccione las sentencias que cree son correctas sobre criterios de modularidad',
       opciones: [
-        'El Entendimiento Modular se relaciona con la facilidad para comprender un módulo con solo leer su código.',
-        'La Protección Modular especifica que los errores en un módulo no se propagan al resto.',
-        'La Descomposición Modular implica descomponer en módulos dependientes.',
-        'La Continuidad Modular especifica que los cambios que impactan un módulo se propagan al resto.',
-        'La Composición Modular trata de crear nuevas unidades de software combinando otras existentes.',
+        'El Entendimiento Modular se relaciona a la facilidad para comprender el comportamiento de un módulo con solo leer su código',
+        'En un programa donde se satisface el criterio de Protección Modular, los cambios que impactan un módulo NO se propagan al resto',
+        'La Descomposición Modular sigue la idea de poder descomponer un programa en módulos menos complejos, rigurosamente dependientes unos de otros',
+        'El criterio de Continuidad Modular especifica que los cambios que impactan un módulo se propaguen al resto',
+        'La Composición Modular trata de la creación de nuevas unidades de software creadas a partir de la combinación de otras ya existentes',
       ],
-      multiple: true,
       correcta: [0, 4],
+      multiple: true,
       respuestaCorrecta:
-        'El Entendimiento Modular facilita la comprensión del código; la Composición Modular permite combinar elementos existentes para crear nuevos sistemas.',
+        'El Entendimiento Modular se relaciona a la facilidad para comprender el comportamiento de un módulo con solo leer su código, La Composición Modular trata de la creación de nuevas unidades de software creadas a partir de la combinación de otras ya existentes',
     },
     {
       texto:
-        'Dada la clase NaveEspacial, indique qué sucede al ejecutar el programa.',
+        "¿Qué sucede si se ejecuta el programa con la clase NaveEspacial? nave_espacial1 = NaveEspacial('R',100); print('Combustible de Nave 1: ' + nave_espacial1.obtenerCombustible()); nave_espacial1.agregarCombustible(700); print('Combustible de Nave 1: ' + str(nave_espacial1.obtenerCombustible()))",
       opciones: [
         'Funciona normalmente',
-        'La primer instrucción print falla porque se intenta concatenar una cadena con un entero.',
-        'Arroja error porque el método __init__ espera parámetros distintos.',
+        'La primer instrucción print falla porque se intenta concatenar una cadena con un valor entero',
+        'Arroja un error, ya que el método __init__ espera que se proporcionen los parámetros co y comb',
       ],
       correcta: 1,
       respuestaCorrecta:
-        'La primer instrucción print falla porque se intenta concatenar una cadena con un valor entero.',
+        'La primer instrucción print falla porque se intenta concatenar una cadena con un valor entero',
     },
     {
       texto:
-        'Dada la clase Robot, indique el valor del atributo energia después de ejecutar el programa.',
-      opciones: ['50 50', '100 50', '100 100', 'Error', '50 100'],
-      correcta: 2,
-      respuestaCorrecta: '100 100',
-    },
-    {
-      texto:
-        'Dada la clase Punto, indique por qué la última instrucción imprime True.',
+        "Dada la clase robot.py, ¿Cuál es el valor del atributo energía de cada objeto luego de ejecutar: r1 = Robot('Fabian'); r2 = Robot('Rosalia'); r1.energia=50; r2.energia=100; r1.recargar(); print(r1.obtenerEnergia()); print(r2.obtenerEnergia())",
       opciones: [
-        'punto12 y punto12bis hacen referencia al mismo objeto.',
-        'punto12 y punto12bis hacen referencia a objetos distintos pero el valor del atributo __x coincide.',
-        'punto12 y punto12bis hacen referencia a objetos distintos y sus estados internos son equivalentes.',
+        '50, 50',
+        '100, 50',
+        '100, 100',
+        'El programa no funciona, arroja un error',
+        '50, 100',
+      ],
+      correcta: 2,
+      respuestaCorrecta: '100, 100',
+    },
+    {
+      texto:
+        'Dada la clase punto.py, la última instrucción print(punto12.equals(punto12bis)) imprime True porque:',
+      opciones: [
+        'punto12 y punto12bis hacen referencia al mismo objeto',
+        'punto12 y punto12bis hacen referencia a objetos distintos, pero el valor del atributo __x de ambos coincide',
+        'punto12 y punto12bis hacen referencia a objetos distintos y sus estados internos son equivalentes',
       ],
       correcta: 2,
       respuestaCorrecta:
-        'punto12 y punto12bis hacen referencia a objetos distintos y sus estados internos son equivalentes.',
+        'punto12 y punto12bis hacen referencia a objetos distintos y sus estados internos son equivalentes',
     },
     {
       texto:
-        'Explique por qué el siguiente programa con os.path falla cuando el archivo no existe.',
+        'El siguiente programa para verificar si un archivo existe no funciona cuando el archivo no existe y lanza un error. ¿Por qué?',
       opciones: [
-        'El archivo debe existir sí o sí.',
-        'La sentencia or debería ser cambiada por una sentencia and.',
-        'Las sentencias if/else deben estar rodeadas por llaves {}.',
+        'El archivo debe existir si o si',
+        'La sentencia or debería ser cambiada por una sentencia and',
+        'Las sentencias contenidas en bloques if / else deben precederse y estar seguidas de llaves ({})',
       ],
       correcta: 1,
       respuestaCorrecta:
-        "El error ocurre porque la condición usa 'or' en lugar de 'and'.",
+        'La sentencia or debería ser cambiada por una sentencia and',
     },
     {
-      texto: 'Dado el programa con objetos Profesor, indique la salida.',
-      opciones: ['1253', '1254', '1255'],
+      texto:
+        "Dado el diagrama de clase Profesor, ¿Cuál es la salida del siguiente programa? p1 = Profesor(1253, 38, 'P'); p2 = p1.clone(); p3 = Profesor(1254, 35, 'E'); p3.copy(p2); p1.establecerLegajo(1255); p3 = p2; print(p3.obtenerLegajo())",
+      opciones: ['1253', '1254', '1255', 'Error'],
       correcta: 0,
-      respuestaCorrecta: 'La salida es 1253',
+      respuestaCorrecta: '1253',
     },
     {
-      texto: 'Indique la salida del programa factorial recursivo.',
-      opciones: ['24', '60', '120'],
-      correcta: 2,
-      respuestaCorrecta: 'La salida es 120',
-    },
-    {
-      texto:
-        'Cuando una clase está asociada a otra, la igualdad solo puede implementarse superficialmente.',
-      opciones: ['Verdadero', 'Falso'],
-      correcta: 1,
-      respuestaCorrecta: 'Falso, también puede implementarse en profundidad.',
-    },
-    {
-      texto: "El programa con PelotaConNombre imprime 'Pelota 1' y 'Pelota 2'.",
-      opciones: ['Verdadero', 'Falso'],
-      correcta: 1,
-      respuestaCorrecta: "Falso, imprime 'Pelota 2' y 'Pelota 2'.",
+      texto: '¿Cuál es la salida del siguiente programa con función factorial?',
+      opciones: ['120', '720', '6', 'Error'],
+      correcta: 0,
+      respuestaCorrecta: '120',
     },
     {
       texto:
-        '¿Las funciones pueden ser llamadas cuantas veces sean necesarias?',
+        'Cuando una clase esta asociada a otra la implementación de la igualdad se puede hacer únicamente en forma superficial.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Falso - Como se vio en clase, se puede hacer también en profundidad.',
+    },
+    {
+      texto: 'El programa con PelotaConNombre imprime: Pelota 1, Pelota 2',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Falso - La salida de este programa es: Pelota 2, Pelota 2',
+    },
+    {
+      texto:
+        '¿Las funciones son bloques de código que pueden ser llamadas cuantas veces sean necesarias?',
       opciones: ['Verdadero', 'Falso'],
       correcta: 0,
       respuestaCorrecta: 'Verdadero',
     },
     {
       texto:
-        'Los comentarios en Python deben estar en un programa para que este pueda ejecutarse.',
+        'Los comentarios en Python deben estar en un programa para que este pueda ejecutarse',
       opciones: ['Verdadero', 'Falso'],
       correcta: 1,
       respuestaCorrecta:
-        'Falso, los comentarios son documentación, no afectan la ejecución.',
+        'Falso - Los comentarios son una mera forma de documentación, que sirve como guía a los programadores para comprender el propósito y comportamiento de los módulos y modelos que componen un programa.',
     },
     {
       texto:
-        'Un tipo abstracto de datos es un tipo de datos que consta de datos y operaciones sobre ellos, definido por el programador, y modela una entidad real.',
+        'Un tipo abstracto de datos es un tipo de datos que: Consta de Datos y Operaciones que pueden realizarse sobre estos datos, Es definido por el programador, Permite hasta cierto punto modelar el comportamiento de una entidad real',
       opciones: ['Verdadero', 'Falso'],
       correcta: 0,
-      respuestaCorrecta: 'Verdadero',
+      respuestaCorrecta:
+        'Verdadero - Un Tipo Abstracto de Datos o TDA está constituido por una estructura de datos y operaciones que se pueden realizar sobre esos datos, y está definido por el programador.',
     },
   ],
 };
