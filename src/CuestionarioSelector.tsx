@@ -29,6 +29,7 @@ const cuestionarios_prog2 = [
   { semana: 6, preguntas: prog2.semana6 },
   { semana: 7, preguntas: prog2.semana7 },
   { semana: 9, preguntas: prog2.semana9 },
+  { semana: 0, preguntas: prog2.parcial },
 ];
 
 const cuestionarios_arq = [

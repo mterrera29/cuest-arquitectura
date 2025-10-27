@@ -1888,4 +1888,336 @@ print(pelota2.obtenerNombre())
         'Aunque ambos objetos de tipo Robot de los sectores O y l cuentan con el mismo estado interno, estos se ubican en posiciones de memoria distintas.',
     },
   ],
+  parcial: [
+    {
+      texto:
+        'Dado el siguiente diagrama de clases, implemente la clase Profesor con sus correspondientes atributos y servicios. Considere 65 la edad jubilatoria.',
+      opciones: [],
+      correcta: [],
+      respuestaCorrecta: `class Profesor():
+    #Atributos de clase
+    edadJubilatoria = 65
+    #Atributos de instancia
+    def __init__(self, leg, ed, ded):
+        self.legajo = leg
+        self.edad = ed
+        self.dedicacion = ded
+    #Comandos
+    def establecerLegajo(self, leg):
+        self.legajo = leg
+    def establecerEdad(self, ed):
+        self.edad = ed
+    def establecerDedicacion(self, ded):
+        self.dedicacion = ded
+    def copy(self, prof):
+        self.legajo = prof.obtenerLegajo()
+        self.edad = prof.obtenerEdad()
+        self.dedicacion = prof.obtenerDedicacion()
+    #Consultas
+    def obtenerLegajo(self):
+        return self.legajo
+    def obtenerEdad(self):
+        return self.edad
+    def obtenerDedicacion(self):
+        return self.dedicacion
+    def obtenerEdadJubilatoria(self):
+        return self.edadJubilatoria
+    def equals(self, prof):
+        return self.legajo == prof.obtenerLegajo() and self.edad == prof.obtenerEdad() and self.dedicacion == prof.obtenerDedicacion()
+    def clone(self):
+        profe = Profesor(self.legajo, self.edad, self.dedicacion)
+        return profe`,
+    },
+    {
+      texto:
+        'Dado el siguiente programa con objetos Punto, indique los valores de las expresiones según la implementación de equals() en profundidad.',
+      opciones: [
+        'p1==p2',
+        'p1.equals(p2)',
+        'p2==p3',
+        'p3.equals(p1)',
+        'p2.equals(p1)',
+        'p1.equals(p4)',
+        'p4==p2',
+        'p5==p4',
+        'p3.equals(p5)',
+        'p4.equals(p3)',
+      ],
+      correcta: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      respuestaCorrecta:
+        'False, False, False, True, False, False, False, True, False, False',
+    },
+    {
+      texto:
+        'Implemente el método cantAutos() que retorna la cantidad de autos que puede armar el robot con las piezas disponibles. Armar un auto consume 70 unidades de energía, 4 ruedas, 6 ópticas y 1 chasis.',
+      opciones: [],
+      correcta: [],
+      respuestaCorrecta: `def cantAutos(self):
+    ruedas = self.ruedas // 4
+    opticas = self.opticas // 6 
+    chasis = self.chasis 
+    energia = self.energia // 70 
+    autos = min(ruedas, opticas, chasis, energia)
+    return autos`,
+    },
+    {
+      texto:
+        'Implemente el método clone() de la clase Robot, que crea y retorna un robot con los mismos valores en cada uno de los atributos que el robot que recibió el mensaje.',
+      opciones: [],
+      correcta: [],
+      respuestaCorrecta: `def clone(self):
+    robot = Robot(self.nroSerie, Caja(self.ruedas, self.opticas, self.chasis))
+    return robot`,
+    },
+    {
+      texto: 'Elegir la opción que corresponda.',
+      opciones: [
+        'favorece la integración de softwares para crear nuevos sistemas',
+      ],
+      correcta: [0],
+      respuestaCorrecta:
+        'Composición modular: favorece la integración de softwares para crear nuevos sistemas',
+    },
+    {
+      texto:
+        'Enlace los enunciados con los Factores que determinan la Calidad de Software.',
+      descripciones: [
+        'Esfuerzo requerido para que partes de una aplicación sean utilizadas en otras aplicaciones.',
+        'Grado en que una aplicación o sistema puede ser transferido a otro hardware o sistema operativo.',
+        'Cantidad de recursos que necesita una aplicación o sistema para realizar las operaciones con tiempos de respuesta óptimos.',
+        'Grado con que puede controlarse el acceso al software y/o a los datos de un sistema a personal no autorizado.',
+        'Esfuerzo requerido para aprender el manejo de una aplicación, trabajar con ella, introducir datos y conseguir resultados.',
+        'Esfuerzo necesario para realizar modificaciones sobre una aplicación o sistema que ya se encuentra en funcionamiento.',
+        'Grado en que una aplicación o sistema cumple con la definición y lo encomendado por el cliente.',
+      ],
+      opciones: [
+        'Reusabilidad',
+        'Portabilidad',
+        'Eficiencia',
+        'Integridad',
+        'Facilidad de uso',
+        'Flexibilidad',
+        'Corrección',
+      ],
+      correcta: [0, 1, 2, 3, 4, 5, 6],
+      tipo: 'ordenar',
+      multiple: true,
+      respuestaCorrecta:
+        'Reusabilidad, Portabilidad, Eficiencia, Integridad, Facilidad de uso, Flexibilidad, Corrección',
+    },
+    {
+      texto:
+        'Una los Criterios con los Factores de Calidad que estos favorecen.',
+      descripciones: [
+        'Protección Modular',
+        'Entendimiento Modular',
+        'Composición Modular',
+        'Continuidad Modular',
+      ],
+      opciones: ['Robustez', 'Mantenimiento', 'Reusabilidad', 'Extensibilidad'],
+      correcta: [0, 1, 2, 3],
+      tipo: 'ordenar',
+      multiple: true,
+      respuestaCorrecta:
+        'Protección Modular → Robustez, Entendimiento Modular → Mantenimiento, Composición Modular → Reusabilidad, Continuidad Modular → Extensibilidad',
+    },
+    {
+      texto: 'Una los términos con sus respectivas definiciones.',
+      descripciones: [
+        'Formada por la signatura de los servicios públicos.',
+        'Servicio que modifica el valor de al menos un atributo.',
+        'Mantienen valores compartidos por todos los objetos de una clase.',
+        'Propiedad o cualidad relevante que caracteriza a todos los objetos de una clase.',
+        'Representa la abstracción del conjunto de objetos o instancias.',
+        'Dependiendo del lenguaje, se usa para crear un objeto o inicializar la instancia de una clase.',
+      ],
+      opciones: [
+        'Interfaz',
+        'Comando',
+        'Atributos de clase',
+        'Atributo',
+        'Nombre',
+        'Constructor',
+      ],
+      correcta: [0, 1, 2, 3, 4, 5],
+      tipo: 'ordenar',
+      multiple: true,
+      respuestaCorrecta:
+        'Interfaz, Comando, Atributos de clase, Atributo, Nombre, Constructor',
+    },
+    {
+      texto:
+        'Enlace los 5 principios de construcción de software con sus respectivas definiciones.',
+      descripciones: [
+        'No debe revelarse la forma en que los servicios ofrecidos por un módulo son implementados.',
+        'Propiedades que describen a un módulo capaz de ser extendido por el usuario o utilizado por otro módulo.',
+        'Un único módulo debe conocer una lista exhaustiva de alternativas a utilizarse por el programa.',
+        'La documentación sobre un módulo debe estar contenida en su propio código.',
+        'Los módulos deben corresponderse con las unidades sintácticas que ofrece el lenguaje utilizado.',
+      ],
+      opciones: [
+        'Acceso Uniforme',
+        'Abierto-Cerrado',
+        'Cambio Simple',
+        'Auto-documentación',
+        'Unidad Modular Lingüística',
+      ],
+      correcta: [0, 1, 2, 3, 4],
+      tipo: 'ordenar',
+      multiple: true,
+      respuestaCorrecta:
+        'Acceso Uniforme, Abierto-Cerrado, Cambio Simple, Auto-documentación, Unidad Modular Lingüística',
+    },
+    {
+      texto:
+        'Dado el código que duplica un regalo diario hasta alcanzar un millón, indique la salida esperada.',
+      opciones: ['Día 27, regalo $671,088.64, total $1,342,177.27'],
+      correcta: [0],
+      respuestaCorrecta:
+        'En el día 27, tu regalo de $671,088.64 te dejará un total de $1,342,177.27',
+    },
+    {
+      texto:
+        'Dadas las clases PresionArterial y SignosVitales, indique qué objetos están asociados.',
+      opciones: [
+        'El mismo objeto de tipo PresionArterial',
+        'Objetos equivalentes de tipo PresionArterial',
+        'Objetos distintos de tipo PresionArterial',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'El mismo objeto de tipo PresionArterial',
+    },
+    {
+      texto:
+        'En un esquema de clases proveedoras y clientes, ¿qué debe conocer cada clase?',
+      opciones: [
+        'No necesita conocer los servicios de sus proveedoras, pero sí conocer quienes son sus clientes.',
+        'Debe conocer los servicios de sus proveedoras, pero no necesita conocer quienes son sus clientes.',
+        'Debe conocer los servicios de sus proveedoras pero no cómo están implementados.',
+        'No necesita conocer los servicios de sus proveedoras ni quienes son sus clientes.',
+      ],
+      multiple: true,
+      correcta: [1, 2],
+      respuestaCorrecta:
+        'Debe conocer los servicios de sus clases proveedoras, pero no necesita conocer quienes son sus clientes; y debe conocer los servicios pero no cómo están implementados.',
+    },
+    {
+      texto:
+        'Seleccione la combinación correcta de factores de calidad y modularidad.',
+      opciones: [
+        'Correctitud & Extensibilidad - Modularidad / Robustez & Reusabilidad - Confiabilidad',
+        'Correctitud & Robustez - Modularidad / Extensibilidad & Reusabilidad - Confiabilidad',
+        'Correctitud & Robustez - Confiabilidad / Extensibilidad & Reusabilidad - Modularidad',
+        'Reusabilidad & Robustez - Confiabilidad / Extensibilidad & Correctitud - Modularidad',
+      ],
+      correcta: 2,
+      respuestaCorrecta:
+        'Correctitud y Robustez aportan a la Confiabilidad; Extensibilidad y Reusabilidad a la Modularidad.',
+    },
+    {
+      texto:
+        'Seleccione las sentencias correctas sobre criterios de modularidad.',
+      opciones: [
+        'El Entendimiento Modular se relaciona con la facilidad para comprender un módulo con solo leer su código.',
+        'La Protección Modular especifica que los errores en un módulo no se propagan al resto.',
+        'La Descomposición Modular implica descomponer en módulos dependientes.',
+        'La Continuidad Modular especifica que los cambios que impactan un módulo se propagan al resto.',
+        'La Composición Modular trata de crear nuevas unidades de software combinando otras existentes.',
+      ],
+      multiple: true,
+      correcta: [0, 4],
+      respuestaCorrecta:
+        'El Entendimiento Modular facilita la comprensión del código; la Composición Modular permite combinar elementos existentes para crear nuevos sistemas.',
+    },
+    {
+      texto:
+        'Dada la clase NaveEspacial, indique qué sucede al ejecutar el programa.',
+      opciones: [
+        'Funciona normalmente',
+        'La primer instrucción print falla porque se intenta concatenar una cadena con un entero.',
+        'Arroja error porque el método __init__ espera parámetros distintos.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'La primer instrucción print falla porque se intenta concatenar una cadena con un valor entero.',
+    },
+    {
+      texto:
+        'Dada la clase Robot, indique el valor del atributo energia después de ejecutar el programa.',
+      opciones: ['50 50', '100 50', '100 100', 'Error', '50 100'],
+      correcta: 2,
+      respuestaCorrecta: '100 100',
+    },
+    {
+      texto:
+        'Dada la clase Punto, indique por qué la última instrucción imprime True.',
+      opciones: [
+        'punto12 y punto12bis hacen referencia al mismo objeto.',
+        'punto12 y punto12bis hacen referencia a objetos distintos pero el valor del atributo __x coincide.',
+        'punto12 y punto12bis hacen referencia a objetos distintos y sus estados internos son equivalentes.',
+      ],
+      correcta: 2,
+      respuestaCorrecta:
+        'punto12 y punto12bis hacen referencia a objetos distintos y sus estados internos son equivalentes.',
+    },
+    {
+      texto:
+        'Explique por qué el siguiente programa con os.path falla cuando el archivo no existe.',
+      opciones: [
+        'El archivo debe existir sí o sí.',
+        'La sentencia or debería ser cambiada por una sentencia and.',
+        'Las sentencias if/else deben estar rodeadas por llaves {}.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        "El error ocurre porque la condición usa 'or' en lugar de 'and'.",
+    },
+    {
+      texto: 'Dado el programa con objetos Profesor, indique la salida.',
+      opciones: ['1253', '1254', '1255'],
+      correcta: 0,
+      respuestaCorrecta: 'La salida es 1253',
+    },
+    {
+      texto: 'Indique la salida del programa factorial recursivo.',
+      opciones: ['24', '60', '120'],
+      correcta: 2,
+      respuestaCorrecta: 'La salida es 120',
+    },
+    {
+      texto:
+        'Cuando una clase está asociada a otra, la igualdad solo puede implementarse superficialmente.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso, también puede implementarse en profundidad.',
+    },
+    {
+      texto: "El programa con PelotaConNombre imprime 'Pelota 1' y 'Pelota 2'.",
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: "Falso, imprime 'Pelota 2' y 'Pelota 2'.",
+    },
+    {
+      texto:
+        '¿Las funciones pueden ser llamadas cuantas veces sean necesarias?',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'Los comentarios en Python deben estar en un programa para que este pueda ejecutarse.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Falso, los comentarios son documentación, no afectan la ejecución.',
+    },
+    {
+      texto:
+        'Un tipo abstracto de datos es un tipo de datos que consta de datos y operaciones sobre ellos, definido por el programador, y modela una entidad real.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+  ],
 };
