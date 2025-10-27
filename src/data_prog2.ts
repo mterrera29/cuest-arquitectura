@@ -503,9 +503,11 @@ export const prog2 = {
     },
     {
       texto:
-        "Dada la clase PelotaConNombre:\n\nEl programa:\n\npelota1 = PelotaConNombre('Pelota 1')\npelota2 = PelotaConNombre('Pelota 2')\npelota1.establecerNombre('Pelota 2')\npelota2.establecerNombre('Pelota 1')\nprint(pelota1.obtenerNombre())\nprint(pelota2.obtenerNombre())\n\nImprime: Pelota 1 / Pelota 2",
+        "Dada la clase PelotaConNombre y el programa:\npelota1 = PelotaConNombre('Pelota 1')\npelota2 = PelotaConNombre('Pelota 2')\npelota1.establecerNombre('Pelota 2')\npelota2.establecerNombre('Pelota 1')\nprint(pelota1.obtenerNombre())\nprint(pelota2.obtenerNombre())\n\n¿El programa imprime:\nPelota 1\nPelota 2?",
       opciones: ['Verdadero', 'Falso'],
       correcta: 1,
+      respuestaCorrecta:
+        "Falso - El programa imprime 'Pelota 2' para pelota1 y 'Pelota 1' para pelota2, ya que se intercambian los nombres mediante los métodos establecerNombre",
     },
     {
       texto:
@@ -714,11 +716,52 @@ export const prog2 = {
         'El método __establecerEstadoInicial, al declararse con doble guion bajo, queda inaccesible convencionalmente',
     },
     {
-      texto:
-        'Dada la clase PelotaConNombre:\n\nEl programa imprime:\n\nPelota 1\nPelota 2',
+      texto: `Dada la clase:
+
+class PelotaConNombre:
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.__establecerEstadoInitial()
+
+    def __establecerEstadoInitial(self):
+        self.__establecerEstado('FRENADA')
+
+    def __establecerEstado(self, estado):
+        self.estado = estado
+
+    def establecerNombre(self, nombre):
+        self.nombre = nombre
+
+    def obtenerEstado(self):
+        return self.estado
+
+    def obtenerNombre(self):
+        return self.nombre
+
+    def rodar(self):
+        print('Rodando...')
+        self.__establecerEstado('RODANDO')
+
+    def frenar(self):
+        print('Frenando...')
+        self.__establecerEstado('FRENADA')
+
+    def imprimirEstado(self):
+        print('Estado de ' + self.nombre + ': ' + self.estado)
+
+El programa:
+pelota1 = PelotaConNombre('Pelota 1')
+pelota2 = PelotaConNombre('Pelota 2')
+pelota1.establecerNombre('Pelota 2')
+pelota2.establecerNombre('Pelota 1')
+print(pelota1.obtenerNombre())
+print(pelota2.obtenerNombre())
+
+¿Imprime:\nPelota 1\nPelota 2?`,
       opciones: ['Verdadero', 'Falso'],
       correcta: 1,
-      respuestaCorrecta: 'Falso',
+      respuestaCorrecta:
+        "Falso - El programa imprime 'Pelota 2' para pelota1 y 'Pelota 1' para pelota2, ya que se intercambian los nombres mediante los métodos establecerNombre",
     },
     {
       texto:
@@ -1268,226 +1311,201 @@ export const prog2 = {
   semana6: [
     {
       texto:
-        'La herencia es un mecanismo que permite construir nuevas clases a partir de clases existentes.',
+        'Dadas las clases PresionArterial y SignosVitales de la semana 6, podemos afirmar que la clase PresionArterial depende de la clase SignosVitales.',
       opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'En realidad, la clase SignosVitales depende de la clase PresionArterial.',
+    },
+    {
+      texto:
+        'Dadas las clases PresionArterial y SignosVitales de la semana 6, el método equals de la clase PresionArterial evalúa:',
+      opciones: ['Igualdad en profundidad', 'Igualdad superficial'],
       correcta: 0,
-      respuestaCorrecta:
-        'La herencia permite crear nuevas clases reutilizando y extendiendo el comportamiento de clases ya existentes.',
+      respuestaCorrecta: 'Igualdad en profundidad',
     },
     {
       texto:
-        'Cuando una clase hereda de otra, los atributos y métodos de la superclase pasan a formar parte de la subclase.',
-      opciones: ['Verdadero', 'Falso'],
-      correcta: 0,
-      respuestaCorrecta:
-        'Los atributos y métodos definidos en la superclase son heredados por la subclase.',
+        'Dadas las clases PresionArterial y SignosVitales de la semana 6, el método equals de la clase SignosVitales evalúa:',
+      opciones: ['Igualdad superficial', 'Igualdad en profundidad'],
+      correcta: 1,
+      respuestaCorrecta: 'Igualdad en profundidad',
     },
     {
       texto:
-        '¿Qué palabra clave se utiliza en Python para definir una clase que hereda de otra?',
-      opciones: ['super', 'extends', 'inherits', 'class', 'def'],
-      correcta: 3,
-      respuestaCorrecta:
-        "En Python se utiliza la palabra clave 'class' seguida del nombre de la clase padre entre paréntesis.",
-    },
-    {
-      texto:
-        'En Python, para invocar el constructor de la clase padre dentro del constructor de la clase hija se utiliza:',
+        'Dadas las clases PresionArterial y SignosVitales de la semana 6, la clase SignosVitales es:',
       opciones: [
-        'self.__init__()',
-        'class.__init__()',
-        'super().__init__()',
-        'this.__init__()',
+        'Cliente de la clase PresionArterial',
+        'Proveedora de la clase PresionArterial',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Cliente de la clase PresionArterial',
+    },
+    {
+      texto:
+        'Dadas las clases PresionArterial y SignosVitales de la semana 6, la clase PresionArterial es:',
+      opciones: [
+        'Proveedora de la clase SignosVitales',
+        'Cliente de la clase SignosVitales',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Proveedora de la clase SignosVitales',
+    },
+    {
+      texto:
+        'Dadas las clases PresionArterial y SignosVitales de la semana 6, evalúe la ejecución del siguiente programa: presion1 = PresionArterial(99,185) sv1 = SignosVitales(36.5,presion1) sv2 = SignosVitales(36.5,presion1) Los objetos referenciados por sv1 y sv2 están asociados con:',
+      opciones: [
+        'Objetos distintos de tipo PresionArterial',
+        'Objetos equivalentes de tipo PresionArterial',
+        'El mismo objeto de tipo PresionArterial',
+      ],
+      correcta: 2,
+      respuestaCorrecta: 'El mismo objeto de tipo PresionArterial',
+    },
+    {
+      texto:
+        'Dadas las clases PresionArterial y SignosVitales de la semana 6, evalúe la ejecución del siguiente programa: sv1 = SignosVitales(36.5,PresionArterial(99,185)) sv2 = SignosVitales(36.5,PresionArterial(99,185)) Los objetos referenciados por sv1 y sv2 están asociados con:',
+      opciones: [
+        'Objetos equivalentes de tipo PresionArterial',
+        'El mismo objeto de tipo PresionArterial',
+        'Objetos distintos de tipo PresionArterial',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Objetos equivalentes de tipo PresionArterial',
+    },
+    {
+      texto:
+        'Dadas las clases PresionArterial y SignosVitales de la semana 6, evalúe la ejecución del siguiente programa: presion1 = PresionArterial(90,185) sv1 = SignosVitales(36.5,presion1) presion1 = PresionArterial(90,185) sv2 = SignosVitales(36.5,presion1) Los objetos referenciados por sv1 y sv2 están asociados con:',
+      opciones: [
+        'El mismo objeto de tipo PresionArterial',
+        'Objetos equivalentes de tipo PresionArterial',
+        'Objetos distintos de tipo PresionArterial',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'Objetos equivalentes de tipo PresionArterial',
+    },
+    {
+      texto:
+        'Dadas las clases PresionArterial y SignosVitales de la semana 6, evalúe la ejecución del siguiente programa: presion1 = PresionArterial(90,185) sv1 = SignosVitales(36.5,presion1) sv2 = SignosVitales(36.5,sv1.obtenerPresion()) Los objetos referenciados por sv1 y sv2 están asociados con:',
+      opciones: [
+        'El mismo objeto de tipo PresionArterial',
+        'Objetos distintos de tipo PresionArterial',
+        'Objetos equivalentes de tipo PresionArterial',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'El mismo objeto de tipo PresionArterial',
+    },
+    {
+      texto:
+        'Dadas las clases PresionArterial y SignosVitales de la semana 6, evalúe la ejecución del siguiente programa: presion1 = PresionArterial(99,185) sv1 = SignosVitales(36.5,PresionArterial(99,185)) sv2 = SignosVitales(36.5,PresionArterial(99,185)) print(sv1.equals(sv2)) La evaluación del método equals final imprime True porque:',
+      opciones: [
+        'Se evalúa igualdad superficial y los objetos de tipo PresionArterial que referencian los objetos relacionados con sv1 y sv2 son distintos',
+        'Se evalúa igualdad en profundidad y los objetos de tipo PresionArterial que referencian los objetos relacionados con sv1 y sv2 son equivalentes',
+        'Se evalúa igualdad superficial y los objetos de tipo PresionArterial que referencian los objetos relacionados con sv1 y sv2 son iguales',
+        'Se evalúa igualdad en profundidad y los objetos de tipo PresionArterial que referencian los objetos relacionados con sv1 y sv2 no son equivalentes',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Se evalúa igualdad en profundidad y los objetos de tipo PresionArterial que referencian los objetos relacionados con sv1 y sv2 son equivalentes',
+    },
+    {
+      texto:
+        'Cuando una clase esta asociada a otra la implementación de la igualdad se puede hacer únicamente en forma superficial.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Como se vio en clase, se puede hacer también en profundidad.',
+    },
+    {
+      texto:
+        'Una clase proveedora es aquella que brinda servicios a otra clase.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: "La respuesta correcta es 'Verdadero'",
+    },
+    {
+      texto: 'Una clase cliente es aquella que brinda servicios a otra clase.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Una clase cliente es aquella que utiliza servicios de otra clase.',
+    },
+    {
+      texto: 'Una clase NO puede ser al mismo tiempo cliente y proveedora',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Que una clase provea servicios a ser usados por sus clases cliente no impide que esta a su vez utilice servicios de otra.',
+    },
+    {
+      texto:
+        'En un esquema de clases proveedoras y clases clientes, cada clase:',
+      opciones: [
+        'Debe conocer los servicios que brindan sus clases proveedoras, pero no necesita conocer quienes son sus clientes.',
+        'No necesita conocer los servicios que brindan sus clases proveedoras ni quienes son sus clientes.',
+        'No necesita conocer los servicios que brindan sus clases proveedoras, pero sí conocer quienes son sus clientes.',
+        'Debe conocer los servicios que brindan sus clases proveedoras y necesita conocer quienes son sus clientes.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Debe conocer los servicios que brindan sus clases proveedoras, pero no necesita conocer quienes son sus clientes.',
+    },
+    {
+      texto:
+        'Las responsabilidades establecen un contrato entre una clase, sus clientes y sus proveedores.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta:
+        'Las responsabilidades establecen un contrato entre una clase, sus clientes y sus proveedores.',
+    },
+    {
+      texto: 'Dos objetos pueden tener:',
+      opciones: [
+        'Diferente estado interno y distinta identidad',
+        'Diferente estado interno y misma identidad',
+        'Mismo estado interno pero distinta identidad',
+        'Mismo estado interno y misma identidad',
+      ],
+      correcta: [0, 2, 3],
+      multiple: true,
+      respuestaCorrecta:
+        'Mismo estado interno pero distinta identidad, Diferente estado interno y distinta identidad, Mismo estado interno y misma identidad',
+    },
+    {
+      texto: 'La igualdad en profundidad compara:',
+      opciones: [
+        'La identidad de los objetos',
+        'El estado interno de los objetos',
+        'Los atributos y servicios de los objetos',
+        'Los nombres de los objetos',
+        'La clase de los objetos',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'El estado interno de los objetos',
+    },
+    {
+      texto: 'Existe una relación de dependencia cuando:',
+      opciones: [
+        'Una clase utiliza los servicios de la clase dependiente.',
+        'Una clase provee servicios a la clase dependiente.',
+        'Un servicio de una clase declara una variable local, recibe un parámetro o retorna como resultado un objeto de la clase dependiente.',
+        'Un servicio de una clase declara una variable local, recibe un parámetro o retorna como resultado un objeto de la clase misma clase.',
       ],
       correcta: 2,
       respuestaCorrecta:
-        "Se utiliza 'super().__init__()' para llamar al constructor de la clase padre desde la subclase.",
+        'Un servicio de una clase declara una variable local, recibe un parámetro o retorna como resultado un objeto de la clase dependiente.',
     },
     {
-      texto: 'La herencia permite:',
+      texto: 'La clase cliente accede a la clase proveedora a través de:',
       opciones: [
-        'Reutilizar código y extender funcionalidades existentes.',
-        'Evitar la creación de nuevas clases.',
-        'Eliminar la necesidad de constructores.',
-        'Modificar directamente la clase padre.',
-      ],
-      correcta: 0,
-      respuestaCorrecta:
-        'Permite reutilizar código y extender funcionalidades ya implementadas en clases existentes.',
-    },
-    {
-      texto:
-        'Una subclase puede sobreescribir un método de la superclase con una nueva implementación.',
-      opciones: ['Verdadero', 'Falso'],
-      correcta: 0,
-      respuestaCorrecta:
-        'La sobrescritura de métodos es una característica fundamental de la herencia.',
-    },
-    {
-      texto:
-        'El método __init__ de una subclase puede reemplazar completamente al de la superclase.',
-      opciones: ['Verdadero', 'Falso'],
-      correcta: 0,
-      respuestaCorrecta:
-        "Si no se invoca 'super().__init__()', el constructor de la superclase no se ejecuta.",
-    },
-    {
-      texto:
-        '¿Qué significa que una subclase sobrescriba un método de su superclase?',
-      opciones: [
-        'Que elimina el método de la clase padre.',
-        'Que redefine el comportamiento del método manteniendo el mismo nombre.',
-        'Que agrega un nuevo método distinto.',
-        'Que oculta el método padre sin reemplazarlo.',
-      ],
-      correcta: 1,
-      respuestaCorrecta:
-        'Significa que redefine el comportamiento del método heredado manteniendo el mismo nombre.',
-    },
-    {
-      texto:
-        'Si una clase hija no define su propio constructor (__init__), ¿qué sucede?',
-      opciones: [
-        'Python arroja un error.',
-        'Se ejecuta automáticamente el constructor de la clase padre.',
-        'No se crea ningún objeto.',
-        'La clase hija hereda el constructor de la clase padre.',
+        'Sus comandos',
+        'Su declaración',
+        'Sus consultas',
+        'Su interfaz',
+        'Sus servicios',
       ],
       correcta: 3,
-      respuestaCorrecta:
-        'La subclase hereda el constructor de la clase padre si no define el suyo propio.',
-    },
-    {
-      texto:
-        '¿Cuál de las siguientes afirmaciones sobre herencia múltiple en Python es correcta?',
-      opciones: [
-        'No está permitida.',
-        'Permite heredar de varias clases a la vez.',
-        'Solo se puede heredar de dos clases.',
-        'Solo puede aplicarse a métodos, no a atributos.',
-      ],
-      correcta: 1,
-      respuestaCorrecta:
-        'Python permite heredar de múltiples clases al mismo tiempo.',
-    },
-    {
-      texto:
-        'En Python, cuando dos clases padres tienen el mismo método y una subclase hereda de ambas, ¿cuál se ejecuta?',
-      opciones: [
-        'El de la primera clase padre indicada en la definición.',
-        'El de la segunda clase padre.',
-        'El método se ejecuta aleatoriamente.',
-        'Python lanza un error.',
-      ],
-      correcta: 0,
-      respuestaCorrecta:
-        'Se ejecuta el método de la primera clase padre listada en la definición de la subclase.',
-    },
-    {
-      texto: 'En POO, la relación de herencia se considera del tipo:',
-      opciones: [
-        'Composición',
-        'Asociación',
-        'Agregación',
-        'Generalización / Especialización',
-      ],
-      correcta: 3,
-      respuestaCorrecta:
-        'La herencia representa una relación de generalización/especialización entre clases.',
-    },
-    {
-      texto: 'Una clase abstracta:',
-      opciones: [
-        'No puede instanciarse directamente.',
-        'Puede instanciarse sin restricciones.',
-        'Debe tener todos sus métodos implementados.',
-        'No puede tener atributos.',
-      ],
-      correcta: 0,
-      respuestaCorrecta:
-        'Una clase abstracta no puede instanciarse directamente; sirve como plantilla para otras clases.',
-    },
-    {
-      texto: 'En Python, el módulo abc permite:',
-      opciones: [
-        'Definir clases abstractas y métodos abstractos.',
-        'Herencia múltiple.',
-        'Controlar el acceso a variables privadas.',
-        'Definir constructores.',
-      ],
-      correcta: 0,
-      respuestaCorrecta:
-        'El módulo abc permite definir clases y métodos abstractos.',
-    },
-    {
-      texto:
-        'Si una clase hija hereda de una clase padre y redefine un método, ¿cómo puede acceder a la versión original?',
-      opciones: [
-        'self.metodo()',
-        'super().metodo()',
-        'class.metodo()',
-        'parent.metodo()',
-      ],
-      correcta: 1,
-      respuestaCorrecta:
-        'Puede acceder a la versión original mediante super().metodo().',
-    },
-    {
-      texto: 'El concepto de herencia favorece principalmente:',
-      opciones: [
-        'La encapsulación',
-        'La reutilización de código',
-        'La independencia total de las clases',
-        'La redundancia de datos',
-      ],
-      correcta: 1,
-      respuestaCorrecta:
-        'La herencia promueve la reutilización del código y evita la duplicación.',
-    },
-    {
-      texto: 'La función isinstance(obj, Clase) permite:',
-      opciones: [
-        'Comprobar si un objeto pertenece a una clase o subclase.',
-        'Comparar el contenido de dos objetos.',
-        'Eliminar una instancia de clase.',
-        'Ver el tipo de atributo de un objeto.',
-      ],
-      correcta: 0,
-      respuestaCorrecta:
-        'Permite verificar si un objeto es instancia de una clase o de una subclase de ella.',
-    },
-    {
-      texto:
-        'En la herencia, el método __str__ puede sobrescribirse en la subclase.',
-      opciones: ['Verdadero', 'Falso'],
-      correcta: 0,
-      respuestaCorrecta:
-        'El método __str__ puede redefinirse para personalizar la representación en cadena del objeto.',
-    },
-    {
-      texto:
-        '¿Qué sucede si una subclase define un atributo con el mismo nombre que uno de la clase padre?',
-      opciones: [
-        'Python lanza un error.',
-        'El atributo de la subclase oculta al de la clase padre.',
-        'Ambos atributos se combinan.',
-        'El atributo del padre tiene prioridad.',
-      ],
-      correcta: 1,
-      respuestaCorrecta:
-        'El atributo definido en la subclase oculta al de la clase padre.',
-    },
-    {
-      texto: '¿Qué es una jerarquía de clases?',
-      opciones: [
-        'El conjunto de clases independientes.',
-        'El conjunto de clases relacionadas mediante herencia.',
-        'Las clases agrupadas en módulos.',
-        'Una lista de clases ordenadas por tamaño.',
-      ],
-      correcta: 1,
-      respuestaCorrecta:
-        'Una jerarquía de clases es un conjunto de clases relacionadas a través de herencia.',
+      respuestaCorrecta: 'Su interfaz',
     },
   ],
   semana7: [
@@ -1682,193 +1700,192 @@ export const prog2 = {
   semana9: [
     {
       texto:
-        'La composición es una relación entre clases en la que una clase está compuesta por objetos de otras clases.',
+        'Un arreglo es una estructura de datos homogénea, no lineal y ordenada que permite representar un conjunto de valores.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Un arreglo es una estructura de datos homogénea, lineal y ordenada que permite representar un conjunto de valores.',
+    },
+    {
+      texto: 'Todos los elementos de un arreglo son del mismo tipo',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: "La respuesta correcta es 'Verdadero'",
+    },
+    {
+      texto: 'En un arreglo, el índice:',
+      opciones: [
+        'Indica la posición de un elemento pero no puede ser utilizado para acceder a un elemento específico contenido en el.',
+        'Es una mera referencia sin utilidad práctica para el programador.',
+        'Indica la posición de un elemento y puede ser utilizado para acceder a un elemento específico contenido en el.',
+      ],
+      correcta: 2,
+      respuestaCorrecta:
+        'Indica la posición de un elemento y puede ser utilizado para acceder a un elemento específico contenido en el.',
+    },
+    {
+      texto: 'Todos los elementos de un arreglo:',
+      opciones: [
+        'Tienen un antecesor y un sucesor',
+        'Tienen un sucesor, a excepción del primer y último elemento.',
+        'Tienen un sucesor',
+        'Tienen un antecesor, a excepción del primer y último elemento.',
+        'Tienen un antecesor y un sucesor, a excepción del primer y último elemento.',
+        'Tienen un antecesor',
+      ],
+      correcta: 4,
+      respuestaCorrecta:
+        'Tienen un antecesor y un sucesor, a excepción del primer y último elemento.',
+    },
+    {
+      texto: 'En Python, el primer índice de un arreglo es 1',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'En Python, el primer índice de un arreglo es 0',
+    },
+    {
+      texto:
+        'En Python, una colección de objetos puede recorrerse tanto con un bucle for como con un bucle while',
       opciones: ['Verdadero', 'Falso'],
       correcta: 0,
       respuestaCorrecta:
-        'La composición permite construir clases complejas a partir de otras más simples.',
+        'Nada impide que el programador recorra las colecciones utilizando ambos enfoques.',
     },
     {
-      texto: 'En una relación de composición:',
+      texto:
+        'Todos los componentes de una tabla mantienen referencias no nulas.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Los componentes de una tabla pueden mantener referencias no nulas.',
+    },
+    {
+      texto:
+        'Una tabla que contiene componentes que mantiene referencias nulas no puede recorrerse.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'Las tablas pueden recorrerse, y es responsabilidad del programador el verificar si esa referencia es nula o no.',
+    },
+    {
+      texto:
+        'El tamaño de una tabla es igual a la cantidad de componentes con referencias no nulas contenidos en ella.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta:
+        'La tabla tiene un numero máximo de componentes, independientemente si estos mantienen referencias nulas o no.',
+    },
+    {
+      texto: 'Todos los elementos de una tabla:',
       opciones: [
-        'Los objetos contenidos pueden existir independientemente del objeto contenedor.',
-        'Los objetos contenidos no pueden existir sin el objeto contenedor.',
-        'El objeto contenedor depende del contenido.',
-        'No hay dependencia entre los objetos involucrados.',
+        'Se agrupan al final, liberando los primeros lugares para los componentes que mantienen referencias nulas.',
+        'No necesariamente se agrupan de algún modo.',
+        'Se agrupan al principio, liberando los últimos lugares para los componentes que mantienen referencias nulas.',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'No necesariamente se agrupan de algún modo.',
+    },
+    {
+      texto:
+        'Dada la clase Planta de la semana 9, analice la salida del siguiente programa:\nfrom planta import Planta\nfrom fecha import Fecha\nfrom empleado import Empleado\npersonal = Planta(0)\nfecha1 = Fecha(20, 4, 2010)\nfecha2 = Fecha(20, 10, 2012)\ne1 = Empleado(123, 20000, fecha1)\ne2 = Empleado(124, 30000, fecha2)\npersonal.alta(e1)\nEl mismo falla porque:',
+      opciones: [
+        'La tabla está vacía.',
+        'El tamaño de la tabla es O y se produce un error de desborde al querer insertar un componente en ella.',
+        'La tabla está llena.',
+        'La tabla no admite referencias a objetos de tipo Empleado.',
       ],
       correcta: 1,
       respuestaCorrecta:
-        'Los objetos contenidos no pueden existir sin el objeto contenedor.',
+        'El tamaño de la tabla es O y se produce un error de desborde al querer insertar un componente en ella.',
     },
     {
       texto:
-        'En Python, cuando se declara un atributo que almacena otro objeto dentro de una clase, se está implementando:',
-      opciones: ['Herencia', 'Asociación', 'Composición', 'Encapsulamiento'],
+        'Dada la clase Planta de la semana 9, analice la salida del siguiente programa:\nfrom planta import Planta\nfrom fecha import Fecha\nfrom empleado import Empleado\npersonal = Planta(10)\nfecha1 = Fecha(20, 4, 2010)\nfecha2 = Fecha(20, 10, 2012)\ne1 = Empleado(123, 20000, fecha1)\ne2 = Empleado(124, 30000, fecha2)\ne3 = Empleado(154, 25000, fecha1)\ne4 = Empleado(150, 22000, fecha1)\nprint(personal.estaEmpleado(154))\nEl mismo imprime False porque:',
+      opciones: [
+        'No hay un objeto de tipo Empleado cuyo legajo sea 154.',
+        'Si bien al empleado se dio de alta en la tabla, luego se lo dio de baja.',
+        'El empleado no se dio de alta en la tabla.',
+      ],
       correcta: 2,
-      respuestaCorrecta: 'Composición',
+      respuestaCorrecta: 'El empleado no se dio de alta en la tabla.',
     },
     {
       texto:
-        '¿Qué tipo de relación existe entre una clase Cliente y una clase Cuenta en un sistema bancario?',
-      opciones: ['Herencia', 'Composición', 'Agregación', 'Abstracción'],
+        'Dada la clase Planta de la semana 9, analice la salida del siguiente programa:\nfrom planta import Planta\nfrom fecha import Fecha\nfrom empleado import Empleado\npersonal = Planta(10)\nfecha1 = Fecha(20, 4, 2010)\nfecha2 = Fecha(20, 10, 2012)\ne1 = Empleado(123, 20000, fecha1)\ne2 = Empleado(124, 30000, fecha2)\ne3 = Empleado(154, 25000, fecha1)\ne4 = Empleado(156, 22000, fecha1)\npersonal.alta(e1)\npersonal.alta(e2)\nprint(personal.cantEmpleados())\nEl mismo imprime:',
+      opciones: ['4', '2', '0'],
+      correcta: 1,
+      respuestaCorrecta: '2',
+    },
+    {
+      texto:
+        'Dada la clase Planta de la semana 9, analice la salida del siguiente programa:\nfrom planta import Planta\nfrom fecha import Fecha\nfrom empleado import Empleado\npersonal = Planta(3)\nfecha1 = Fecha(20, 4, 2010)\nfecha2 = Fecha(20, 10, 2012)\ne1 = Empleado(123, 20000, fecha1)\ne2 = Empleado(124, 30000, fecha2)\ne3 = Empleado(154, 25000, fecha1)\ne4 = Empleado(156, 22000, fecha1)\npersonal.alta(e1)\npersonal.alta(e2)\npersonal.alta(e3)\npersonal.alta(e4)\nprint(personal.cantEmpleados())\nEl mismo imprime:',
+      opciones: [
+        'Error. La tabla se desborda al intentar insertar un elemento por sobre su capacidad máxima.',
+        '3',
+        '4',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Error. La tabla se desborda al intentar insertar un elemento por sobre su capacidad máxima.',
+    },
+    {
+      texto:
+        'Dada la clase Planta de la semana 9, analice la salida del siguiente programa:\nfrom planta import Planta\nfrom fecha import Fecha\nfrom empleado import Empleado\npersonal = Planta(4)\nfecha1 = Fecha(20, 4, 2010)\nfecha2 = Fecha(20, 10, 2012)\nempleados = []\nempleados.append(Empleado(123, 20000, fecha1))\nempleados.append(Empleado(124, 30000, fecha2))\nempleados.append(Empleado(154, 25000, fecha1))\nempleados.append(Empleado(150, 22000, fecha1))\nfor i in range(len(empleados)):\n    personal.alta(empleados[0])\nprint(personal.basicoRange(25000, 30000))\nEl mismo imprime:',
+      opciones: ['2', '0', '4'],
+      correcta: 1,
+      respuestaCorrecta: '0',
+    },
+    {
+      texto:
+        "Dada la clase SectorsFabrica de la semana 9, analice la salida del siguiente programa:\nfrom sectorsFabrica import SectorsFabrica\nfrom robot import Robot\nfabrica = SectorsFabrica(2)\nr1 = Robot('Robot 1')\nr2 = Robot('Robot 2')\nprint(fabrica.existeSector(2))\nEl mismo imprime False porque:",
+      opciones: [
+        'El sector 2 ya se encuentra ocupado.',
+        'El sector 2 mantiene una referencia nula.',
+        'En Python, el primer índice de un arreglo es 0 y no 1.',
+      ],
       correcta: 2,
-      respuestaCorrecta: 'Agregación',
+      respuestaCorrecta:
+        'En Python, el primer índice de un arreglo es 0 y no 1.',
     },
     {
       texto:
-        'En la agregación, el objeto contenido puede existir sin el objeto contenedor.',
+        'Dada la clase SectorsFabrica de la semana 9, analice la salida del siguiente programa:\nfrom sectorsFabrica import SectorsFabrica\nfrom robot import Robot\nfabrica = SectorsFabrica(5)\nprint(fabrica.existeSector(2))\nEl mismo imprime:',
+      opciones: [
+        'True, el sector existe a pesar de mantener una referencia nula.',
+        'False, porque el sector 2 mantiene una referencia nula.',
+        'True, porque el sector 2 no mantiene una referencia nula.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'True, el sector existe a pesar de mantener una referencia nula.',
+    },
+    {
+      texto:
+        "Dada la clase SectorsFabrica de la semana 9, analice la salida del siguiente programa:\nfrom sectorsFabrica import SectorsFabrica\nfrom robot import Robot\nfabrica = SectorsFabrica(5)\nr1 = Robot('Robot 1')\nr2 = Robot('Robot 2')\nprint(fabrica.cantSectores())\nprint(fabrica.cantSectoresOcupados())\nEl mismo imprime:",
+      opciones: [
+        '5',
+        'No se asignó ningún robot en la Fábrica.',
+        'Se asignaron r1 y r2 a sectores en la Fábrica, ocupando todos los sectores creados hasta el momento.',
+        'Se asignaron r1 y r2 a sectores en la Fábrica.',
+      ],
+      correcta: 0,
+      respuestaCorrecta: '5\nNo se asignó ningún robot en la Fábrica.',
+    },
+    {
+      texto:
+        'Dada la clase SectorsFabrica de la semana 9, ambas sentencias son equivalentes\nfabrica.todosOcupados()\nfabrica.cantSectores() == fabrica.cantSectoresOcupados()',
       opciones: ['Verdadero', 'Falso'],
       correcta: 0,
       respuestaCorrecta:
-        'En la agregación, los objetos asociados pueden existir independientemente del todo.',
-    },
-    {
-      texto: 'La principal diferencia entre composición y agregación es:',
-      opciones: [
-        'En la composición hay una relación más fuerte, donde la vida del componente depende del contenedor.',
-        'En la agregación el objeto contenido depende completamente del objeto contenedor.',
-        'La composición permite compartir objetos entre clases sin dependencia.',
-        'La agregación impide la creación de objetos independientes.',
-      ],
-      correcta: 0,
-      respuestaCorrecta:
-        'En la composición, la vida del componente depende del contenedor.',
+        'Ambos procedimientos son válidos para determinar si todos los sectores están asignados a un robot.',
     },
     {
       texto:
-        'Si una clase Vehículo contiene un atributo de tipo Motor, y al destruir el Vehículo también se destruye el Motor, estamos frente a:',
-      opciones: ['Herencia', 'Agregación', 'Composición', 'Abstracción'],
-      correcta: 2,
-      respuestaCorrecta: 'Composición',
-    },
-    {
-      texto:
-        'En Python, cuando se declara un objeto dentro del constructor de una clase, ¿qué tipo de relación suele representar?',
-      opciones: ['Composición', 'Herencia', 'Agregación', 'Dependencia'],
-      correcta: 0,
-      respuestaCorrecta: 'Representa una relación de composición.',
-    },
-    {
-      texto:
-        'En POO, la relación entre un objeto Alumno y su objeto Colegio puede considerarse:',
-      opciones: ['Herencia', 'Composición', 'Agregación', 'Abstracción'],
-      correcta: 2,
-      respuestaCorrecta: 'Agregación',
-    },
-    {
-      texto:
-        'Cuando un objeto contiene referencias a varios objetos independientes, se dice que:',
-      opciones: [
-        'Tiene una relación de agregación.',
-        'Tiene una relación de herencia.',
-        'Tiene una relación de composición.',
-        'Está implementando encapsulamiento.',
-      ],
-      correcta: 0,
-      respuestaCorrecta: 'Tiene una relación de agregación.',
-    },
-    {
-      texto:
-        'En la relación de agregación, si el objeto contenedor deja de existir:',
-      opciones: [
-        'Los objetos contenidos también se destruyen.',
-        'Los objetos contenidos pueden seguir existiendo.',
-        'Los objetos contenidos se vuelven inaccesibles.',
-        'Se destruyen todas las referencias del sistema.',
-      ],
-      correcta: 1,
-      respuestaCorrecta: 'Los objetos contenidos pueden seguir existiendo.',
-    },
-    {
-      texto: '¿Cuál de las siguientes opciones describe mejor la composición?',
-      opciones: [
-        'Relación débil donde los objetos pueden vivir independientemente.',
-        'Relación fuerte donde el todo controla la vida de las partes.',
-        'Relación entre clases sin dependencia.',
-        'Relación de herencia.',
-      ],
-      correcta: 1,
-      respuestaCorrecta:
-        'Es una relación fuerte donde el todo controla la vida de las partes.',
-    },
-    {
-      texto:
-        '¿Cuál es la forma correcta de establecer una relación de composición en Python?',
-      opciones: [
-        'Definir un atributo dentro del constructor que contenga un objeto de otra clase.',
-        'Heredar una clase dentro de otra.',
-        'Importar un módulo dentro de una clase.',
-        'Definir una función que reciba otra clase como parámetro.',
-      ],
-      correcta: 0,
-      respuestaCorrecta:
-        'Definiendo un atributo dentro del constructor que contenga un objeto de otra clase.',
-    },
-    {
-      texto:
-        'En la composición, el objeto contenido se crea dentro del constructor del objeto contenedor.',
+        "Dada la clase SectorsFabrica de la semana 9, analice la salida del siguiente programa:\nfrom sectorsFabrica import SectorsFabrica\nfrom robot import Robot\nfabrica = SectorsFabrica(2)\nfabrica.asignar(Robot('Robot 1'), 0)\nfabrica.asignar(Robot('Robot 1'), 1)\nprint(fabrica.robotSector(0) == fabrica.robotSector(1))\nEl mismo imprime True",
       opciones: ['Verdadero', 'Falso'],
-      correcta: 0,
-      respuestaCorrecta:
-        'En composición, el objeto contenido es creado dentro del constructor del contenedor.',
-    },
-    {
-      texto:
-        'Si una clase Persona tiene una lista de objetos Mascota, ¿qué tipo de relación hay?',
-      opciones: ['Herencia', 'Composición', 'Agregación', 'Dependencia'],
-      correcta: 2,
-      respuestaCorrecta: 'Agregación',
-    },
-    {
-      texto: "El concepto de 'parte-todo' en POO hace referencia a:",
-      opciones: [
-        'La relación entre superclase y subclase.',
-        'La relación de agregación o composición.',
-        'La relación entre objetos independientes.',
-        'La relación entre atributos y métodos.',
-      ],
       correcta: 1,
       respuestaCorrecta:
-        'Hace referencia a las relaciones de agregación o composición.',
-    },
-    {
-      texto:
-        'En una relación de composición, la eliminación del objeto contenedor implica:',
-      opciones: [
-        'Que los objetos contenidos continúan existiendo.',
-        'Que los objetos contenidos también se destruyen.',
-        'Que los objetos contenidos cambian de clase.',
-        'Que se reinicia la referencia de los objetos contenidos.',
-      ],
-      correcta: 1,
-      respuestaCorrecta: 'Los objetos contenidos también se destruyen.',
-    },
-    {
-      texto:
-        'En la agregación, la referencia al objeto contenido se suele pasar:',
-      opciones: [
-        'Por valor en el constructor del contenedor.',
-        'Como parámetro desde fuera de la clase contenedora.',
-        'Por copia dentro del contenedor.',
-        'Por herencia directa.',
-      ],
-      correcta: 1,
-      respuestaCorrecta:
-        'En la agregación, el objeto se pasa como parámetro externo al contenedor.',
-    },
-    {
-      texto:
-        'Cuando una clase Alarma incluye un atributo de tipo Sensor creado dentro del constructor, se trata de:',
-      opciones: ['Agregación', 'Composición', 'Dependencia', 'Herencia'],
-      correcta: 1,
-      respuestaCorrecta: 'Composición',
-    },
-    {
-      texto:
-        'Cuando una clase Auto recibe un objeto Motor como parámetro en su constructor, se trata de:',
-      opciones: ['Composición', 'Agregación', 'Dependencia', 'Encapsulamiento'],
-      correcta: 1,
-      respuestaCorrecta: 'Agregación',
+        'Aunque ambos objetos de tipo Robot de los sectores O y l cuentan con el mismo estado interno, estos se ubican en posiciones de memoria distintas.',
     },
   ],
 };
