@@ -215,7 +215,7 @@ export default function BuscadorGlobal({
           : materia === '2'
           ? 'Introducción a la Informática'
           : materia === '3'
-          ? 'Programación 2'
+          ? 'IDW'
           : 'Sistemas Operativos'}
       </h2>
       <input
@@ -254,7 +254,7 @@ export default function BuscadorGlobal({
                     : materia === '2'
                     ? 'Introducción a la Informática'
                     : materia === '3'
-                    ? 'Programación 2'
+                    ? 'IDW'
                     : 'Sistemas Operativos'}
                 </strong>{' '}
                 — Semana {p.semana === 0 ? 'Parcial' : p.semana}

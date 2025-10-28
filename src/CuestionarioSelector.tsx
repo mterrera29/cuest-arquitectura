@@ -7,12 +7,13 @@ import { prog2 } from './data_prog2';
 import BuscadorGlobal from './BuscadorGlobal';
 import { Analytics } from '@vercel/analytics/react';
 import { sistemasOperativos } from './data_so';
+import { idw } from './dataIdw';
 
 const materiasNombre = [
   'Seleccionar Materia',
   'Arquitectura de Computadoras📋',
   'Introducción a la Informática📋',
-  'Programación 2📋',
+  'IDW📋',
   'Sistemas Operativos📋',
 ];
 
@@ -20,7 +21,7 @@ const cuestionarios_so = [
   { semana: 1, preguntas: sistemasOperativos.semana1 },
   { semana: 2, preguntas: sistemasOperativos.semana2 },
 ];
-const cuestionarios_prog2 = [
+/* const cuestionarios_prog2 = [
   { semana: 1, preguntas: prog2.semana1 },
   { semana: 2, preguntas: prog2.semana2 },
   { semana: 3, preguntas: prog2.semana3_2 },
@@ -30,7 +31,7 @@ const cuestionarios_prog2 = [
   { semana: 7, preguntas: prog2.semana7 },
   { semana: 9, preguntas: prog2.semana9 },
   { semana: 0, preguntas: prog2.parcial },
-];
+]; */
 
 const cuestionarios_arq = [
   { semana: 1, preguntas: arquitectura.preguntasSemana1_v1 },
@@ -70,6 +71,13 @@ const cuestionarios_inf = [
   { semana: 0, preguntas: introducción.parcial },
 ];
 
+const cuestionarios_idw = [
+  { semana: 6, preguntas: idw.semana6 },
+  { semana: 7, preguntas: idw.semana7 },
+  { semana: 8, preguntas: idw.semana8 },
+  { semana: 9, preguntas: idw.semana9 },
+];
+
 export default function CuestionarioSelector() {
   const [materia, setMateria] = useState<string>('0');
   const [seleccionado, setSeleccionado] = useState<number | null>(null);
@@ -79,7 +87,7 @@ export default function CuestionarioSelector() {
       : materia == '2'
       ? cuestionarios_inf
       : materia == '3'
-      ? cuestionarios_prog2
+      ? cuestionarios_idw
       : materia == '4'
       ? cuestionarios_so
       : [];
@@ -93,7 +101,7 @@ export default function CuestionarioSelector() {
         : materia == '2'
         ? cuestionarios_inf[seleccionado]
         : materia == '3'
-        ? cuestionarios_prog2[seleccionado]
+        ? cuestionarios_idw[seleccionado]
         : materia == '4'
         ? cuestionarios_so[seleccionado]
         : cuestionarios_arq[seleccionado];
@@ -124,7 +132,7 @@ export default function CuestionarioSelector() {
         <option value='0'>Seleccionar</option>
         <option value='1'>Arquitectura de Computadoras</option>
         <option value='2'>Introducción a la Informática</option>
-        <option value='3'>Programación 2</option>
+        <option value='3'>IDW</option>
         <option value='4'>Sistemas Operativos</option>
       </select>
       <Analytics />
@@ -133,7 +141,7 @@ export default function CuestionarioSelector() {
         cuestionarios_arq={cuestionarios_arq}
         cuestionarios_inf={cuestionarios_inf}
         cuestionarios_so={cuestionarios_so}
-        cuestionarios_prog2={cuestionarios_prog2}
+        cuestionarios_prog2={cuestionarios_idw}
       />
       <h2>Seleccioná un cuestionario</h2>
       <ul
