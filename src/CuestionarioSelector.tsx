@@ -3,7 +3,7 @@ import App from './App';
 
 import { arquitectura } from './data';
 import { introducción } from './data_info';
-import { prog2 } from './data_prog2';
+//import { prog2 } from './data_prog2';
 import BuscadorGlobal from './BuscadorGlobal';
 import { Analytics } from '@vercel/analytics/react';
 import { sistemasOperativos } from './data_so';
@@ -72,6 +72,10 @@ const cuestionarios_inf = [
 ];
 
 const cuestionarios_idw = [
+  { semana: 1, preguntas: idw.semana1 },
+  { semana: 2, preguntas: idw.semana2 },
+  { semana: 3, preguntas: idw.semana3 },
+  { semana: 4, preguntas: idw.semana4 },
   { semana: 6, preguntas: idw.semana6 },
   { semana: 7, preguntas: idw.semana7 },
   { semana: 8, preguntas: idw.semana8 },

@@ -1,4 +1,694 @@
 export const idw = {
+  semana1: [
+    {
+      texto: '¿Qué elementos pueden tener las páginas web además de texto?',
+      opciones: [
+        'Imágenes',
+        'Videos',
+        'Fibra Óptica',
+        'Tablas',
+        'Enlaces a otras páginas',
+      ],
+      multiple: true,
+      correcta: [0, 1, 3, 4],
+      respuestaCorrecta: 'Imágenes, Videos, Enlaces a otras páginas, Tablas',
+    },
+    {
+      texto:
+        'Seleccionar cuáles de las siguientes capas componen el protocolo TCP/IP.',
+      opciones: [
+        'Capa de Aplicación',
+        'Capa de Enlace',
+        'Capa de Red',
+        'Capa de Internet',
+        'Capa Física',
+      ],
+      multiple: true,
+      correcta: [0, 1, 3],
+      respuestaCorrecta: 'Capa de Aplicación, Capa de Internet, Capa de Enlace',
+    },
+    {
+      texto: 'Indicar las características correctas de la llamada Web 1.0',
+      opciones: [
+        'El webmaster se encargaba de las modificaciones sobre los sitios web.',
+        'Los usuarios podían realizar modificaciones sobre los sitios web.',
+        'Sitios web estáticos.',
+        'Muy comunes en la década del 2000.',
+      ],
+      multiple: true,
+      correcta: [0, 2],
+      respuestaCorrecta:
+        'El webmaster se encargaba de las modificaciones sobre los sitios web, Sitios web estáticos.',
+    },
+    {
+      texto: 'Una página web se compone de uno o más sitios web.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'Un sitio web no puede tener contenido dinámico.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        'Siempre es necesario contar con un servidor DNS para poder acceder un sitio web desde un navegador. Incluso si el sitio se accede en una red local de computadoras.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        'La capa Internet resuelve problemas como la creación, transmisión y recepción de paquetes.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'La siguiente dirección IP 8.8.8.8, ¿es IPv4?',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'La siguiente dirección IP: 192.168.1.270 es una dirección IP válida?',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        'En el protocolo TCP/IP la capa de Aplicación posee menor nivel abstracción que el resto de las capas.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        'Los programadores o desarrolladores suelen trabajar en la capa de Aplicación.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'En la capa de Transporte en caso que se pierda un paquete. El emisor lo retransmite hacia el receptor.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+  ],
+  semana2: [
+    {
+      texto: 'Un servidor puede atender a varios clientes simultáneamente.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'Un servidor web puede ofrecer varios servicios a través de un puerto diferente para cada servicio.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'El método HEAD solicita una respuesta sin cuerpo, útil para comprobar la existencia de un recurso.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        '¿Qué método de solicitud HTTP se utiliza para obtener datos de un servidor?',
+      opciones: ['GET', 'DELETE', 'PUT', 'POST'],
+      correcta: 0,
+      respuestaCorrecta: 'GET',
+    },
+    {
+      texto: '¿Cuál fue el principal avance que trajo HTTP/2?',
+      opciones: [
+        'Transferencia sin encabezados',
+        'Introducción de TLS 1.3',
+        'Conexiones inseguras',
+        'Multiplexado y compresión de encabezados',
+      ],
+      correcta: 3,
+      respuestaCorrecta: 'Multiplexado y compresión de encabezados',
+    },
+    {
+      texto:
+        "¿Cuál es el objetivo del encabezado 'Host' en una solicitud HTTP?",
+      opciones: [
+        'Indicar el nombre del servidor al que se desea acceder.',
+        'Especificar el tipo de contenido.',
+        'Identificar al navegador cliente.',
+        'Indicar la longitud del contenido.',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Indicar el nombre del servidor al que se desea acceder.',
+    },
+    {
+      texto:
+        '¿Cuál de los siguientes códigos HTTP indica un error del cliente?',
+      opciones: ['3xx', '2xx', '5xx', '4xx'],
+      correcta: 3,
+      respuestaCorrecta: '4xx',
+    },
+    {
+      texto: 'HTTP fue desarrollado por:',
+      opciones: [
+        'Microsoft y Mozilla',
+        'Java Community Process',
+        'Google y Oracle',
+        'W3C e IETF',
+      ],
+      correcta: 3,
+      respuestaCorrecta: 'W3C e IETF',
+    },
+    {
+      texto:
+        '¿Qué método HTTP se utiliza para realizar modificaciones parciales sobre un recurso?',
+      opciones: ['GET', 'PUT', 'PATCH', 'HEAD'],
+      correcta: 2,
+      respuestaCorrecta: 'PATCH',
+    },
+    {
+      texto:
+        'HTTPS es exactamente igual que HTTP pero añade compresión de datos.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        '¿En el modelo cliente-servidor la comunicación se da por Internet?',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        '¿Cuál de los siguientes puertos corresponde típicamente a un servidor web?',
+      opciones: ['443', '80', '21', '3306'],
+      correcta: 1,
+      respuestaCorrecta: '80',
+    },
+    {
+      texto:
+        'En el protocolo HTTP el método GET se utiliza típicamente para enviar información desde un formulario.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        'Los servidores web solo atienden a 1 cliente a la vez, no soportan concurrencia de solicitudes.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: '¿Cuál de los siguientes no es un servidor web?',
+      opciones: ['Nginx', 'Apache', 'IIS', 'MySQL'],
+      correcta: 3,
+      respuestaCorrecta: 'MySQL',
+    },
+    {
+      texto:
+        '¿Cuál de las siguientes tecnologías se utiliza para estructurar el contenido de una página web?',
+      opciones: ['CSS', 'HTTP', 'HTML', 'JavaScript'],
+      correcta: 2,
+      respuestaCorrecta: 'HTML',
+    },
+    {
+      texto:
+        'Si necesitamos que el sitio web reciba información personal como contraseñas, lo más indicado es utilizar el protocolo HTTPs.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'Indicar cuales de los siguientes son servidores webs.',
+      opciones: [
+        'NodeJS',
+        'Apache Tomcat',
+        'Apache HTTP Server Proyect',
+        'Internet Information Services',
+      ],
+      multiple: true,
+      correcta: [1, 2, 3],
+      respuestaCorrecta:
+        'Apache Tomcat, Internet Information Services, Apache HTTP Server Proyect',
+    },
+    {
+      texto:
+        '¿Cuáles de las siguientes opciones son métodos del protocolo HTTP?',
+      opciones: ['SELECT', 'GET', 'TRACE', 'PUT', 'POST'],
+      multiple: true,
+      correcta: [1, 2, 3, 4],
+      respuestaCorrecta: 'POST, PUT, TRACE, GET',
+    },
+    {
+      texto:
+        '¿Cuál de las siguientes opciones describe mejor el proceso de renderizado de una página web?',
+      opciones: [
+        'Compilación de código JavaScript en código máquina.',
+        'Transformación de código HTML, CSS y JavaScript en una representación visual en pantalla.',
+        'Ejecución de consultas en una base de datos.',
+        'Conversión de código fuente a bytecode.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Transformación de código HTML, CSS y JavaScript en una representación visual en pantalla.',
+    },
+    {
+      texto:
+        'En el protocolo HTTP los mensajes son cifrados es por esto que es considerado muy seguro.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'En una respuesta HTTP, el código 500 indica:',
+      opciones: [
+        'Redirección temporal',
+        'Éxito de la solicitud',
+        'Error interno del servidor',
+        'Recurso no encontrado',
+      ],
+      correcta: 2,
+      respuestaCorrecta: 'Error interno del servidor',
+    },
+    {
+      texto:
+        'Un mensaje HTTP de respuesta con código de estado 500 en general hace referencia a...',
+      opciones: [
+        'Redirección. El recurso solicitado se encuentra en otra dirección.',
+        'Éxito en general.',
+        'Error en el procesamiento de la solicitud del lado del servidor.',
+        'Error del lado del cliente. Como por ejemplo seguir un link a una página web inexistente.',
+      ],
+      correcta: 2,
+      respuestaCorrecta:
+        'Error en el procesamiento de la solicitud del lado del servidor.',
+    },
+  ],
+  semana3: [
+    {
+      texto: '¿Qué significa HTML?',
+      opciones: [
+        'HyperText Markup Language',
+        'HyperText Machine Language',
+        'HighText Markup Language',
+        'High Transfer Machine Language',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'HyperText Markup Language',
+    },
+    {
+      texto:
+        'La etiqueta <figure> puede contener gráficos, tablas, código o imágenes.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'Son elementos semánticos',
+      opciones: [
+        '<div>',
+        '<span>',
+        '<head>',
+        '<body>',
+        'Todos los anteriores',
+        'Ninguno de los anteriores',
+      ],
+      correcta: 5,
+      respuestaCorrecta: 'Ninguno de los anteriores',
+    },
+    {
+      texto:
+        'La etiqueta <header> pertenece al cuerpo del documento y no debe confundirse con <head>.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'Para mostrar texto en cursiva se puede utilizar el elemento <i>texto</i>',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'Los elementos HTML:',
+      opciones: [
+        'Todas las anteriores.',
+        'No pueden contener otros elementos.',
+        'Determinan cómo se conforma una página web y sus secciones.',
+        'Ninguna de las anteriores.',
+        'Siempre tienen un tag o etiqueta de apertura y de cierre.',
+      ],
+      correcta: 2,
+      respuestaCorrecta:
+        'Determinan cómo se conforma una página web y sus secciones.',
+    },
+    {
+      texto: 'Para desplegar una lista no ordenada se utiliza <ul></ul>',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'En un página web desarrollada con HTML la única forma de implementar un enlace a otro recurso es a través del elemento <a>',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        'Los elementos block-level (nivel de bloque) siempre generan un salto de línea antes y después.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'Un elemento HTML solo puede contener 255 elementos HTML',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'Las etiquetas <b>, <i>, <u> son recomendadas en HTML5.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'Son tipos MIME válidos:',
+      opciones: [
+        'application/json',
+        'text/html',
+        'text/css',
+        'video/mp4',
+        'image/png',
+        'Todos los anteriores.',
+        'Ninguno de los anteriores.',
+      ],
+      correcta: 5,
+      respuestaCorrecta: 'Todos los anteriores.',
+    },
+    {
+      texto:
+        'Es recomendable utilizar <b>texto</b> e <i>texto</i> para delimitar texto en negrita y cursiva',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: '¿Cuál de las siguientes afirmaciones es correcta sobre <span>?',
+      opciones: [
+        'Se utiliza exclusivamente para agrupar títulos.',
+        'Es un contenedor en línea sin significado semántico.',
+        'Genera un salto de línea automático.',
+        'Sirve para representar contenido multimedia.',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'Es un contenedor en línea sin significado semántico.',
+    },
+    {
+      texto: '¿Para qué se usa principalmente la etiqueta <aside>?',
+      opciones: [
+        'Para información secundaria o complementaria.',
+        'Para enlazar con archivos de estilo CSS.',
+        'Para insertar scripts en la página.',
+        'Para encabezados principales.',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Para información secundaria o complementaria.',
+    },
+    {
+      texto:
+        'El atributo url de un elemento <a> nos permite identificar la página destino del enlace.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'El contenedor principal de todo documento HTML es:',
+      opciones: ['<meta>', '<body>', '<head>', '<html>'],
+      correcta: 3,
+      respuestaCorrecta: '<html>',
+    },
+    {
+      texto:
+        '¿Qué etiqueta permite preformatear texto y mostrarlo con espaciado y saltos de línea tal como está en el código fuente?',
+      opciones: ['<span>', '<pre>', '<b>', '<code>'],
+      correcta: 1,
+      respuestaCorrecta: '<pre>',
+    },
+    {
+      texto: 'Como alternativa a los elementos <img> se puede usar <picture>',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'La etiqueta <head> contiene el contenido principal del sitio que se muestra al usuario.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        '¿Cuál de los siguientes elementos es usado para insertar un enlace en HTML?',
+      opciones: ['<url>', '<link>', '<a>', '<href>'],
+      correcta: 2,
+      respuestaCorrecta: '<a>',
+    },
+    {
+      texto: 'La etiqueta <meta> se utiliza para insertar imágenes en HTML.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: '¿Cuál es el propósito de la declaración <!DOCTYPE html>?',
+      opciones: [
+        'Mostrar el título de la página',
+        'Indicar al navegador la versión de HTML utilizada',
+        'Cargar hojas de estilo externas',
+        'Iniciar el cuerpo del documento',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'Indicar al navegador la versión de HTML utilizada',
+    },
+    {
+      texto:
+        '¿Cuál de estas etiquetas es específica de HTML5 y aporta semántica?',
+      opciones: ['div', 'br', 'font', 'section'],
+      correcta: 3,
+      respuestaCorrecta: 'section',
+    },
+    {
+      texto: 'HTML fue desarrollado originalmente como un subconjunto de SGML.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'El contenido que se visualiza en el viewport del navegador va dentro del elemento <head>',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: '¿Qué atributo del tag <a> permite especificar la URL de destino?',
+      opciones: ['title', 'name', 'href', 'target'],
+      correcta: 2,
+      respuestaCorrecta: 'href',
+    },
+    {
+      texto:
+        'Para mostrar texto en negrita se puede utilizar el elemento <b>texto</b>',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'Se pueden abrir aplicaciones por defecto del sistema (como el cliente de correo) a través de elementos <a>',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'Un tipo MIME es un tipo de página web',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'Las listas de tipo «ul» son listas ordenadas.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        'Los elementos semánticos indican qué contienen y no cómo deben formatearse.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'La etiqueta <div> no tiene un significado semántico asociado.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        '¿Cuál de los siguientes elementos se utiliza para definir una lista ordenada?',
+      opciones: ['<li>', '<ul>', '<ol>', '<menu>'],
+      correcta: 2,
+      respuestaCorrecta: '<ol>',
+    },
+    {
+      texto: '¿Cuál de las siguientes afirmaciones es incorrecta?',
+      opciones: [
+        'XHTML es una tecnología que permite construir páginas web',
+        'XHTML es una tecnología mucho más avanzada que HTML5',
+        'XHTML está basado en XML y es más restrictivo',
+        'Todos los elementos de XHTML se pueden usar en HTML5',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'XHTML es una tecnología mucho más avanzada que HTML5',
+    },
+    {
+      texto: 'El término página web es sinónimo de sitio web',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        '¿Cuál de las siguientes afirmaciones del elemento <select> es incorrecta?',
+      opciones: [
+        'Las opciones disponibles deben listarse dentro de elementos de tipo <li>',
+        'El tamaño del elemento se adapta al desplegarse las opciones que tienen textos muy largos',
+        'Permite escribir texto dentro',
+        'La opción seleccionada es marcada con el atributo selected',
+      ],
+      multiple: true,
+      correcta: [0, 2],
+      respuestaCorrecta:
+        'Permite escribir texto dentro, Las opciones disponibles deben listarse dentro de elementos de tipo <li>',
+    },
+    {
+      texto:
+        'El atributo target de la etiqueta <a> permite especificar en qué ventana se abrirá el enlace.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+  ],
+  semana4: [
+    {
+      texto:
+        'Para separar verticalmente un elemento de los que siguen hacia abajo lo mejor es usar...',
+      opciones: [
+        'margin',
+        'padding',
+        'posicionamiento absoluto',
+        'flexbox',
+        'Todas las anteriores',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'margin',
+    },
+    {
+      texto:
+        'La propiedad background permite que configuremos como fondo de un elemento',
+      opciones: [
+        'Un color',
+        'Una imagen',
+        'Un gradiente',
+        'Todos los anteriores.',
+        'Ninguno de los anteriores.',
+      ],
+      correcta: 3,
+      respuestaCorrecta: 'Todos los anteriores.',
+    },
+    {
+      texto:
+        '¿Cuál es el símbolo que se utiliza para declarar un selector ID en CSS?',
+      opciones: ['#', '@', '.', '!'],
+      correcta: 0,
+      respuestaCorrecta: '#',
+    },
+    {
+      texto:
+        'Según el efecto cascada, ¿qué criterios se consideran para determinar qué estilo aplicar?',
+      opciones: [
+        'Ubicación del estilo (ínline, interno o externo)',
+        'Nombre del archivo CSS',
+        'Uso de ‘!important’',
+        'Especificidad del selector',
+      ],
+      multiple: true,
+      correcta: [0, 2, 3],
+      respuestaCorrecta:
+        'Especificidad del selector, Ubicación del estilo (ínline, interno o externo), Uso de ‘!important’',
+    },
+    {
+      texto: '¿Cuál de estas medidas CSS es inválida?',
+      opciones: ['1.5rem', '1pc', '1.5cm', '0.5mts'],
+      correcta: 3,
+      respuestaCorrecta: '0.5mts',
+    },
+    {
+      texto: '¿Cuál propiedad CSS define el alineamiento del texto?',
+      opciones: ['text-align', 'text-spacing', 'line-style', 'font-weight'],
+      correcta: 0,
+      respuestaCorrecta: 'text-align',
+    },
+    {
+      texto:
+        'Las propiedades de margen (margin) pueden tener valores negativos',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: '¿Cuál propiedad permite redondear las esquinas de un borde?',
+      opciones: ['corner-shape', 'border-radius', 'border-style', 'edge-curve'],
+      correcta: 1,
+      respuestaCorrecta: 'border-radius',
+    },
+    {
+      texto:
+        '¿Qué propiedad CSS permite definir el espacio interno entre el contenido y el borde?',
+      opciones: ['padding', 'gap', 'spacing', 'margin'],
+      correcta: 0,
+      respuestaCorrecta: 'padding',
+    },
+    {
+      texto: '¿Qué propiedades CSS están relacionadas con la fuente del texto?',
+      opciones: ['font-family', 'text-indent', 'font-size', 'font-weight'],
+      multiple: true,
+      correcta: [0, 2, 3],
+      respuestaCorrecta: 'font-size, font-family, font-weight',
+    },
+  ],
   semana6: [
     {
       texto:
