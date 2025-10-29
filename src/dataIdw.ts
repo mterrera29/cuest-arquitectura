@@ -604,6 +604,198 @@ export const idw = {
   semana4: [
     {
       texto:
+        '¿Cuáles propiedades permiten modificar los bordes de un elemento?',
+      opciones: [
+        'border-color',
+        'border-radius',
+        'border-style',
+        'border-align',
+      ],
+      multiple: true,
+      correcta: [0, 1, 2],
+      respuestaCorrecta: 'border-style, border-radius, border-color',
+    },
+    {
+      texto: 'El Box Model de CSS incluye las siguientes partes:',
+      opciones: [
+        'Padding, Border, Container, Font',
+        'Height, Width, Radius, Margin',
+        'Block, Inline, Grid, Flex',
+        'Content, Padding, Border, Margin',
+      ],
+      correcta: 3,
+      respuestaCorrecta: 'Content, Padding, Border, Margin',
+    },
+    {
+      texto:
+        'Módulos CSS 3 se divide en módulos que pueden estar en distintos estados de desarrollo.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: "¿Para qué sirve la propiedad 'margin'?",
+      opciones: [
+        'Controla la opacidad de un fondo',
+        'Define el espaciado entre letras',
+        'Define el espacio exterior de un elemento',
+        'Establece la rotación de un objeto',
+      ],
+      correcta: 2,
+      respuestaCorrecta: 'Define el espacio exterior de un elemento',
+    },
+    {
+      texto:
+        'Si quiero que todos los párrafos de mi sitio web aparezcan en azul debo usar',
+      opciones: [
+        'font-color: blue;',
+        'background-color: blue;',
+        'font: 16px blue solid;',
+        'Cualquiera de las anteriores',
+        'Ninguna de las anteriores',
+      ],
+      correcta: 4,
+      respuestaCorrecta: 'Ninguna de las anteriores',
+    },
+    {
+      texto: '¿Cuáles son unidades relativas válidas en CSS?',
+      opciones: ['rem', '%', 'em', 'cm'],
+      multiple: true,
+      correcta: [0, 1, 2],
+      respuestaCorrecta: 'em, rem, %',
+    },
+    {
+      texto: 'El box-model puede ser cambiado a través de propiedades CSS',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'Las viñetas de los elementos <li> las quito usando...',
+      opciones: [
+        'list-style: none',
+        'bullets: no-bullets',
+        'display: none',
+        'Ninguno de los anteriores',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'list-style: none',
+    },
+    {
+      texto:
+        '¿Cuáles de las siguientes opciones corresponde a una ventaja de usar CSS?',
+      opciones: [
+        'Simplificación del mantenimiento del sitio',
+        'Mayor velocidad de descarga',
+        'Control de acceso a la base de datos',
+        'Validación de formularios',
+      ],
+      multiple: true,
+      correcta: [0, 1],
+      respuestaCorrecta:
+        'Simplificación del mantenimiento del sitio, Mayor velocidad de descarga',
+    },
+    {
+      texto:
+        '¿Cuáles de las siguientes propiedades son válidas para manejar el margen de un elemento?',
+      opciones: ['margin-top', 'margin', 'padding-right', 'margin-left'],
+      multiple: true,
+      correcta: [0, 1, 3],
+      respuestaCorrecta: 'margin-top, margin-left, margin',
+    },
+    {
+      texto: '¿Cuál de los siguientes selectores tiene mayor especificidad?',
+      opciones: ['.clase', '#id', 'etiqueta', '::pseudo-elemento'],
+      correcta: 1,
+      respuestaCorrecta: '#id',
+    },
+    {
+      texto:
+        "¿Cuál es la diferencia entre 'visibility: hidden' y 'display: none'?",
+      opciones: [
+        'visibility: hidden ocupa espacio, display: none no ocupa espacio',
+        'display: none ocupa espacio, visibility: hidden no ocupa espacio',
+        'Ambos ocupan espacio pero visibility: hidden es más eficiente',
+        'No hay diferencia, son equivalentes',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'visibility: hidden ocupa espacio, display: none no ocupa espacio',
+    },
+    {
+      texto: '¿Qué propiedad CSS se utiliza para crear un diseño flexible?',
+      opciones: [
+        'flexbox',
+        'display: flex',
+        'flex-direction',
+        'Todas las anteriores',
+      ],
+      correcta: 3,
+      respuestaCorrecta: 'Todas las anteriores',
+    },
+    {
+      texto:
+        "¿Cuál es el orden correcto de la propiedad 'margin' cuando se usa shorthand?",
+      opciones: [
+        'top, right, bottom, left',
+        'left, right, top, bottom',
+        'top, bottom, left, right',
+        'bottom, top, left, right',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'top, right, bottom, left',
+    },
+    {
+      texto: "¿Qué hace la propiedad 'position: absolute'?",
+      opciones: [
+        'Posiciona el elemento relativo a su contenedor más cercano con position: relative',
+        'Posiciona el elemento relativo al viewport',
+        'Posiciona el elemento relativo al documento completo',
+        'Posiciona el elemento relativo a su posición normal',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Posiciona el elemento relativo a su contenedor más cercano con position: relative',
+    },
+    {
+      texto: "¿Cuál es la diferencia entre 'em' y 'rem'?",
+      opciones: [
+        'em es relativo al elemento padre, rem es relativo al elemento raíz',
+        'em es relativo al elemento raíz, rem es relativo al elemento padre',
+        'Ambos son relativos al elemento padre',
+        'Ambos son relativos al elemento raíz',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'em es relativo al elemento padre, rem es relativo al elemento raíz',
+    },
+    {
+      texto:
+        '¿Qué propiedad se usa para cambiar el orden de los elementos en flexbox?',
+      opciones: ['flex-order', 'order', 'flex-direction', 'flex-align'],
+      correcta: 1,
+      respuestaCorrecta: 'order',
+    },
+    {
+      texto: "¿Cuál es el valor por defecto de la propiedad 'position'?",
+      opciones: ['static', 'relative', 'absolute', 'fixed'],
+      correcta: 0,
+      respuestaCorrecta: 'static',
+    },
+    {
+      texto: "¿Qué hace 'z-index'?",
+      opciones: [
+        'Controla el orden de apilamiento de elementos posicionados',
+        'Controla el tamaño del elemento en el eje Z',
+        'Controla la rotación 3D del elemento',
+        'Controla la profundidad de campo',
+      ],
+      correcta: 0,
+      respuestaCorrecta:
+        'Controla el orden de apilamiento de elementos posicionados',
+    },
+    {
+      texto:
         'Para separar verticalmente un elemento de los que siguen hacia abajo lo mejor es usar...',
       opciones: [
         'margin',
@@ -641,13 +833,13 @@ export const idw = {
       opciones: [
         'Ubicación del estilo (ínline, interno o externo)',
         'Nombre del archivo CSS',
-        'Uso de ‘!important’',
+        "Uso de '!important'",
         'Especificidad del selector',
       ],
       multiple: true,
       correcta: [0, 2, 3],
       respuestaCorrecta:
-        'Especificidad del selector, Ubicación del estilo (ínline, interno o externo), Uso de ‘!important’',
+        "Especificidad del selector, Ubicación del estilo (ínline, interno o externo), Uso de '!important'",
     },
     {
       texto: '¿Cuál de estas medidas CSS es inválida?',
@@ -687,6 +879,398 @@ export const idw = {
       multiple: true,
       correcta: [0, 2, 3],
       respuestaCorrecta: 'font-size, font-family, font-weight',
+    },
+    {
+      texto:
+        "El selector 'menu' aplica estilos a todos los elementos con ID igual a 'menu'.",
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        '¿Cuál es el símbolo que se utiliza para declarar un selector de clase en CSS?',
+      opciones: ['$', '@', '.'],
+      correcta: 2,
+      respuestaCorrecta: '.',
+    },
+    {
+      texto: 'Para reutilizar estilos es conveniente hacer uso de...',
+      opciones: ['CSS importado', 'CSS incorporado', 'CSS en línea'],
+      correcta: 0,
+      respuestaCorrecta: 'CSS importado',
+    },
+    {
+      texto: '¿Cuál es el principal objetivo de CSS?',
+      opciones: [
+        'Controlar la lógica del servidor',
+        'Separar la presentación del contenido HTML',
+        'Validar formularios de usuario',
+        'Agregar contenido dinámico al sitio',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'Separar la presentación del contenido HTML',
+    },
+    {
+      texto:
+        'Las pseudoclases permiten definir estilos en función del estado del elemento.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: "La unidad 'rem' se refiere a:",
+      opciones: [
+        'A la altura de la letra x',
+        'A la fuente base del documento, sin depender del elemento padre',
+        'Una medida absoluta',
+        'Al tamaño relativo al ancho del dispositivo',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'A la fuente base del documento, sin depender del elemento padre',
+    },
+    {
+      texto: '¿Cuáles son formas válidas de conectar CSS a un documento HTML?',
+      opciones: [
+        'CSS en línea (inline)',
+        'CSS externo (importado)',
+        'CSS vinculado por atributo data-style',
+        'CSS incorporado (interno)',
+      ],
+      multiple: true,
+      correcta: [0, 1, 3],
+      respuestaCorrecta:
+        'CSS externo (importado), CSS incorporado (interno), CSS en línea (inline)',
+    },
+    {
+      texto: '¿Cuáles son unidades absolutas válidas en CSS?',
+      opciones: ['pt', 'in', 'em', 'cm'],
+      multiple: true,
+      correcta: [0, 1, 3],
+      respuestaCorrecta: 'cm, in, pt',
+    },
+    {
+      texto:
+        "La pseudoclase ':hover' se aplica cuando el usuario hace clic en un elemento.",
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        '¿Cuál de las siguientes propiedades es usada para definir el tipo de fuente?',
+      opciones: ['text-align', 'font-family', 'word-wrap', 'font-style'],
+      correcta: 1,
+      respuestaCorrecta: 'font-family',
+    },
+  ],
+  semana5: [
+    {
+      texto: 'Son elementos semánticos',
+      opciones: [
+        '«header»',
+        '«main»',
+        '«section»',
+        '«article»',
+        '«aside»',
+        'Todos los anteriores',
+        'Ninguno de los anteriores',
+      ],
+      correcta: 5,
+      respuestaCorrecta: 'Todos los anteriores',
+    },
+    {
+      texto:
+        'Flexbox permite ajustar automáticamente el tamaño de los elementos para adaptarse a diferentes tamaños de pantalla.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'Para alinear elementos a izquierda o derecha puedo utilizar las propiedades',
+      opciones: [
+        'float',
+        'position',
+        'flexbox y justify-content',
+        'Todas las anteriores',
+        'Ninguna de las anteriores',
+      ],
+      multiple: true,
+      correcta: [0, 2],
+      respuestaCorrecta: 'float, flexbox y justify-content',
+    },
+    {
+      texto:
+        '¿Cuál NO es una ventaja del uso de elementos semánticos en HTML5?',
+      opciones: [
+        'Mejoran la accesibilidad.',
+        'Ayudan a los motores de búsqueda.',
+        'Permiten cambiar el diseño sin necesidad de CSS.',
+        'Facilitan la mantenibilidad.',
+      ],
+      correcta: 2,
+      respuestaCorrecta: 'Permiten cambiar el diseño sin necesidad de CSS.',
+    },
+    {
+      texto:
+        'Cuando un elemento tiene display: none, sigue ocupando espacio en el layout.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto:
+        '¿Qué valor de display hace que un elemento se comporte como bloque pero sin romper el flujo de línea?',
+      opciones: ['none', 'inline-block', 'block', 'inline'],
+      correcta: 1,
+      respuestaCorrecta: 'inline-block',
+    },
+    {
+      texto:
+        'Un elemento con display: inline-block conserva propiedades de bloque pero se comporta como elemento en línea.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        '¿En relación a qué se posiciona un elemento con position: absolute?',
+      opciones: [
+        'Al centro de la pantalla.',
+        'A su posición anterior.',
+        'Al viewport.',
+        'A su contenedor posicionado más cercano.',
+      ],
+      correcta: 3,
+      respuestaCorrecta: 'A su contenedor posicionado más cercano.',
+    },
+    {
+      texto: '¿Qué propiedad define un contenedor grid en CSS?',
+      opciones: [
+        'container: grid',
+        'grid-mode: on',
+        'display: grid',
+        'position: grid',
+      ],
+      correcta: 2,
+      respuestaCorrecta: 'display: grid',
+    },
+    {
+      texto: '¿Qué característica tiene position: fixed?',
+      opciones: [
+        'Se mueve con el contenido del documento.',
+        'Permanece en la misma posición aunque se haga scroll.',
+        'Se comporta como un elemento flotante.',
+        'Solo aplica dentro de Flexbox.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'Permanece en la misma posición aunque se haga scroll.',
+    },
+    {
+      texto:
+        'Con position: relative se puede mover un elemento desde su posición original.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'La etiqueta <header> pertenece al cuerpo del documento y no debe confundirse con <head>.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'Los elementos semánticos indican qué contienen y no cómo deben formatearse.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'Sin CSS, los elementos HTML se disponen en orden de arriba hacia abajo y de izquierda a derecha.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: '¿Cuál de estas afirmaciones es cierta?',
+      opciones: [
+        'Grid es bidimensional y Flexbox es unidimensional.',
+        'Flexbox y Grid no son compatibles entre sí.',
+        'Grid no necesita contenedores.',
+        'Flexbox solo funciona con imágenes.',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Grid es bidimensional y Flexbox es unidimensional.',
+    },
+    {
+      texto: '¿Cuál NO es un tipo de posicionamiento CSS válido?',
+      opciones: ['relative', 'fixed', 'static', 'external'],
+      correcta: 3,
+      respuestaCorrecta: 'external',
+    },
+    {
+      texto: 'Cuál de las siguientes afirmaciones de Flexbox es incorrecta',
+      opciones: [
+        'Flexbox es specialmente útil en para la creación de sitios web adaptativos o responsive',
+        'Con Flexbox se pueden crear contenedores que dispongan los elementos vertical u horizontalmente',
+        'Flexbox es la única forma de desplegar elementos de bloque en una sola fila sin tener que agregar estilos adicionales a los ítems contenidos.',
+        'Antes de Flexbox se debía utilizar combinaciones de float y clear para desplegar elementos alineados horizontalmente',
+      ],
+      correcta: 2,
+      respuestaCorrecta:
+        'Flexbox es la única forma de desplegar elementos de bloque en una sola fila sin tener que agregar estilos adicionales a los ítems contenidos.',
+    },
+    {
+      texto:
+        '¿Qué propiedad se usa en los ítems flex para definir su crecimiento?',
+      opciones: ['grow-size', 'flex-grow', 'flex-align', 'item-grow'],
+      correcta: 1,
+      respuestaCorrecta: 'flex-grow',
+    },
+    {
+      texto:
+        '¿Cuál de los siguientes elementos es de nivel de bloque por defecto?',
+      opciones: ['img', 'div', 'span', 'a'],
+      correcta: 1,
+      respuestaCorrecta: 'div',
+    },
+    {
+      texto: '¿Para qué se usa principalmente la etiqueta <aside>?',
+      opciones: [
+        'Para información secundaria o complementaria.',
+        'Para encabezados principales.',
+        'Para enlazar con archivos de estilo CSS.',
+        'Para insertar scripts en la página.',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Para información secundaria o complementaria.',
+    },
+    {
+      texto:
+        '¿Cuál de estas etiquetas es específica de HTML5 y aporta semántica?',
+      opciones: ['div', 'section', 'br', 'font'],
+      correcta: 1,
+      respuestaCorrecta: 'section',
+    },
+    {
+      texto:
+        'La etiqueta <figure> puede contener gráficos, tablas, código o imágenes.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'Las propiedades margín y padding permiten alterar la posición de los elementos en el flujo del documento.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'La propiedad z-index puede tomar valores negativos.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: 'Hago que un elemento sea invisible usando',
+      opciones: [
+        'visibility: hidden',
+        'display: none',
+        'Todas las anteriores.',
+        'Todas las anteriores, pero visibility: hidden reserva el espacio.',
+      ],
+      correcta: 3,
+      respuestaCorrecta:
+        'Todas las anteriores, pero visibility: hidden reserva el espacio.',
+    },
+    {
+      texto:
+        'Los elementos con position: static responden a las propiedades top, left, etc.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'La etiqueta <div> no tiene un significado semántico asociado.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: '¿Cuál de las siguientes afirmaciones es correcta sobre <span>?',
+      opciones: [
+        'Es un contenedor en línea sin significado semántico.',
+        'Se utiliza exclusivamente para agrupar títulos.',
+        'Sirve para representar contenido multimedia.',
+        'Genera un salto de línea automático.',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Es un contenedor en línea sin significado semántico.',
+    },
+    {
+      texto:
+        '¿Qué propiedades se usan para establecer filas y columnas en Grid?',
+      opciones: [
+        'row-template y col-template',
+        'template-columns y template-rows',
+        'grid-positioning',
+        'grid-template-columns y grid-template-rows',
+      ],
+      correcta: 3,
+      respuestaCorrecta: 'grid-template-columns y grid-template-rows',
+    },
+    {
+      texto:
+        'La propiedad float permite que el texto fluya alrededor de una imagen.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto: '¿Qué hace la propiedad clear?',
+      opciones: [
+        'Fija el tamaño del contenedor.',
+        'Establece la opacidad del elemento.',
+        'Aumenta el contraste del texto.',
+        'Evita que un elemento se ubique adyacente a uno flotado.',
+      ],
+      correcta: 3,
+      respuestaCorrecta:
+        'Evita que un elemento se ubique adyacente a uno flotado.',
+    },
+    {
+      texto:
+        'Para alinear elementos a izquierda o derecha puedo utilizar las propiedades',
+      opciones: [
+        'float',
+        'position',
+        'flexbox y justify-content',
+        'Todas las anteriores',
+        'Ninguna de las anteriores',
+      ],
+      multiple: true,
+      correcta: [0, 2],
+      respuestaCorrecta: 'float, flexbox y justify-content',
+    },
+    {
+      texto: 'Son elementos semánticos',
+      opciones: [
+        '<div>',
+        '<span>',
+        '<head>',
+        '<body>',
+        'Todos los anteriores',
+        'Ninguno de los anteriores',
+      ],
+      correcta: 5,
+      respuestaCorrecta: 'Ninguno de los anteriores',
     },
   ],
   semana6: [
@@ -827,6 +1411,45 @@ export const idw = {
     },
   ],
   semana7: [
+    {
+      texto:
+        'En JavaScript es indistinto utilizar null o undefined para indicar que una variable tiene asociado un valor desconocido',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        '¿Cuál de estas afirmaciones sobre el punto y coma en JavaScript es correcta?',
+      opciones: [
+        'Es obligatorio y no se puede omitir nunca.',
+        'No es obligatorio, pero su omisión puede causar efectos secundarios.',
+        'No se utiliza en JavaScript.',
+        'Es necesario solo en funciones flecha.',
+      ],
+      correcta: 1,
+      respuestaCorrecta:
+        'No es obligatorio, pero su omisión puede causar efectos secundarios.',
+    },
+    {
+      texto:
+        '¿Cuál es la propiedad que permite acceder a los argumentos pasados a una función?',
+      opciones: ['args', 'parameters', 'arguments', 'params'],
+      correcta: 2,
+      respuestaCorrecta: 'arguments',
+    },
+    {
+      texto: '¿Qué valor retorna typeof sobre una variable sin asignar?',
+      opciones: ['"false"', '"undefined"', '"null"', '"empty"'],
+      correcta: 1,
+      respuestaCorrecta: '"undefined"',
+    },
+    {
+      texto: 'En JavaScript se puede crear un objeto sin definir una clase',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
     {
       texto: '¿Qué método de array elimina el primer elemento?',
       opciones: ['unshift()', 'pop()', 'shift()', 'splice()'],

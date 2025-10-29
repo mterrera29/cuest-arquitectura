@@ -76,6 +76,7 @@ const cuestionarios_idw = [
   { semana: 2, preguntas: idw.semana2 },
   { semana: 3, preguntas: idw.semana3 },
   { semana: 4, preguntas: idw.semana4 },
+  { semana: 5, preguntas: idw.semana5 },
   { semana: 6, preguntas: idw.semana6 },
   { semana: 7, preguntas: idw.semana7 },
   { semana: 8, preguntas: idw.semana8 },
