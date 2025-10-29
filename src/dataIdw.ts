@@ -103,6 +103,51 @@ export const idw = {
   ],
   semana2: [
     {
+      texto:
+        '¿Qué método/s de solicitud HTTP se utiliza/n para enviar datos al servidor?',
+      opciones: ['GET', 'POST', 'PUT', 'DELETE'],
+      multiple: true,
+      correcta: [1, 2],
+      respuestaCorrecta: 'POST, PUT',
+    },
+    {
+      texto:
+        '¿Qué línea de encabezado en una solicitud HTTP identifica al software del navegador?',
+      opciones: ['Accept-Encoding', 'Content-Type', 'User-Agent', 'Server'],
+      correcta: 2,
+      respuestaCorrecta: 'User-Agent',
+    },
+    {
+      texto:
+        'El navegador interpreta el HTML, imágenes y otros recursos para mostrar la página. Este proceso se llama:',
+      opciones: ['Hosting', 'Renderizado', 'Caching', 'Parsing'],
+      correcta: 1,
+      respuestaCorrecta: 'Renderizado',
+    },
+    {
+      texto: '¿Qué función principal tiene un navegador web?',
+      opciones: [
+        'Ejecutar scripts del lado del servidor.',
+        'Gestionar archivos en el sistema operativo.',
+        'Procesar consultas de bases de datos.',
+        'Interpretar y renderizar páginas web.',
+      ],
+      correcta: 3,
+      respuestaCorrecta: 'Interpretar y renderizar páginas web.',
+    },
+    {
+      texto: 'Las IP o nombre de dominios NO son equivalentes.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'HTTP/11 permite la reutilización de conexiones TCP.',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
       texto: 'Un servidor puede atender a varios clientes simultáneamente.',
       opciones: ['Verdadero', 'Falso'],
       correcta: 0,
