@@ -346,6 +346,68 @@ export const idw = {
   ],
   semana3: [
     {
+      texto: 'Las etiquetas <tr>, <td> y <th> se usan en:',
+      opciones: ['Listas', 'Formularios', 'Enlaces', 'Tablas'],
+      correcta: 3,
+      respuestaCorrecta: 'Tablas',
+    },
+    {
+      texto: 'Son elementos semánticos',
+      opciones: [
+        '<header>',
+        '<main>',
+        '<section>',
+        '<article>',
+        'Todos los anteriores',
+        'Ninguno de los anteriores',
+      ],
+      correcta: 4,
+      respuestaCorrecta: 'Todos los anteriores',
+    },
+    {
+      texto:
+        'Cuál de las siguientes opciones representa un elemento vacío en HTML?',
+      opciones: ['<strong>', '<img>', '<em>', '<p>'],
+      correcta: 1,
+      respuestaCorrecta: '<img>',
+    },
+    {
+      texto:
+        'El elemento <br/> es un elemento contenedor dentro del cual se pueden anidar otros elementos',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 1,
+      respuestaCorrecta: 'Falso',
+    },
+    {
+      texto: 'Cuál NO es una ventaja del uso de elementos semánticos en HTML5?',
+      opciones: [
+        'Permiten cambiar el diseño sin necesidad de CSS',
+        'Mejoran la accesibilidad',
+        'Facilitan la mantenibilidad',
+        'Ayudan a los motores de búsqueda',
+      ],
+      correcta: 0,
+      respuestaCorrecta: 'Permiten cambiar el diseño sin necesidad de CSS',
+    },
+    {
+      texto: 'Cuál es el propósito de la declaración <!DOCTYPE html>?',
+      opciones: [
+        'Mostrar el título de la página',
+        'Indicar al navegador la versión de HTML utilizada',
+        'Iniciar el cuerpo del documento',
+        'Cargar hojas de estilo externas',
+      ],
+      correcta: 1,
+      respuestaCorrecta: 'Indicar al navegador la versión de HTML utilizada',
+    },
+    {
+      texto:
+        'Cuál de estas etiquetas es específica de HTML5 y aporta semántica?',
+      opciones: ['div', 'br', 'section', 'font'],
+      correcta: 2,
+      respuestaCorrecta: 'section',
+    },
+    {
       texto: '¿Qué significa HTML?',
       opciones: [
         'HyperText Markup Language',
@@ -1375,14 +1437,13 @@ export const idw = {
         '¿Cuál es un ejemplo correcto de media query para pantallas medianas?',
       opciones: [
         '@media screen-width: 768px',
-        '768px',
         '@media screen(768px)',
         '@media (min-width: 768px)',
         '@media width >',
       ],
       multiple: true,
-      correcta: [1, 3],
-      respuestaCorrecta: '768px, @media (min-width: 768px)',
+      correcta: [2],
+      respuestaCorrecta: '@media (min-width: 768px)',
     },
     {
       texto:
@@ -1456,6 +1517,38 @@ export const idw = {
     },
   ],
   semana7: [
+    {
+      texto: '¿Qué método convierte un array en un string separado por comas?',
+      opciones: ['toString()', 'slice()', 'concat()', 'join(",")'],
+      correcta: 3,
+      respuestaCorrecta: 'join(",")',
+    },
+    {
+      texto:
+        '¿Qué resultado produce la siguiente desestructuración: [a,,b] = [1,2,3]; console.log(b);',
+      opciones: ['Error de sintaxis', '3', 'undefined', '2'],
+      correcta: 1,
+      respuestaCorrecta: '3',
+    },
+    {
+      texto:
+        'En JavaScript da lo mismo definir un texto con comillas simples (*) o comillas dobles (**)',
+      opciones: ['Verdadero', 'Falso'],
+      correcta: 0,
+      respuestaCorrecta: 'Verdadero',
+    },
+    {
+      texto:
+        'En términos de performance, el mejor lugar para colocar un elemento <script> dentro de una página HTML es',
+      opciones: [
+        'Al principio del elemento <body>',
+        'En el elemento <header>',
+        'Al final del elemento <body>',
+        'En el elemento <head>',
+      ],
+      correcta: 2,
+      respuestaCorrecta: 'Al final del elemento <body>',
+    },
     {
       texto:
         'En JavaScript es indistinto utilizar null o undefined para indicar que una variable tiene asociado un valor desconocido',
