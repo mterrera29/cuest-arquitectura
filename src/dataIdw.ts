@@ -1745,13 +1745,6 @@ export const idw = {
     },
     {
       texto:
-        '¿Qué resultado produce la siguiente desestructuración: [a,b] = [1,2,3]; console.log(b);',
-      opciones: ['3', '2', 'Error de sintaxis', 'undefined'],
-      correcta: 0,
-      respuestaCorrecta: '3',
-    },
-    {
-      texto:
         '¿Cuál es una forma válida de definir e invocar inmediatamente una función anónima?',
       opciones: [
         'anonymous() { console.log("Hola"); };',
